@@ -1,0 +1,319 @@
+{
+  "countries": [
+    {
+      "slug": "singapore",
+      "name": "Singapore",
+      "stamp_top": "SINGAPORE",
+      "stamp_bottom": "SOUTHEAST ASIA",
+      "tagline": "A city that runs on order, and somehow still surprises you.",
+      "hero_seed": "sg-hero",
+      "intro": "My first stop into Southeast Asia — and the easiest place to fall for. Hawker centres, glass towers, and rainforest, all inside one MRT ride.",
+      "since": "2022",
+      "places": [
+        {
+          "name": "Marina Bay & the Downtown Core",
+          "days": "2 Days",
+          "note": "Skyline walks, the Merlion at sunrise, and a rooftop that made me rethink what a city view could look like.",
+          "tags": ["City", "Photography", "Nightlife"],
+          "gallery": 6
+        },
+        {
+          "name": "Tiong Bahru & Chinatown",
+          "days": "1 Day",
+          "note": "Old shophouses, kopi in a real coffeeshop, and the best plate of chilli crab I've had anywhere.",
+          "tags": ["Food", "Old Town", "Walking"],
+          "gallery": 5
+        },
+        {
+          "name": "Sentosa & Southern Islands",
+          "days": "1 Day",
+          "note": "A short cable car ride out of the CBD chaos into beach clubs and quiet coastline.",
+          "tags": ["Beach", "Day Trip"],
+          "gallery": 4
+        }
+      ],
+      "logistics": {
+        "flights": "Manila → Singapore (Scoot), ~4h direct",
+        "stay": "Capsule hotel, Bugis — clean, central, budget-friendly",
+        "transport": "EZ-Link card on the MRT the entire trip — no car needed",
+        "budget": "~$65/day (excl. flights)",
+        "best_time": "Feb–Apr, before the mid-year humidity",
+        "tickets": [
+          { "type": "Flight", "name": "Scoot — MNL to SIN", "note": "Booked ~6 weeks out for the best fare", "link": "#" },
+          { "type": "Stay", "name": "Bugis Capsule Hotel", "note": "Booked via Booking.com", "link": "#" },
+          { "type": "Transit", "name": "EZ-Link Card", "note": "Top up at any MRT station", "link": "#" }
+        ]
+      },
+      "video": true
+    },
+    {
+      "slug": "malaysia",
+      "name": "Malaysia",
+      "stamp_top": "MALAYSIA",
+      "stamp_bottom": "SOUTHEAST ASIA",
+      "tagline": "Petronas lights, jungle air, and a food scene that never lets up.",
+      "hero_seed": "my-hero",
+      "intro": "KL was meant to be a two-day layover. It turned into a full week between the Batu Caves, the Cameron Highlands tea fields, and Penang's street art.",
+      "since": "2022",
+      "places": [
+        {
+          "name": "Kuala Lumpur",
+          "days": "3 Days",
+          "note": "KLCC Park at golden hour, Batu Caves before the tour buses arrive, and Jalan Alor at night for the satay.",
+          "tags": ["City", "Food", "Landmarks"],
+          "gallery": 6
+        },
+        {
+          "name": "Cameron Highlands",
+          "days": "2 Days",
+          "note": "A road trip up into tea plantations and strawberry farms — the temperature drop alone is worth it.",
+          "tags": ["Road Trip", "Nature"],
+          "gallery": 5
+        },
+        {
+          "name": "Penang (George Town)",
+          "days": "2 Days",
+          "note": "Street art alleys, colonial shophouses, and hands-down the best char kway teow of the whole trip.",
+          "tags": ["Old Town", "Food", "Street Art"],
+          "gallery": 5
+        }
+      ],
+      "logistics": {
+        "flights": "Singapore → Kuala Lumpur (AirAsia), ~1h10m",
+        "stay": "Mix of hostels (KL) and a homestay (Cameron Highlands)",
+        "transport": "Rented a car for the highlands leg — Grab everywhere else",
+        "budget": "~$45/day (excl. flights)",
+        "best_time": "Year-round, avoid Nov–Dec monsoon on the east coast",
+        "tickets": [
+          { "type": "Flight", "name": "AirAsia — SIN to KUL", "note": "Book the early morning flight, cheaper + less turbulence", "link": "#" },
+          { "type": "Car Rental", "name": "Perodua Axia, self-drive", "note": "Picked up at KL Sentral, dropped in Ipoh", "link": "#" },
+          { "type": "Stay", "name": "Cameron Highlands homestay", "note": "Found via Agoda, mountain view room", "link": "#" }
+        ]
+      },
+      "video": false
+    },
+    {
+      "slug": "thailand",
+      "name": "Thailand",
+      "stamp_top": "THAILAND",
+      "stamp_bottom": "SOUTHEAST ASIA",
+      "tagline": "Temples at dawn, night markets at midnight, islands in between.",
+      "hero_seed": "th-hero",
+      "intro": "Three weeks, three regions — Bangkok's chaos, Chiang Mai's calm, and the islands down south. Still the trip I recommend to every first-time backpacker.",
+      "since": "2023",
+      "places": [
+        {
+          "name": "Bangkok",
+          "days": "4 Days",
+          "note": "Wat Arun across the river at sunset, Chatuchak on a Saturday, and a rooftop bar that made the humidity worth it.",
+          "tags": ["City", "Temples", "Nightlife"],
+          "gallery": 7
+        },
+        {
+          "name": "Chiang Mai & Pai",
+          "days": "5 Days",
+          "note": "Rented a scooter and did the Pai loop over two days — waterfalls, canyon views, and the best banana pancakes on the route.",
+          "tags": ["Road Trip", "Nature", "Scooter"],
+          "gallery": 6
+        },
+        {
+          "name": "Koh Lipe & Koh Phi Phi",
+          "days": "4 Days",
+          "note": "Island hopping by longtail boat, snorkeling off Maya Bay before the crowds arrived at 8am.",
+          "tags": ["Beach", "Islands", "Boats"],
+          "gallery": 6
+        }
+      ],
+      "logistics": {
+        "flights": "Bangkok internal legs via Thai Lion Air + a ferry from Krabi to the islands",
+        "stay": "Hostels in BKK & Chiang Mai, beach bungalow on Koh Lipe",
+        "transport": "Scooter rental in the north, longtail boats in the south",
+        "budget": "~$38/day (excl. flights)",
+        "best_time": "Nov–Feb, dry season across the whole country",
+        "tickets": [
+          { "type": "Flight", "name": "Thai Lion Air — BKK to Krabi", "note": "Booked last-minute, still under $40", "link": "#" },
+          { "type": "Scooter", "name": "Honda Click 125i", "note": "Rented in Pai, 300 THB/day incl. helmet", "link": "#" },
+          { "type": "Ferry", "name": "Krabi → Koh Lipe speedboat", "note": "2.5h, book the morning departure", "link": "#" }
+        ]
+      },
+      "video": true
+    },
+    {
+      "slug": "philippines",
+      "name": "Philippines",
+      "stamp_top": "PHILIPPINES",
+      "stamp_bottom": "SOUTHEAST ASIA",
+      "tagline": "Home base, and still the trip that surprises me every time.",
+      "hero_seed": "ph-hero",
+      "intro": "7,000+ islands and I've barely made a dent. These are the routes I keep coming back to — and sending friends on.",
+      "since": "2019",
+      "places": [
+        {
+          "name": "Palawan (El Nido & Coron)",
+          "days": "6 Days",
+          "note": "Island-hopping tours A to D, hidden lagoons, and a shipwreck dive in Coron that's still my favourite in the country.",
+          "tags": ["Islands", "Diving", "Boats"],
+          "gallery": 7
+        },
+        {
+          "name": "Siargao",
+          "days": "5 Days",
+          "note": "Learned to surf at Cloud 9, rented a motorbike for the island loop, and the rock pools at Magpupungko at low tide.",
+          "tags": ["Surf", "Motorbike", "Islands"],
+          "gallery": 6
+        },
+        {
+          "name": "Batanes",
+          "days": "4 Days",
+          "note": "The furthest north I've travelled at home — rolling hills, stone houses, and almost no phone signal. Worth every peso.",
+          "tags": ["Road Trip", "Remote", "Nature"],
+          "gallery": 6
+        }
+      ],
+      "logistics": {
+        "flights": "Manila → Puerto Princesa / Siargao / Basco, all direct on Cebu Pacific",
+        "stay": "Budget guesthouses + one splurge resort night in El Nido",
+        "transport": "Habal-habal and rented scooters on every island",
+        "budget": "~₱2,500/day (~$45, excl. flights)",
+        "best_time": "Dec–May, before typhoon season",
+        "tickets": [
+          { "type": "Flight", "name": "Cebu Pacific — MNL to Basco", "note": "Limited seats, book 2 months ahead", "link": "#" },
+          { "type": "Tour", "name": "El Nido Island Hopping Tour A", "note": "Booked through the hostel, split cost with 4 others", "link": "#" },
+          { "type": "Motorbike", "name": "Honda Beat, Siargao", "note": "300 PHP/day, ask at Cloud 9 area", "link": "#" }
+        ]
+      },
+      "video": true
+    },
+    {
+      "slug": "vietnam",
+      "name": "Vietnam",
+      "stamp_top": "VIETNAM",
+      "stamp_bottom": "SOUTHEAST ASIA",
+      "tagline": "A country you cross by motorbike, one coastline at a time.",
+      "hero_seed": "vn-hero",
+      "intro": "North to south, mostly on two wheels. Hanoi's old quarter, Ha Long Bay by boat, and a coastal ride I still think about.",
+      "since": "2023",
+      "places": [
+        {
+          "name": "Hanoi & Ha Long Bay",
+          "days": "3 Days",
+          "note": "Egg coffee in the Old Quarter, then an overnight boat through the limestone karsts of Ha Long Bay.",
+          "tags": ["City", "Boats", "Food"],
+          "gallery": 6
+        },
+        {
+          "name": "Hoi An & Da Nang",
+          "days": "3 Days",
+          "note": "Lantern-lit old town at night, a tailored jacket I still wear, and the Marble Mountains just outside the city.",
+          "tags": ["Old Town", "Beach"],
+          "gallery": 6
+        },
+        {
+          "name": "Ho Chi Minh City",
+          "days": "2 Days",
+          "note": "War Remnants Museum, the Bến Thành night market, and rooftop pho that broke every rule I thought pho had.",
+          "tags": ["City", "History", "Food"],
+          "gallery": 5
+        }
+      ],
+      "logistics": {
+        "flights": "Manila → Hanoi (Cebu Pacific), then domestic hops on Vietjet",
+        "stay": "Hostels + one homestay near Hoi An",
+        "transport": "Motorbike rented in Hoi An for the coastal stretch",
+        "budget": "~$32/day (excl. flights)",
+        "best_time": "Feb–Apr for the whole north-to-south route",
+        "tickets": [
+          { "type": "Flight", "name": "Vietjet — HAN to DAD", "note": "Domestic leg, booked a week ahead", "link": "#" },
+          { "type": "Boat", "name": "Ha Long Bay overnight cruise", "note": "Mid-range operator, booked via hostel desk", "link": "#" },
+          { "type": "Motorbike", "name": "Honda Wave, Hoi An to Hue", "note": "One-way rental, drop-off included", "link": "#" }
+        ]
+      },
+      "video": false
+    },
+    {
+      "slug": "maldives",
+      "name": "Maldives",
+      "stamp_top": "MALDIVES",
+      "stamp_bottom": "INDIAN OCEAN",
+      "tagline": "The one where the ocean did all the talking.",
+      "hero_seed": "mv-hero",
+      "intro": "Proof you don't need an overwater villa budget to see it properly — local islands, a guesthouse, and some of the clearest water I've ever swum in.",
+      "since": "2024",
+      "places": [
+        {
+          "name": "Malé",
+          "days": "1 Day",
+          "note": "A short stopover to reset before the speedboat out — local market, fish harbour, and a rooftop coffee.",
+          "tags": ["City", "Transit"],
+          "gallery": 3
+        },
+        {
+          "name": "Maafushi (Local Island)",
+          "days": "5 Days",
+          "note": "Bikini beach by day, night snorkeling with reef sharks, and a sandbank picnic that needed zero filter.",
+          "tags": ["Beach", "Snorkeling", "Budget"],
+          "gallery": 7
+        }
+      ],
+      "logistics": {
+        "flights": "Manila → Malé via Singapore, ~10h total",
+        "stay": "Guesthouse on Maafushi, local island (no resort)",
+        "transport": "Public ferry + speedboat transfers between islands",
+        "budget": "~$70/day (excl. flights) — the budget way to do the Maldives",
+        "best_time": "Dec–Apr, dry season",
+        "tickets": [
+          { "type": "Flight", "name": "Singapore Airlines — SIN to MLE", "note": "Booked as a stopover add-on", "link": "#" },
+          { "type": "Ferry", "name": "Malé → Maafushi speedboat", "note": "30 mins, book a day ahead at the jetty", "link": "#" },
+          { "type": "Stay", "name": "Maafushi guesthouse", "note": "Half the price of a resort, same water", "link": "#" }
+        ]
+      },
+      "video": true
+    },
+    {
+      "slug": "india",
+      "name": "India",
+      "stamp_top": "INDIA",
+      "stamp_bottom": "SOUTH ASIA",
+      "tagline": "A country too big for one trip — this was chapter one.",
+      "hero_seed": "in-hero",
+      "intro": "Rajasthan's forts, Delhi's chaos, and an overnight train that taught me more about the country than any guidebook could.",
+      "since": "2024",
+      "places": [
+        {
+          "name": "Delhi",
+          "days": "3 Days",
+          "note": "Old Delhi by cycle rickshaw, Humayun's Tomb at sunrise, and a street food crawl through Chandni Chowk.",
+          "tags": ["City", "History", "Food"],
+          "gallery": 6
+        },
+        {
+          "name": "Jaipur & Jodhpur",
+          "days": "4 Days",
+          "note": "The Pink City's forts, the Blue City's rooftop views, and an overnight train between the two.",
+          "tags": ["Road Trip", "Forts", "Trains"],
+          "gallery": 6
+        },
+        {
+          "name": "Udaipur",
+          "days": "2 Days",
+          "note": "Lake Pichola at golden hour and a rooftop dinner looking straight at the City Palace.",
+          "tags": ["Lakes", "Palaces"],
+          "gallery": 5
+        }
+      ],
+      "logistics": {
+        "flights": "Manila → Delhi via Singapore, ~9h total",
+        "stay": "Heritage guesthouses in Jaipur & Udaipur, hostel in Delhi",
+        "transport": "Hired a car + driver for Rajasthan, overnight train Jaipur–Jodhpur",
+        "budget": "~$40/day (excl. flights)",
+        "best_time": "Oct–Mar, before the heat sets in",
+        "tickets": [
+          { "type": "Train", "name": "Jaipur → Jodhpur overnight sleeper", "note": "Booked via IRCTC, AC 3-tier", "link": "#" },
+          { "type": "Car + Driver", "name": "Rajasthan circuit, 6 days", "note": "Arranged through the Jaipur guesthouse", "link": "#" },
+          { "type": "Stay", "name": "Udaipur heritage haveli", "note": "Lake-facing room, booked direct", "link": "#" }
+        ]
+      },
+      "video": false
+    }
+  ]
+}
