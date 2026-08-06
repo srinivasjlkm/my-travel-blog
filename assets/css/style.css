@@ -75,6 +75,20 @@ h1,h2,h3,h4{ font-family: var(--font-display); font-weight: 600; margin: 0; lett
 
 .hero{ position: relative; padding: 70px 0 40px; overflow: hidden; }
 .hero-grid{ display:grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items:center; }
+.hero-intro{
+  margin: 16px 0 22px;
+  max-width: 48ch;
+  font-family: var(--font-body);
+  font-size: 15.5px;
+  font-weight: 500;
+  color: var(--text-ink-dim);
+  padding: 14px 20px;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: var(--shadow-card);
+  display: inline-block;
+}
+.hero-intro strong{ color: var(--gold); font-weight: 700; }
 .hero h1{ font-size: clamp(40px, 5.6vw, 68px); line-height: 1.02; color: var(--text-ink); }
 .hero h1 em{ color: var(--gold); font-style: normal; }
 .hero p.lede{ margin-top: 20px; max-width: 46ch; color: var(--text-ink-dim); font-size: 18px; }
