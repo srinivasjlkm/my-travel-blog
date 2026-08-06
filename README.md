@@ -103,3 +103,29 @@ Either way, custom domains can be attached later from the host's dashboard.
 - [ ] Swap placeholder video embeds for real ones (or remove the section)
 - [ ] Double check costs/logistics numbers are accurate for readers
 - [ ] Add a favicon (a 32×32 image at the project root named `favicon.ico`)
+- [ ] Set up the "Plan a Trip" form (see below) so submissions actually reach you
+
+## 9. Setting up the "Plan a Trip" form
+This form uses **Formspree** — a free service that takes form submissions on a
+static site (like this one, with no server of its own) and forwards them to
+your email. It also gives you a private online dashboard to see every
+submission, so you don't have to rely on email alone. Your email address is
+never visible in the site's code — only Formspree sees it.
+
+1. Go to [formspree.io](https://formspree.io) and sign up free with
+   `srinivasjlkm@gmail.com`.
+2. Click **New Form**, name it something like "Trip Requests."
+3. Formspree gives you a form ID that looks like `https://formspree.io/f/abcd1234`.
+4. Open `plan.html`, find this line near the bottom:
+   ```js
+   const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
+   ```
+   Replace `YOUR_FORM_ID` with your real ID from step 3.
+5. Re-upload `plan.html` to GitHub (same drag-and-drop process as before).
+6. Formspree will send a verification email the first time someone submits —
+   confirm it once, and every submission after that lands in your inbox,
+   nicely formatted, plus you can log into formspree.io any time to see the
+   full history of submissions.
+
+The free Formspree plan covers 50 submissions a month, which is plenty to
+start — you can upgrade later if the service takes off.
