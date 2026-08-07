@@ -75,7 +75,6 @@
       <div class="stop" id="stop-{{ loop.index }}">
         <div class="stop-head">
           <div class="stop-left">
-            <span class="stop-num">{{ '%02d'|format(loop.index) }}</span>
             <h3>{{ place.name }}</h3>
           </div>
           <div style="display:flex;align-items:center;gap:18px;">
@@ -96,6 +95,24 @@
             <div class="stop-tags">
               {% for tag in place.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
             </div>
+
+            {% if place.sub_places %}
+            <div class="sub-places">
+              {% for sub in place.sub_places %}
+              <div class="sub-place">
+                <div class="sub-place-head">
+                  <h4>{{ sub.name }}</h4>
+                  <span class="sub-place-days">{{ sub.days }}</span>
+                </div>
+                {% if sub.getting_there %}<p class="getting-there">→ {{ sub.getting_there }}</p>{% endif %}
+                <p>{{ sub.note }}</p>
+                <div class="stop-tags">
+                  {% for tag in sub.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+            {% endif %}
           </div>
         </div>
       </div>

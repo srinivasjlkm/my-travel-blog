@@ -177,21 +177,27 @@
           "gallery": 4
         },
         {
-          "name": "Batangas — Mabini",
-          "days": "2 Days",
+          "name": "Batangas",
+          "days": "5 Days",
           "when": "Year TBD",
-          "getting_there": "A 2-hour drive from Tagaytay.",
-          "note": "A quiet freediving base on the Verde Island Passage — one of the most biodiverse stretches of water on the planet.",
-          "tags": ["Freediving", "Budget"],
-          "gallery": 3
-        },
-        {
-          "name": "Batangas — Calatagan",
-          "days": "3 Days",
-          "when": "Year TBD",
-          "getting_there": "Details coming soon.",
-          "note": "Long stretches of pale sand and calm water — a low-key coastal escape without the crowds.",
-          "tags": ["Beach", "Budget"],
+          "note": "Two very different sides of the same province — a quiet freediving base and a long stretch of open beach, both easy trips from Manila.",
+          "tags": ["Budget", "Weekend Trip"],
+          "sub_places": [
+            {
+              "name": "Mabini",
+              "days": "2 Days",
+              "getting_there": "A 2-hour drive from Tagaytay.",
+              "note": "A quiet freediving base on the Verde Island Passage — one of the most biodiverse stretches of water on the planet.",
+              "tags": ["Freediving"]
+            },
+            {
+              "name": "Calatagan",
+              "days": "3 Days",
+              "getting_there": "Details coming soon.",
+              "note": "Long stretches of pale sand and calm water — a low-key coastal escape without the crowds.",
+              "tags": ["Beach"]
+            }
+          ],
           "gallery": 3
         },
         {

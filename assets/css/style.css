@@ -199,6 +199,21 @@ h1,h2,h3,h4{ font-family: var(--font-display); font-weight: 600; margin: 0; lett
 .stop-tags{ display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
 .tag{ font-family: var(--font-mono); font-size:11px; font-weight:700; background: #fff; padding:7px 14px; border-radius:999px; color: var(--gold-soft); box-shadow: var(--shadow-card); }
 
+.sub-places{ margin-top: 24px; display: flex; flex-direction: column; gap: 18px; }
+.sub-place{
+  background: #fff;
+  border-radius: 20px;
+  padding: 22px 24px;
+  box-shadow: var(--shadow-card);
+  border-left: 4px solid var(--jade);
+}
+.sub-place-head{ display:flex; justify-content:space-between; align-items:baseline; gap:16px; }
+.sub-place-head h4{ font-size: 18px; color: var(--text-ink); }
+.sub-place-days{ font-family: var(--font-mono); font-size: 11.5px; color: var(--text-ink-dim); white-space: nowrap; }
+.sub-place .getting-there{ margin-top: 8px; }
+.sub-place p:not(.getting-there){ color: var(--text-ink-dim); font-size: 14.5px; margin-top: 6px; }
+.sub-place .stop-tags{ margin-top: 12px; }
+
 .place-hero{ margin: 0 0 20px; border-radius: 22px; overflow: hidden; box-shadow: var(--shadow-card); position: relative; }
 .place-hero img{ display: block; width: 100%; height: 460px; object-fit: cover; }
 .place-hero figcaption{
