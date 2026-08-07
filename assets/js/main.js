@@ -21,30 +21,24 @@ function initNavToggle(){
   links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
 }
 
-/* ---------- passport stamp SVG (the signature element) ----------
-   Builds a circular ink-stamp: arced country name on top,
-   arced "VISITED" + year on bottom, small icon in the middle.
-   Usage: <div class="stamp" data-top="THAILAND" data-bottom="EST. 2022"></div>
+/* ---------- passport stamp (the signature element) ----------
+   Circular ink-ring badge, optionally with a cropped photo inside.
+   The country name sits in a tag overlapping the top of the ring
+   (not curved text on the ring itself) so it stays readable over any photo.
+   Usage: <div class="stamp" data-top="THAILAND"></div>
    Add data-photo="assets/img/yourphoto.webp" to crop a real photo inside the ring.
 */
 function renderStamps(){
   document.querySelectorAll('.stamp').forEach(el => {
     const top = el.dataset.top || '';
-    const bottom = el.dataset.bottom || '';
     const photo = el.dataset.photo || '';
-    const uid = 'stamp-' + Math.random().toString(36).slice(2, 9);
     el.innerHTML = `
+      <span class="stamp-label">${top}</span>
       ${photo ? `<img class="stamp-photo" src="${photo}" alt="${top}">` : ''}
       <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <path id="${uid}-top" d="M 20,80 A 55,55 0 1 1 130,80" />
-          <path id="${uid}-bottom" d="M 28,95 A 45,45 0 1 0 122,95" />
-        </defs>
         <circle class="stamp-ink stamp-outer" cx="75" cy="75" r="68" />
         <circle class="stamp-ink stamp-inner" cx="75" cy="75" r="58" />
         ${photo ? '' : '<path class="stamp-icon" transform="translate(67,60) scale(0.9)" d="M16 1 L18 7 L24 9 L18 11 L16 17 L14 11 L8 9 L14 7 Z" />'}
-        <text><textPath href="#${uid}-top" startOffset="50%" text-anchor="middle">${top}</textPath></text>
-        <text><textPath href="#${uid}-bottom" startOffset="50%" text-anchor="middle">${bottom}</textPath></text>
       </svg>
     `;
   });
