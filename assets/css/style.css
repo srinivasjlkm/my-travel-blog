@@ -108,6 +108,27 @@ h1,h2,h3,h4{ font-family: var(--font-display); font-weight: 600; margin: 0; lett
 .stat .label{ font-family: var(--font-mono); font-size: 10.5px; letter-spacing:0.06em; text-transform:uppercase; color: var(--text-ink-dim); margin-top:6px; }
 @media (max-width: 700px){ .stats-strip .wrap{ grid-template-columns: repeat(2,1fr); } }
 
+.raw-promise{
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 28px;
+  padding: 36px 40px;
+  box-shadow: var(--shadow-card);
+}
+.raw-promise-icon{
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  background: var(--jade);
+  color: var(--paper);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.raw-promise h2{ font-size: clamp(23px, 2.8vw, 30px); margin-top: 8px; color: var(--text-ink); }
+.raw-promise p{ color: var(--text-ink-dim); font-size: 15.5px; margin-top: 10px; max-width: 66ch; }
+@media (max-width: 640px){ .raw-promise{ flex-direction: column; padding: 28px; gap: 18px; } }
+
 .stamp-section{ padding: 70px 0 20px; }
 .stamp-section .section-head{ display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:40px; flex-wrap:wrap; gap:16px; }
 .stamp-section h2{ font-size: clamp(28px,3.4vw,42px); color: var(--text-ink); margin-top:6px; }
@@ -115,7 +136,8 @@ h1,h2,h3,h4{ font-family: var(--font-display); font-weight: 600; margin: 0; lett
 .stamp-card{ text-align:center; }
 .stamp{ position:relative; width: 148px; height:148px; margin: 0 auto; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; transition: transform .4s var(--ease); }
 .stamp:hover{ transform: scale(1.08) rotate(4deg); }
-.stamp svg{ width:100%; height:100%; }
+.stamp svg{ position:relative; z-index:2; width:100%; height:100%; pointer-events:none; }
+.stamp-photo{ position:absolute; inset:11px; width:calc(100% - 22px); height:calc(100% - 22px); border-radius:50%; object-fit:cover; z-index:1; }
 .stamp .stamp-ink{ fill:none; }
 .stamp .stamp-outer{ stroke: var(--gold); stroke-width:2; }
 .stamp .stamp-inner{ stroke: var(--jade); stroke-width:2.4; stroke-dasharray: 5 6; }

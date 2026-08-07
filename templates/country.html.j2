@@ -31,7 +31,11 @@
 </nav>
 
 <header class="country-hero">
+  {% if country.hero_photo %}
+  <img src="{{ country.hero_photo }}" alt="{{ country.name }} landscape">
+  {% else %}
   <img src="https://picsum.photos/seed/{{ country.hero_seed }}/1600/1000" alt="{{ country.name }} landscape">
+  {% endif %}
   <div class="country-hero-content wrap">
     <div class="eyebrow">Chapter · {{ country.stamp_bottom }} · Since {{ country.since }}</div>
     <h1>{{ country.name }}</h1>

@@ -24,14 +24,17 @@ function initNavToggle(){
 /* ---------- passport stamp SVG (the signature element) ----------
    Builds a circular ink-stamp: arced country name on top,
    arced "VISITED" + year on bottom, small icon in the middle.
-   Usage: <div class="stamp" data-top="THAILAND" data-bottom="EST. 2022" data-icon="plane"></div>
+   Usage: <div class="stamp" data-top="THAILAND" data-bottom="EST. 2022"></div>
+   Add data-photo="assets/img/yourphoto.webp" to crop a real photo inside the ring.
 */
 function renderStamps(){
   document.querySelectorAll('.stamp').forEach(el => {
     const top = el.dataset.top || '';
     const bottom = el.dataset.bottom || '';
+    const photo = el.dataset.photo || '';
     const uid = 'stamp-' + Math.random().toString(36).slice(2, 9);
     el.innerHTML = `
+      ${photo ? `<img class="stamp-photo" src="${photo}" alt="${top}">` : ''}
       <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <path id="${uid}-top" d="M 20,80 A 55,55 0 1 1 130,80" />
@@ -39,7 +42,7 @@ function renderStamps(){
         </defs>
         <circle class="stamp-ink stamp-outer" cx="75" cy="75" r="68" />
         <circle class="stamp-ink stamp-inner" cx="75" cy="75" r="58" />
-        <path class="stamp-icon" transform="translate(67,60) scale(0.9)" d="M16 1 L18 7 L24 9 L18 11 L16 17 L14 11 L8 9 L14 7 Z" />
+        ${photo ? '' : '<path class="stamp-icon" transform="translate(67,60) scale(0.9)" d="M16 1 L18 7 L24 9 L18 11 L16 17 L14 11 L8 9 L14 7 Z" />'}
         <text><textPath href="#${uid}-top" startOffset="50%" text-anchor="middle">${top}</textPath></text>
         <text><textPath href="#${uid}-bottom" startOffset="50%" text-anchor="middle">${bottom}</textPath></text>
       </svg>
