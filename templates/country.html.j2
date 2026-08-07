@@ -56,7 +56,7 @@
 
     <div class="route-strip reveal" style="margin-top:34px;">
       {% for place in country.places %}
-        <span class="route-dot">{{ place.short }}</span>
+        <a href="#stop-{{ loop.index }}" class="route-dot" data-stop-target="stop-{{ loop.index }}">{{ place.short }}</a>
         {% if not loop.last %}<span class="route-line"></span>{% endif %}
       {% endfor %}
     </div>
@@ -68,7 +68,7 @@
     <div class="section-title reveal"><span class="idx">02</span><h2>Where I Went</h2></div>
     <div class="itinerary reveal">
       {% for place in country.places %}
-      <div class="stop">
+      <div class="stop" id="stop-{{ loop.index }}">
         <div class="stop-head">
           <div class="stop-left">
             <span class="stop-num">{{ '%02d'|format(loop.index) }}</span>
@@ -81,6 +81,12 @@
         </div>
         <div class="stop-panel">
           <div class="stop-panel-inner">
+            {% if place.hero_img %}
+            <figure class="place-hero">
+              <img src="{{ place.hero_img }}" alt="{{ place.hero_caption or place.name }}" loading="lazy">
+              {% if place.hero_caption %}<figcaption>{{ place.hero_caption }}</figcaption>{% endif %}
+            </figure>
+            {% endif %}
             <p>{{ place.note }}</p>
             <div class="stop-tags">
               {% for tag in place.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
@@ -97,14 +103,27 @@
   <div class="wrap">
     <div class="section-title reveal"><span class="idx">03</span><h2>Through the Lens</h2></div>
     <div class="gallery reveal">
-      {% set total = country.places | sum(attribute='gallery') %}
-      {% for i in range(total) %}
-      <figure class="{{ 'span-2' if i % 7 == 0 else '' }}">
-        <img src="https://picsum.photos/seed/{{ country.slug }}-{{ i }}/700/700" alt="{{ country.name }} photo {{ i + 1 }}" loading="lazy">
-      </figure>
+      {% set ns = namespace(i=0) %}
+      {% for place in country.places %}
+        {% if place.hero_img or place.images %}
+          {% set all_imgs = ([place.hero_img] if place.hero_img else []) + (place.images if place.images else []) %}
+          {% for img in all_imgs %}
+          <figure class="{{ 'span-2' if ns.i % 7 == 0 else '' }}">
+            <img src="{{ img }}" alt="{{ place.name }} photo" loading="lazy">
+          </figure>
+          {% set ns.i = ns.i + 1 %}
+          {% endfor %}
+        {% elif place.gallery %}
+          {% for j in range(place.gallery) %}
+          <figure class="{{ 'span-2' if ns.i % 7 == 0 else '' }}">
+            <img src="https://picsum.photos/seed/{{ country.slug }}-{{ loop.index }}-{{ j }}/700/700" alt="{{ place.name }} photo {{ j + 1 }}" loading="lazy">
+          </figure>
+          {% set ns.i = ns.i + 1 %}
+          {% endfor %}
+        {% endif %}
       {% endfor %}
     </div>
-    <p class="video-note" style="margin-top:18px;">Placeholder gallery — swap these for your own shots from Instagram/your camera roll. Keep the same file names and everything else updates automatically.</p>
+    <p class="video-note" style="margin-top:18px;">Placeholder gallery photos will keep appearing here for any place you haven't uploaded real shots for yet — swap them in data.json whenever you're ready.</p>
   </div>
 </section>
 

@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavToggle();
   renderStamps();
   initAccordion();
+  initRouteStrip();
   initLightbox();
   initScrollReveal();
   initCountryNavHighlight();
@@ -58,6 +59,20 @@ function initAccordion(){
   });
   const first = document.querySelector('.itinerary .stop');
   if(first) first.classList.add('open');
+}
+
+/* ---------- route-strip pills: jump to + open matching itinerary stop ---------- */
+function initRouteStrip(){
+  document.querySelectorAll('.route-dot[data-stop-target]').forEach(dot => {
+    dot.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.getElementById(dot.dataset.stopTarget);
+      if(!target) return;
+      target.parentElement.querySelectorAll('.stop.open').forEach(s => s.classList.remove('open'));
+      target.classList.add('open');
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
 }
 
 /* ---------- lightbox gallery ---------- */

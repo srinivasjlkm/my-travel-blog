@@ -156,18 +156,33 @@
           "gallery": 7
         },
         {
-          "name": "Siargao",
-          "days": "5 Days",
-          "note": "Learned to surf at Cloud 9, rented a motorbike for the island loop, and the rock pools at Magpupungko at low tide.",
-          "tags": ["Surf", "Motorbike", "Islands"],
-          "gallery": 6
+          "name": "Siquijor",
+          "days": "TBD",
+          "note": "Home to Cambugahay Falls' turquoise cascades and the quietly eerie ruins of the Sunken Cemetery. Full write-up coming soon.",
+          "tags": ["Waterfalls", "Island"],
+          "hero_img": "../assets/img/DJI_20260720135217_0473_D.webp",
+          "hero_caption": "Cambugahay Falls, Siquijor",
+          "images": [
+            "../assets/img/DJI_20260720180842_0489_D.webp",
+            "../assets/img/DJI_20260720181004_0491_D.webp",
+            "../assets/img/DJI_20260727130313_0568_D.webp"
+          ]
         },
         {
-          "name": "Batanes",
-          "days": "4 Days",
-          "note": "The furthest north I've travelled at home — rolling hills, stone houses, and almost no phone signal. Worth every peso.",
-          "tags": ["Road Trip", "Remote", "Nature"],
-          "gallery": 6
+          "name": "Bohol",
+          "days": "TBD",
+          "note": "The famous Chocolate Hills, rolling across the interior as far as you can see. Full write-up coming soon.",
+          "tags": ["Nature"],
+          "hero_img": "../assets/img/DJI_20260725115212_0532_D.webp",
+          "hero_caption": "Chocolate Hills, Bohol"
+        },
+        {
+          "name": "Camiguin",
+          "days": "TBD",
+          "note": "White Island's sandbar, sitting alone in open water off the coast. Full write-up coming soon.",
+          "tags": ["Beach", "Island"],
+          "hero_img": "../assets/img/DJI_20260729085346_0612_D.webp",
+          "hero_caption": "White Island, Camiguin"
         }
       ],
       "logistics": {
