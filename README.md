@@ -1,4 +1,4 @@
-# My Travel Diaries — your travel journal
+# My Travel Diaries — your travel journal Trips Away from Home
 
 A small multi-page travel site: a home page, one page per country, an about page,
 and a "more countries" holding page for trips you haven't written up yet.
