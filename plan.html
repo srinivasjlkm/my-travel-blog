@@ -99,6 +99,14 @@
       <p id="form-status" class="form-status" role="status"></p>
     </form>
 
+    <div id="form-success" class="form-success-panel" style="display:none;" role="status">
+      <div class="form-success-icon">
+        <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12.5l5 5L20 6"/></svg>
+      </div>
+      <h3>Message sent!</h3>
+      <p>Thanks — your trip details are in. I'll email you back soon at the address you gave me.</p>
+    </div>
+
   </div>
 </section>
 
@@ -117,7 +125,7 @@
   // ---- Trip request form -> Formspree ----
   // Replace YOUR_FORM_ID below with the ID from your Formspree form
   // (see the README section "Setting up the Plan a Trip form").
-  const FORMSPREE_ENDPOINT = "https://formspree.io/f/mjybkvda";
+  const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
 
   const form = document.getElementById('trip-form');
   const status = document.getElementById('form-status');
@@ -147,8 +155,8 @@
       if (res.ok) {
         form.reset();
         form.style.display = 'none';
-        status.textContent = "Thanks! Your trip details are in — I'll email you back soon.";
-        status.classList.add('form-status-success');
+        document.getElementById('form-success').style.display = 'flex';
+        document.getElementById('form-success').scrollIntoView({ behavior: 'smooth', block: 'center' });
       } else {
         status.textContent = 'Something went wrong sending that — mind trying again?';
         status.classList.add('form-status-error');

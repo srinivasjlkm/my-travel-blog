@@ -281,3 +281,25 @@ h1,h2,h3,h4{ font-family: var(--font-display); font-weight: 600; margin: 0; lett
 .form-status-success{ color: var(--gold-soft); font-weight: 700; }
 .form-status-error{ color: var(--chili); font-weight: 700; }
 @media (max-width: 640px){ .form-row{ grid-template-columns: 1fr; } .plan-form{ padding: 26px; } }
+
+.form-success-panel{
+  background: #fff;
+  border-radius: 28px;
+  padding: 60px 40px;
+  box-shadow: var(--shadow-card);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  animation: pop-in .5s var(--ease);
+}
+.form-success-icon{
+  width: 68px; height: 68px;
+  border-radius: 50%;
+  background: var(--jade);
+  color: var(--paper);
+  display: flex; align-items: center; justify-content: center;
+}
+.form-success-panel h3{ font-size: 24px; color: var(--text-ink); }
+.form-success-panel p{ color: var(--text-ink-dim); font-size: 15px; max-width: 42ch; }
+@keyframes pop-in{ from{ opacity:0; transform: scale(0.94) translateY(10px); } to{ opacity:1; transform:none; } }
