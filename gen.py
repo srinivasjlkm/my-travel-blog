@@ -20,7 +20,8 @@ out_dir.mkdir(exist_ok=True)
 for i, country in enumerate(data):
     prev_c = data[i - 1] if i > 0 else None
     next_c = data[i + 1] if i < len(data) - 1 else None
-    html = tmpl.render(country=country, prev_country=prev_c, next_country=next_c)
+    fallback_count = sum(p.get("gallery", 0) for p in country["places"]) or 6
+    html = tmpl.render(country=country, prev_country=prev_c, next_country=next_c, fallback_count=fallback_count)
     (out_dir / f"{country['slug']}.html").write_text(html)
     print("wrote", country["slug"])
 

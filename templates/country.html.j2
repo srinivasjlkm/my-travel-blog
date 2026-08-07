@@ -79,7 +79,7 @@
             <h3>{{ place.name }}</h3>
           </div>
           <div style="display:flex;align-items:center;gap:18px;">
-            <span class="stop-days">{{ place.days }}</span>
+            <span class="stop-days">{{ place.days }}{% if place.when %} · {{ place.when }}{% endif %}</span>
             <svg class="stop-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
           </div>
         </div>
@@ -91,6 +91,7 @@
               {% if place.hero_caption %}<figcaption>{{ place.hero_caption }}</figcaption>{% endif %}
             </figure>
             {% endif %}
+            {% if place.getting_there %}<p class="getting-there">→ {{ place.getting_there }}</p>{% endif %}
             <p>{{ place.note }}</p>
             <div class="stop-tags">
               {% for tag in place.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
@@ -106,28 +107,10 @@
 <section class="section" id="gallery">
   <div class="wrap">
     <div class="section-title reveal"><span class="idx">03</span><h2>Through the Lens</h2></div>
-    <div class="gallery reveal">
-      {% set ns = namespace(i=0) %}
-      {% for place in country.places %}
-        {% if place.hero_img or place.images %}
-          {% set all_imgs = ([place.hero_img] if place.hero_img else []) + (place.images if place.images else []) %}
-          {% for img in all_imgs %}
-          <figure class="{{ 'span-2' if ns.i % 7 == 0 else '' }}">
-            <img src="{{ img }}" alt="{{ place.name }} photo" loading="lazy">
-          </figure>
-          {% set ns.i = ns.i + 1 %}
-          {% endfor %}
-        {% elif place.gallery %}
-          {% for j in range(place.gallery) %}
-          <figure class="{{ 'span-2' if ns.i % 7 == 0 else '' }}">
-            <img src="https://picsum.photos/seed/{{ country.slug }}-{{ loop.index }}-{{ j }}/700/700" alt="{{ place.name }} photo {{ j + 1 }}" loading="lazy">
-          </figure>
-          {% set ns.i = ns.i + 1 %}
-          {% endfor %}
-        {% endif %}
-      {% endfor %}
+    <div class="gallery reveal" data-country="{{ country.slug }}" data-fallback-count="{{ fallback_count }}">
+      <p class="gallery-loading">Loading photos…</p>
     </div>
-    <p class="video-note" style="margin-top:18px;">Placeholder gallery photos will keep appearing here for any place you haven't uploaded real shots for yet — swap them in data.json whenever you're ready.</p>
+    <p class="video-note" style="margin-top:18px;">This gallery pulls live from the <code>assets/img/{{ country.slug }}/</code> folder in the repo — drop any photo in there and it appears here automatically, no code editing needed. Until real photos are added, placeholders fill the space.</p>
   </div>
 </section>
 

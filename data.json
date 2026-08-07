@@ -145,57 +145,137 @@
       "stamp_bottom": "SOUTHEAST ASIA",
       "tagline": "Home base, and still the trip that surprises me every time.",
       "hero_seed": "ph-hero",
-      "hero_photo": "../assets/img/DJI_20260725115212_0532_D.webp",
-      "intro": "7,000+ islands and I've barely made a dent. These are the routes I keep coming back to — and sending friends on.",
-      "since": "2019",
+      "hero_photo": "../assets/img/philippines/DJI_20260725115212_0532_D.webp",
+      "intro": "7,000+ islands and I've barely made a dent. These are the routes I keep coming back to — and sending friends on. Everything here is backpacker style — budget guesthouses over resorts, more time out on the water and in town than sitting in a hotel room.",
+      "since": "2018",
       "places": [
         {
-          "name": "Palawan (El Nido & Coron)",
-          "days": "6 Days",
-          "note": "Island-hopping tours A to D, hidden lagoons, and a shipwreck dive in Coron that's still my favourite in the country.",
-          "tags": ["Islands", "Diving", "Boats"],
-          "gallery": 7
+          "name": "Manila",
+          "days": "5 Days",
+          "when": "Dec 2018",
+          "getting_there": "A 4-hour flight in from Malaysia to kick off the trip.",
+          "note": "The sprawling starting point — colonial Intramuros, chaotic jeepneys, and a food scene that genuinely never sleeps.",
+          "tags": ["City", "Food"],
+          "gallery": 3
         },
         {
-          "name": "Siquijor",
-          "days": "TBD",
-          "note": "Home to Cambugahay Falls' turquoise cascades and the quietly eerie ruins of the Sunken Cemetery. Full write-up coming soon.",
-          "tags": ["Waterfalls", "Island"],
-          "hero_img": "../assets/img/DJI_20260720135217_0473_D.webp",
-          "hero_caption": "Cambugahay Falls, Siquijor",
-          "images": [
-            "../assets/img/DJI_20260720180842_0489_D.webp",
-            "../assets/img/DJI_20260720181004_0491_D.webp",
-            "../assets/img/DJI_20260727130313_0568_D.webp"
-          ]
+          "name": "Sagada",
+          "days": "3 Days",
+          "when": "Dec 2018",
+          "getting_there": "About 6 hours by bus from Manila, through Baguio.",
+          "note": "Mountain air, hanging coffins carved into limestone cliffs, and rice terraces that appear as the morning fog lifts.",
+          "tags": ["Mountains", "Bus Ride", "Nature"],
+          "gallery": 3
         },
         {
-          "name": "Bohol",
-          "days": "TBD",
-          "note": "The famous Chocolate Hills, rolling across the interior as far as you can see. Full write-up coming soon.",
-          "tags": ["Nature"],
-          "hero_img": "../assets/img/DJI_20260725115212_0532_D.webp",
+          "name": "Coron, Palawan",
+          "days": "4 Days",
+          "when": "Dec 2018",
+          "getting_there": "A straightforward 2-hour flight from Manila.",
+          "note": "Impossibly clear lagoons ringed by limestone karsts, with WWII shipwrecks resting in turquoise water just offshore.",
+          "tags": ["Islands", "Diving", "Lagoons"],
+          "gallery": 4
+        },
+        {
+          "name": "Batangas — Mabini",
+          "days": "2 Days",
+          "when": "Year TBD",
+          "getting_there": "A 2-hour drive from Tagaytay.",
+          "note": "A quiet freediving base on the Verde Island Passage — one of the most biodiverse stretches of water on the planet.",
+          "tags": ["Freediving", "Budget"],
+          "gallery": 3
+        },
+        {
+          "name": "Batangas — Calatagan",
+          "days": "3 Days",
+          "when": "Year TBD",
+          "getting_there": "Details coming soon.",
+          "note": "Long stretches of pale sand and calm water — a low-key coastal escape without the crowds.",
+          "tags": ["Beach", "Budget"],
+          "gallery": 3
+        },
+        {
+          "name": "Bohol — Panglao",
+          "days": "4 Days",
+          "when": "Summer 2019",
+          "getting_there": "About a 1-hour flight from Manila to Tagbilaran.",
+          "note": "White sand beaches by day, and the otherworldly Chocolate Hills rolling across the interior.",
+          "tags": ["Beach", "Nature"],
+          "hero_img": "../assets/img/philippines/DJI_20260725115212_0532_D.webp",
           "hero_caption": "Chocolate Hills, Bohol"
         },
         {
+          "name": "Bicol",
+          "days": "4 Days",
+          "when": "Dec 2023",
+          "getting_there": "A 2-day motorbike ride from Manila, with overnight stops in Pagbilao and Naga City.",
+          "note": "Mayon Volcano's near-perfect cone watches over the road the whole way, with some of the country's spiciest food waiting at the end of it.",
+          "tags": ["Motorbike", "Volcano", "Food"],
+          "gallery": 3
+        },
+        {
+          "name": "Romblon",
+          "days": "4 Days",
+          "when": "2025",
+          "getting_there": "About a 6-hour ferry from Batangas.",
+          "note": "The 'Marble Capital of the Philippines' — quiet fishing towns, marble quarries, and coastline that barely sees a tourist.",
+          "tags": ["Island", "Off the Beaten Path"],
+          "gallery": 3
+        },
+        {
+          "name": "Sibuyan",
+          "days": "4 Days",
+          "when": "2025",
+          "getting_there": "A 4-hour ferry from Romblon.",
+          "note": "Known as the 'Galapagos of Asia' — dense rainforest, rivers running gin-clear, and Mt. Guiting-Guiting looming over all of it.",
+          "tags": ["Rainforest", "Ferry"],
+          "gallery": 3
+        },
+        {
+          "name": "Siquijor",
+          "days": "5 Days",
+          "when": "2026",
+          "getting_there": "Flight from Manila to Dumaguete (1 hour), a quick trike to the port, then a short ferry over to the island.",
+          "note": "An island wrapped in old mysticism, waterfalls the colour of glass, and a Sunken Cemetery marker sitting just offshore.",
+          "tags": ["Waterfalls", "Island"],
+          "hero_img": "../assets/img/philippines/DJI_20260720135217_0473_D.webp",
+          "hero_caption": "Cambugahay Falls, Siquijor",
+          "images": [
+            "../assets/img/philippines/DJI_20260720180842_0489_D.webp",
+            "../assets/img/philippines/DJI_20260720181004_0491_D.webp",
+            "../assets/img/philippines/DJI_20260727130313_0568_D.webp"
+          ]
+        },
+        {
+          "name": "Bohol — Anda",
+          "days": "1 Day",
+          "when": "2026",
+          "getting_there": "A 2-hour ferry from Siquijor into Tagbilaran, then a trike and bus out to Anda — mostly used as a stop on the way to Camiguin this time.",
+          "note": "Bohol's quieter side — untouched beaches and blue holes, without Panglao's resort crowds.",
+          "tags": ["Beach", "Transit Stop"],
+          "gallery": 3
+        },
+        {
           "name": "Camiguin",
-          "days": "TBD",
-          "note": "White Island's sandbar, sitting alone in open water off the coast. Full write-up coming soon.",
+          "days": "4 Days",
+          "when": "2026",
+          "getting_there": "A 4-hour ferry from Jagna, Bohol. Getting back out: ferry to Balingoan, bus to Cagayan de Oro, overnight, then a flight home to Manila.",
+          "note": "More volcanoes than towns, and White Island's sandbar sitting alone in the middle of the sea.",
           "tags": ["Beach", "Island"],
-          "hero_img": "../assets/img/DJI_20260729085346_0612_D.webp",
+          "hero_img": "../assets/img/philippines/DJI_20260729085346_0612_D.webp",
           "hero_caption": "White Island, Camiguin"
         }
       ],
       "logistics": {
-        "flights": "Manila → Puerto Princesa / Siargao / Basco, all direct on Cebu Pacific",
-        "stay": "Budget guesthouses + one splurge resort night in El Nido",
-        "transport": "Habal-habal and rented scooters on every island",
-        "budget": "~₱2,500/day (~$45, excl. flights)",
+        "flights": "Manila → Tagbilaran, Dumaguete, and other regional hops — mostly Cebu Pacific",
+        "stay": "Budget guesthouses and cheap motels throughout — never resorts",
+        "transport": "A mix of ferries, buses, trikes, and the occasional rented motorbike between islands",
+        "budget": "~₱2,000/day (~$36, excl. flights) — budget backpacking style",
         "best_time": "Dec–May, before typhoon season",
         "tickets": [
-          { "type": "Flight", "name": "Cebu Pacific — MNL to Basco", "note": "Limited seats, book 2 months ahead", "link": "#" },
-          { "type": "Tour", "name": "El Nido Island Hopping Tour A", "note": "Booked through the hostel, split cost with 4 others", "link": "#" },
-          { "type": "Motorbike", "name": "Honda Beat, Siargao", "note": "300 PHP/day, ask at Cloud 9 area", "link": "#" }
+          { "type": "Flight", "name": "Cebu Pacific — MNL to Tagbilaran", "note": "Book a few weeks ahead for the better fares", "link": "#" },
+          { "type": "Ferry", "name": "Batangas → Romblon", "note": "~6 hours, several daily departures", "link": "#" },
+          { "type": "Ferry", "name": "Jagna, Bohol → Camiguin", "note": "~4 hours, check schedules ahead — not daily", "link": "#" }
         ]
       },
       "video": true

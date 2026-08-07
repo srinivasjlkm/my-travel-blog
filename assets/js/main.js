@@ -7,10 +7,70 @@ document.addEventListener('DOMContentLoaded', () => {
   renderStamps();
   initAccordion();
   initRouteStrip();
-  initLightbox();
+  loadCountryGallery();
   initScrollReveal();
   initCountryNavHighlight();
 });
+
+/* ---------- live country gallery, pulled from GitHub ----------
+   Any file dropped into assets/img/{country-slug}/ in the repo
+   shows up here automatically — no data.json / HTML editing needed.
+   Falls back to placeholder photos if the folder is empty or missing.
+*/
+const GITHUB_USER = 'srinivasjlkm';
+const GITHUB_REPO = 'my-travel-blog';
+
+async function loadCountryGallery(){
+  const container = document.querySelector('.gallery[data-country]');
+  if(!container) return;
+
+  const country = container.dataset.country;
+  const fallbackCount = parseInt(container.dataset.fallbackCount || '6', 10);
+  const apiUrl = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/assets/img/${country}`;
+  const imageExt = /\.(webp|jpg|jpeg|png)$/i;
+
+  let images = [];
+  try{
+    const res = await fetch(apiUrl);
+    if(res.ok){
+      const files = await res.json();
+      if(Array.isArray(files)){
+        images = files
+          .filter(f => f.type === 'file' && imageExt.test(f.name))
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map(f => ({ src: f.download_url, alt: `${country} photo` }));
+      }
+    }
+  } catch(err){ /* network issue — fall through to placeholders */ }
+
+  container.innerHTML = '';
+
+  if(images.length){
+    images.forEach((img, i) => {
+      const fig = document.createElement('figure');
+      if(i % 7 === 0) fig.classList.add('span-2');
+      const el = document.createElement('img');
+      el.src = img.src;
+      el.alt = img.alt;
+      el.loading = 'lazy';
+      fig.appendChild(el);
+      container.appendChild(fig);
+    });
+  } else {
+    for(let i = 0; i < fallbackCount; i++){
+      const fig = document.createElement('figure');
+      if(i % 7 === 0) fig.classList.add('span-2');
+      const el = document.createElement('img');
+      el.src = `https://picsum.photos/seed/${country}-${i}/700/700`;
+      el.alt = `${country} placeholder photo`;
+      el.loading = 'lazy';
+      fig.appendChild(el);
+      container.appendChild(fig);
+    }
+  }
+
+  initLightbox();
+}
 
 /* ---------- mobile nav ---------- */
 function initNavToggle(){
