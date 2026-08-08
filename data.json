@@ -145,7 +145,7 @@
       "stamp_bottom": "SOUTHEAST ASIA",
       "tagline": "Home base, and still the trip that surprises me every time.",
       "hero_seed": "ph-hero",
-      "hero_photo": "../assets/img/philippines/DJI_20260725115212_0532_D.webp",
+      "hero_photo": "../assets/img/philippines/bohol/anda/DJI_20260725115212_0532_D.webp",
       "intro": "7,000+ islands and I've barely made a dent. These are the routes I keep coming back to — and sending friends on. Everything here is backpacker style — budget guesthouses over resorts, more time out on the water and in town than sitting in a hotel room.",
       "since": "2018",
       "places": [
@@ -214,7 +214,7 @@
           "when": "2019 & 2026",
           "note": "Two visits, two very different sides — resort beaches in Panglao, and the quieter blue holes of Anda.",
           "tags": ["Island"],
-          "hero_img": "../assets/img/philippines/DJI_20260725115212_0532_D.webp",
+          "hero_img": "../assets/img/philippines/bohol/anda/DJI_20260725115212_0532_D.webp",
           "hero_caption": "Chocolate Hills, Bohol",
           "sub_places": [
             {
@@ -269,12 +269,12 @@
           "getting_there": "Flight from Manila to Dumaguete (1 hour), a quick trike to the port, then a short ferry over to the island.",
           "note": "An island wrapped in old mysticism, waterfalls the colour of glass, and a Sunken Cemetery marker sitting just offshore.",
           "tags": ["Waterfalls", "Island"],
-          "hero_img": "../assets/img/philippines/DJI_20260720135217_0473_D.webp",
+          "hero_img": "../assets/img/philippines/siquijor/DJI_20260720135217_0473_D.webp",
           "hero_caption": "Cambugahay Falls, Siquijor",
           "images": [
-            "../assets/img/philippines/DJI_20260720180842_0489_D.webp",
-            "../assets/img/philippines/DJI_20260720181004_0491_D.webp",
-            "../assets/img/philippines/DJI_20260727130313_0568_D.webp"
+            "../assets/img/philippines/siquijor/DJI_20260720180842_0489_D.webp",
+            "../assets/img/philippines/siquijor/DJI_20260720181004_0491_D.webp",
+            "../assets/img/philippines/siquijor/DJI_20260727130313_0568_D.webp"
           ]
         },
         {
@@ -284,7 +284,7 @@
           "getting_there": "A 4-hour ferry from Jagna, Bohol. Getting back out: ferry to Balingoan, bus to Cagayan de Oro, overnight, then a flight home to Manila.",
           "note": "More volcanoes than towns, and White Island's sandbar sitting alone in the middle of the sea.",
           "tags": ["Beach", "Island"],
-          "hero_img": "../assets/img/philippines/DJI_20260729085346_0612_D.webp",
+          "hero_img": "../assets/img/philippines/camiguin/DJI_20260729085346_0612_D.webp",
           "hero_caption": "White Island, Camiguin"
         }
       ],
