@@ -191,9 +191,9 @@ h1,h2,h3,h4{ font-family: var(--font-display); font-weight: 600; margin: 0; lett
 .stop-head .stop-days{ font-family: var(--font-mono); font-size:12px; color: var(--text-ink-dim); white-space:nowrap; }
 .stop-chevron{ width:20px; height:20px; flex-shrink:0; transition: transform .3s var(--ease); color: var(--gold); }
 .stop.open .stop-chevron{ transform: rotate(45deg); }
-.stop-panel{ max-height:0; overflow:hidden; transition: max-height .45s var(--ease); }
-.stop.open .stop-panel{ max-height: 900px; }
-.stop-panel-inner{ padding: 4px 6px 32px; }
+.stop-panel{ display:grid; grid-template-rows: 0fr; transition: grid-template-rows .45s var(--ease); overflow:hidden; }
+.stop.open .stop-panel{ grid-template-rows: 1fr; }
+.stop-panel-inner{ padding: 4px 6px 32px; overflow:hidden; min-height:0; }
 .stop-panel p{ color: var(--text-ink-dim); max-width:70ch; }
 .getting-there{ font-family: var(--font-mono); font-size: 13px; color: var(--gold-soft); font-weight: 700; margin-bottom: 10px; }
 .stop-tags{ display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
