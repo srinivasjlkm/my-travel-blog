@@ -223,7 +223,7 @@ h1,h2,h3,h4{ font-family: var(--font-display); font-weight: 600; margin: 0; lett
   color: #fff; font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.04em;
   padding: 30px 20px 14px;
 }
-.highlight-note{ color: var(--text-ink-dim); font-size: 15px; margin: -6px 0 22px; padding-left: 16px; border-left: 3px solid var(--gold); }
+.highlight-note{ color: var(--text-ink-dim); font-size: 15px; margin: -6px 0 22px; max-width: 70ch; }
 @media (max-width: 640px){ .place-hero img{ height: 260px; } }
 
 .gallery{ display:grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 160px; gap: 12px; }

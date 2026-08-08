@@ -84,6 +84,11 @@
         </div>
         <div class="stop-panel">
           <div class="stop-panel-inner">
+            {% if place.getting_there %}<p class="getting-there">→ {{ place.getting_there }}</p>{% endif %}
+            <p>{{ place.note }}</p>
+            <div class="stop-tags">
+              {% for tag in place.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+            </div>
             {% if place.highlights %}
               {% for h in place.highlights %}
               <figure class="place-hero">
@@ -93,11 +98,6 @@
               {% if h.note %}<p class="highlight-note">{{ h.note }}</p>{% endif %}
               {% endfor %}
             {% endif %}
-            {% if place.getting_there %}<p class="getting-there">→ {{ place.getting_there }}</p>{% endif %}
-            <p>{{ place.note }}</p>
-            <div class="stop-tags">
-              {% for tag in place.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
-            </div>
             <div class="gallery place-gallery" data-folder="assets/img/{{ country.slug }}/{{ place.slug }}/"></div>
 
             {% if place.sub_places %}
