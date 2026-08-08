@@ -84,11 +84,14 @@
         </div>
         <div class="stop-panel">
           <div class="stop-panel-inner">
-            {% if place.hero_img %}
-            <figure class="place-hero">
-              <img src="{{ place.hero_img }}" alt="{{ place.hero_caption or place.name }}" loading="lazy">
-              {% if place.hero_caption %}<figcaption>{{ place.hero_caption }}</figcaption>{% endif %}
-            </figure>
+            {% if place.highlights %}
+              {% for h in place.highlights %}
+              <figure class="place-hero">
+                <img src="{{ h.img }}" alt="{{ h.caption }}" loading="lazy">
+                {% if h.caption %}<figcaption>{{ h.caption }}</figcaption>{% endif %}
+              </figure>
+              {% if h.note %}<p class="highlight-note">{{ h.note }}</p>{% endif %}
+              {% endfor %}
             {% endif %}
             {% if place.getting_there %}<p class="getting-there">→ {{ place.getting_there }}</p>{% endif %}
             <p>{{ place.note }}</p>
