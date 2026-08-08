@@ -113,6 +113,15 @@
                 <div class="stop-tags">
                   {% for tag in sub.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
                 </div>
+                {% if sub.highlights %}
+                  {% for h in sub.highlights %}
+                  <figure class="place-hero">
+                    <img src="{{ h.img }}" alt="{{ h.caption }}" loading="lazy">
+                    {% if h.caption %}<figcaption>{{ h.caption }}</figcaption>{% endif %}
+                  </figure>
+                  {% if h.note %}<p class="highlight-note">{{ h.note }}</p>{% endif %}
+                  {% endfor %}
+                {% endif %}
                 <div class="gallery place-gallery" data-folder="assets/img/{{ country.slug }}/{{ place.slug }}/{{ sub.slug }}/"></div>
               </div>
               {% endfor %}

@@ -212,16 +212,8 @@
           "name": "Bohol",
           "days": "5 Days",
           "when": "2019 & 2026",
-          "getting_there": "We rented a motorbike and drove up to Chocolate Hills — about a 2-hour ride from Jagna Port.",
           "note": "Two visits, two very different sides — resort beaches in Panglao, and the quieter blue holes of Anda.",
           "tags": ["Island"],
-          "highlights": [
-            {
-              "img": "../assets/img/philippines/bohol/anda/DJI_20260725115212_0532_D.webp",
-              "caption": "Chocolate Hills",
-              "note": "Thousands of grass-covered mounds that turn cocoa-brown in the dry season, seen here from the lookout point above them."
-            }
-          ],
           "sub_places": [
             {
               "name": "Panglao",
@@ -235,9 +227,16 @@
               "name": "Anda",
               "days": "1 Day",
               "when": "2026",
-              "getting_there": "A 2-hour ferry from Siquijor into Tagbilaran, then a trike and bus out to Anda — mostly used as a stop on the way to Camiguin this time.",
+              "getting_there": "A 2-hour ferry from Siquijor into Tagbilaran, then a trike and bus out to Anda — mostly used as a stop on the way to Camiguin this time. We also rented a motorbike and drove up to Chocolate Hills — about a 2-hour ride from Jagna Port.",
               "note": "Bohol's quieter side — untouched beaches and blue holes, without Panglao's resort crowds.",
-              "tags": ["Beach", "Transit Stop"]
+              "tags": ["Beach", "Transit Stop"],
+              "highlights": [
+                {
+                  "img": "../assets/img/philippines/bohol/anda/DJI_20260725115212_0532_D.webp",
+                  "caption": "Chocolate Hills",
+                  "note": "Thousands of grass-covered mounds that turn cocoa-brown in the dry season, seen here from the lookout point above them."
+                }
+              ]
             }
           ]
         },
