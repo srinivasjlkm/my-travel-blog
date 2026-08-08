@@ -168,18 +168,26 @@
           "gallery": 3
         },
         {
-          "name": "Coron, Palawan",
+          "name": "Palawan",
           "days": "4 Days",
           "when": "Dec 2018",
-          "getting_there": "A straightforward 2-hour flight from Manila.",
-          "note": "Impossibly clear lagoons ringed by limestone karsts, with WWII shipwrecks resting in turquoise water just offshore.",
-          "tags": ["Islands", "Diving", "Lagoons"],
+          "note": "The Philippines' 'Last Frontier' — even the well-known corners still feel a little undiscovered.",
+          "tags": ["Islands"],
+          "sub_places": [
+            {
+              "name": "Coron",
+              "days": "4 Days",
+              "getting_there": "A straightforward 2-hour flight from Manila.",
+              "note": "Impossibly clear lagoons ringed by limestone karsts, with WWII shipwrecks resting in turquoise water just offshore.",
+              "tags": ["Diving", "Lagoons"]
+            }
+          ],
           "gallery": 4
         },
         {
           "name": "Batangas",
           "days": "5 Days",
-          "when": "Year TBD",
+          "when": "2024 (confirm)",
           "note": "Two very different sides of the same province — a quiet freediving base and a long stretch of open beach, both easy trips from Manila.",
           "tags": ["Budget", "Weekend Trip"],
           "sub_places": [
@@ -201,14 +209,31 @@
           "gallery": 3
         },
         {
-          "name": "Bohol — Panglao",
-          "days": "4 Days",
-          "when": "Summer 2019",
-          "getting_there": "About a 1-hour flight from Manila to Tagbilaran.",
-          "note": "White sand beaches by day, and the otherworldly Chocolate Hills rolling across the interior.",
-          "tags": ["Beach", "Nature"],
+          "name": "Bohol",
+          "days": "5 Days",
+          "when": "2019 & 2026",
+          "note": "Two visits, two very different sides — resort beaches in Panglao, and the quieter blue holes of Anda.",
+          "tags": ["Island"],
           "hero_img": "../assets/img/philippines/DJI_20260725115212_0532_D.webp",
-          "hero_caption": "Chocolate Hills, Bohol"
+          "hero_caption": "Chocolate Hills, Bohol",
+          "sub_places": [
+            {
+              "name": "Panglao",
+              "days": "4 Days",
+              "when": "Summer 2019",
+              "getting_there": "About a 1-hour flight from Manila to Tagbilaran.",
+              "note": "White sand beaches by day, and the otherworldly Chocolate Hills rolling across the interior.",
+              "tags": ["Beach", "Nature"]
+            },
+            {
+              "name": "Anda",
+              "days": "1 Day",
+              "when": "2026",
+              "getting_there": "A 2-hour ferry from Siquijor into Tagbilaran, then a trike and bus out to Anda — mostly used as a stop on the way to Camiguin this time.",
+              "note": "Bohol's quieter side — untouched beaches and blue holes, without Panglao's resort crowds.",
+              "tags": ["Beach", "Transit Stop"]
+            }
+          ]
         },
         {
           "name": "Bicol",
@@ -251,15 +276,6 @@
             "../assets/img/philippines/DJI_20260720181004_0491_D.webp",
             "../assets/img/philippines/DJI_20260727130313_0568_D.webp"
           ]
-        },
-        {
-          "name": "Bohol — Anda",
-          "days": "1 Day",
-          "when": "2026",
-          "getting_there": "A 2-hour ferry from Siquijor into Tagbilaran, then a trike and bus out to Anda — mostly used as a stop on the way to Camiguin this time.",
-          "note": "Bohol's quieter side — untouched beaches and blue holes, without Panglao's resort crowds.",
-          "tags": ["Beach", "Transit Stop"],
-          "gallery": 3
         },
         {
           "name": "Camiguin",

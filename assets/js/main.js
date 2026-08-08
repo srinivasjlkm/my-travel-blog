@@ -12,62 +12,94 @@ document.addEventListener('DOMContentLoaded', () => {
   initCountryNavHighlight();
 });
 
-/* ---------- live country gallery, pulled from GitHub ----------
-   Any file dropped into assets/img/{country-slug}/ in the repo
-   shows up here automatically — no data.json / HTML editing needed.
-   Falls back to placeholder photos if the folder is empty or missing.
+/* ---------- live photo galleries, pulled from GitHub ----------
+   One repo-wide fetch per pageview (efficient, avoids rate limits),
+   then distributed into: the country-wide overview gallery, and
+   individual per-place / per-sub-place mini-galleries.
+   Drop a photo into assets/img/{country}/{place}/{sub-place}/ in the
+   repo and it appears in exactly that spot — nothing else to edit.
 */
 const GITHUB_USER = 'srinivasjlkm';
 const GITHUB_REPO = 'my-travel-blog';
+const GITHUB_BRANCH = 'main';
+const IMAGE_EXT = /\.(webp|jpg|jpeg|png)$/i;
+
+function rawGithubUrl(path){
+  return `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/${path}`;
+}
+
+async function fetchRepoImagePaths(){
+  try{
+    const res = await fetch(`https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/git/trees/${GITHUB_BRANCH}?recursive=1`);
+    if(!res.ok) return [];
+    const data = await res.json();
+    return (data.tree || [])
+      .filter(item => item.type === 'blob' && item.path.startsWith('assets/img/') && IMAGE_EXT.test(item.path))
+      .map(item => item.path)
+      .sort();
+  } catch(err){
+    return [];
+  }
+}
+
+function renderImagesInto(container, paths){
+  container.innerHTML = '';
+  paths.forEach((path, i) => {
+    const fig = document.createElement('figure');
+    if(i % 7 === 0) fig.classList.add('span-2');
+    const img = document.createElement('img');
+    img.src = rawGithubUrl(path);
+    img.alt = 'travel photo';
+    img.loading = 'lazy';
+    fig.appendChild(img);
+    container.appendChild(fig);
+  });
+}
+
+function renderPlaceholdersInto(container, seed, count){
+  container.innerHTML = '';
+  for(let i = 0; i < count; i++){
+    const fig = document.createElement('figure');
+    if(i % 7 === 0) fig.classList.add('span-2');
+    const img = document.createElement('img');
+    img.src = `https://picsum.photos/seed/${seed}-${i}/700/700`;
+    img.alt = 'placeholder photo';
+    img.loading = 'lazy';
+    fig.appendChild(img);
+    container.appendChild(fig);
+  }
+}
 
 async function loadCountryGallery(){
-  const container = document.querySelector('.gallery[data-country]');
-  if(!container) return;
+  const overview = document.querySelector('.gallery[data-country]');
+  const placeContainers = document.querySelectorAll('.place-gallery[data-folder]');
+  if(!overview && !placeContainers.length) return;
 
-  const country = container.dataset.country;
-  const fallbackCount = parseInt(container.dataset.fallbackCount || '6', 10);
-  const apiUrl = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/assets/img/${country}`;
-  const imageExt = /\.(webp|jpg|jpeg|png)$/i;
+  const allPaths = await fetchRepoImagePaths();
 
-  let images = [];
-  try{
-    const res = await fetch(apiUrl);
-    if(res.ok){
-      const files = await res.json();
-      if(Array.isArray(files)){
-        images = files
-          .filter(f => f.type === 'file' && imageExt.test(f.name))
-          .sort((a, b) => a.name.localeCompare(b.name))
-          .map(f => ({ src: f.download_url, alt: `${country} photo` }));
-      }
-    }
-  } catch(err){ /* network issue — fall through to placeholders */ }
-
-  container.innerHTML = '';
-
-  if(images.length){
-    images.forEach((img, i) => {
-      const fig = document.createElement('figure');
-      if(i % 7 === 0) fig.classList.add('span-2');
-      const el = document.createElement('img');
-      el.src = img.src;
-      el.alt = img.alt;
-      el.loading = 'lazy';
-      fig.appendChild(el);
-      container.appendChild(fig);
-    });
-  } else {
-    for(let i = 0; i < fallbackCount; i++){
-      const fig = document.createElement('figure');
-      if(i % 7 === 0) fig.classList.add('span-2');
-      const el = document.createElement('img');
-      el.src = `https://picsum.photos/seed/${country}-${i}/700/700`;
-      el.alt = `${country} placeholder photo`;
-      el.loading = 'lazy';
-      fig.appendChild(el);
-      container.appendChild(fig);
+  if(overview){
+    const country = overview.dataset.country;
+    const prefix = `assets/img/${country}/`;
+    const matches = allPaths.filter(p => p.startsWith(prefix));
+    if(matches.length){
+      renderImagesInto(overview, matches);
+    } else {
+      renderPlaceholdersInto(overview, country, parseInt(overview.dataset.fallbackCount || '6', 10));
     }
   }
+
+  placeContainers.forEach(container => {
+    const folder = container.dataset.folder;
+    // only files directly inside this folder — deeper sub-place folders get their own container
+    const matches = allPaths.filter(p => p.startsWith(folder) && !p.slice(folder.length).includes('/'));
+    if(matches.length){
+      renderImagesInto(container, matches);
+    } else {
+      container.remove();
+    }
+  });
+
+  initLightbox();
 
   initLightbox();
 }

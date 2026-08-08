@@ -5,11 +5,19 @@ from jinja2 import Environment, FileSystemLoader
 root = Path(__file__).parent
 data = json.loads((root / "data.json").read_text())["countries"]
 
-# compute a short label for the route strip
+def slugify(text):
+    text = text.lower()
+    text = re.sub(r"[^a-z0-9]+", "-", text)
+    return text.strip("-")
+
+# compute a short label for the route strip + slugs for photo-folder paths
 for c in data:
     for p in c["places"]:
         short = re.split(r"[(&]", p["name"])[0].strip()
         p["short"] = short
+        p["slug"] = slugify(p["name"])
+        for sub in p.get("sub_places", []):
+            sub["slug"] = slugify(sub["name"])
 
 env = Environment(loader=FileSystemLoader(str(root / "templates")))
 tmpl = env.get_template("country.html.j2")
