@@ -57,6 +57,9 @@
   <div class="wrap">
     <div class="section-title reveal"><span class="idx">01</span><h2>The Story</h2></div>
     <p style="max-width:70ch;color:var(--text-ink-dim);font-size:17px;" class="reveal">{{ country.intro }}</p>
+    {% if country.nav_tip %}
+    <p class="nav-tip reveal">🧭 {{ country.nav_tip }}</p>
+    {% endif %}
 
     <div class="route-strip reveal" style="margin-top:34px;">
       {% for place in country.places %}
@@ -84,8 +87,8 @@
         </div>
         <div class="stop-panel">
           <div class="stop-panel-inner">
-            {% if place.getting_there %}<p class="getting-there">→ {{ place.getting_there }}</p>{% endif %}
             <p>{{ place.note }}</p>
+            {% if place.getting_there %}<p class="getting-there">→ {{ place.getting_there }}</p>{% endif %}
             <div class="stop-tags">
               {% for tag in place.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
             </div>
@@ -108,8 +111,8 @@
                   <h4>{{ sub.name }}</h4>
                   <span class="sub-place-days">{{ sub.days }}{% if sub.when %} · {{ sub.when }}{% endif %}</span>
                 </div>
-                {% if sub.getting_there %}<p class="getting-there">→ {{ sub.getting_there }}</p>{% endif %}
                 <p>{{ sub.note }}</p>
+                {% if sub.getting_there %}<p class="getting-there">→ {{ sub.getting_there }}</p>{% endif %}
                 <div class="stop-tags">
                   {% for tag in sub.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
                 </div>
