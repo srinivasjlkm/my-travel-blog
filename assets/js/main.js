@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
   renderStamps();
   initAccordion();
   initRouteStrip();
+  initCarousels();
   loadCountryGallery();
+  initGeneralAmbientPhotos();
   initScrollReveal();
   initCountryNavHighlight();
 });
@@ -28,6 +30,15 @@ function rawGithubUrl(path){
   return `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/${path}`;
 }
 
+/* Derives a readable location label from a photo's folder path, e.g.
+   "assets/img/philippines/bohol/anda/photo.webp" -> "Bohol › Anda" */
+function locationLabelFromPath(path){
+  const parts = path.split('/').slice(3, -1); // drop "assets/img/<country>" and the filename
+  if(!parts.length) return '';
+  const pretty = parts.map(p => p.replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase()));
+  return pretty.join(' › ');
+}
+
 async function fetchRepoImagePaths(){
   try{
     const res = await fetch(`https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/git/trees/${GITHUB_BRANCH}?recursive=1`);
@@ -44,10 +55,11 @@ async function fetchRepoImagePaths(){
 
 function renderImagesInto(container, paths){
   container.innerHTML = '';
-  paths.forEach((path, i) => {
+  paths.forEach((path) => {
     const fig = document.createElement('figure');
-    if(i % 7 === 0) fig.classList.add('span-2');
     const img = document.createElement('img');
+    const location = locationLabelFromPath(path);
+    if(location) img.dataset.location = location;
     img.src = rawGithubUrl(path);
     img.alt = 'travel photo';
     img.loading = 'lazy';
@@ -60,7 +72,6 @@ function renderPlaceholdersInto(container, seed, count){
   container.innerHTML = '';
   for(let i = 0; i < count; i++){
     const fig = document.createElement('figure');
-    if(i % 7 === 0) fig.classList.add('span-2');
     const img = document.createElement('img');
     img.src = `https://picsum.photos/seed/${seed}-${i}/700/700`;
     img.alt = 'placeholder photo';
@@ -86,6 +97,12 @@ async function loadCountryGallery(){
     } else {
       renderPlaceholdersInto(overview, country, parseInt(overview.dataset.fallbackCount || '6', 10));
     }
+    initAmbientPhotos(country, matches);
+
+    const heroFallback = document.getElementById('country-hero-photo');
+    if(heroFallback && matches.length){
+      heroFallback.src = rawGithubUrl(matches[Math.floor(Math.random() * matches.length)]);
+    }
   }
 
   placeContainers.forEach(container => {
@@ -95,13 +112,75 @@ async function loadCountryGallery(){
     if(matches.length){
       renderImagesInto(container, matches);
     } else {
-      container.remove();
+      const wrap = container.closest('.carousel-wrap');
+      (wrap || container).remove();
     }
   });
 
   initLightbox();
+}
 
-  initLightbox();
+/* ---------- ambient floating background photos (fills empty side margins) ---------- */
+function initAmbientPhotos(countrySlug, countryPaths){
+  const layer = document.getElementById('bg-photo-layer');
+  if(!layer || !countryPaths.length || layer.dataset.filled) return;
+  layer.dataset.filled = 'true';
+  const path = countryPaths[Math.floor(Math.random() * countryPaths.length)];
+  if(!path) return;
+  const img = new Image();
+  img.onload = () => {
+    layer.style.backgroundImage = `url(${rawGithubUrl(path)})`;
+    layer.classList.add('loaded');
+  };
+  img.src = rawGithubUrl(path);
+}
+
+/* ---------- page background photo on non-country pages (home, about, plan, more) ----------
+   Pulls one image from anywhere in the repo, since these pages have no single
+   "country" of their own. */
+async function initGeneralAmbientPhotos(){
+  const layer = document.getElementById('bg-photo-layer');
+  const heroPhoto = document.getElementById('hero-photo');
+  if((!layer || document.querySelector('.gallery[data-country]')) && !heroPhoto) return; // country pages handle their own
+  const allPaths = await fetchRepoImagePaths();
+  if(!allPaths.length) return;
+  if(layer && !document.querySelector('.gallery[data-country]')){
+    initAmbientPhotos('all', allPaths);
+  }
+  if(heroPhoto){
+    const pick = allPaths[Math.floor(Math.random() * allPaths.length)];
+    if(pick) heroPhoto.src = rawGithubUrl(pick);
+  }
+}
+
+/* ---------- carousels: arrow buttons + mouse-wheel horizontal scroll ----------
+   Uses event delegation on the whole document, so it reliably works no matter
+   which image in the row the cursor is over, and covers carousels added later. */
+function initCarousels(){
+  if(window._carouselsDelegated) return;
+  window._carouselsDelegated = true;
+
+  document.addEventListener('wheel', (e) => {
+    const track = e.target.closest('.gallery');
+    if(!track) return;
+    if(track.scrollWidth <= track.clientWidth + 2) return; // nothing to scroll
+    if(Math.abs(e.deltaY) <= Math.abs(e.deltaX)) return; // let native horizontal gestures through
+    e.preventDefault();
+    const WHEEL_SPEED = 5; // multiplier — raise/lower to tune scroll speed per wheel tick
+    track.scrollLeft += e.deltaY * WHEEL_SPEED;
+  }, { passive: false });
+
+  document.addEventListener('click', (e) => {
+    const prevBtn = e.target.closest('.car-prev');
+    const nextBtn = e.target.closest('.car-next');
+    const btn = prevBtn || nextBtn;
+    if(!btn) return;
+    const wrap = btn.closest('.carousel-wrap');
+    const track = wrap && wrap.querySelector('.gallery');
+    if(!track) return;
+    const amount = track.clientWidth * 0.8;
+    track.scrollBy({ left: prevBtn ? -amount : amount, behavior: 'smooth' });
+  });
 }
 
 /* ---------- mobile nav ---------- */
@@ -136,17 +215,17 @@ function renderStamps(){
   });
 }
 
-/* ---------- itinerary accordion ---------- */
+/* ---------- itinerary timeline (expand/collapse) ---------- */
 function initAccordion(){
-  document.querySelectorAll('.stop-head').forEach(head => {
+  document.querySelectorAll('.tl-head').forEach(head => {
     head.addEventListener('click', () => {
-      const stop = head.closest('.stop');
+      const stop = head.closest('.tl-stop');
       const wasOpen = stop.classList.contains('open');
-      stop.parentElement.querySelectorAll('.stop.open').forEach(s => s.classList.remove('open'));
+      stop.parentElement.querySelectorAll('.tl-stop.open').forEach(s => s.classList.remove('open'));
       if(!wasOpen) stop.classList.add('open');
     });
   });
-  const first = document.querySelector('.itinerary .stop');
+  const first = document.querySelector('.timeline .tl-stop');
   if(first) first.classList.add('open');
 }
 
@@ -157,7 +236,7 @@ function initRouteStrip(){
       e.preventDefault();
       const target = document.getElementById(dot.dataset.stopTarget);
       if(!target) return;
-      target.parentElement.querySelectorAll('.stop.open').forEach(s => s.classList.remove('open'));
+      target.parentElement.querySelectorAll('.tl-stop.open').forEach(s => s.classList.remove('open'));
       target.classList.add('open');
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
@@ -174,22 +253,32 @@ function initLightbox(){
   lb.innerHTML = `
     <button class="lightbox-close" aria-label="Close">✕</button>
     <button class="lightbox-prev" aria-label="Previous">‹</button>
-    <img src="" alt="" />
+    <div class="lightbox-media">
+      <div class="lightbox-caption"></div>
+      <img src="" alt="" />
+    </div>
     <button class="lightbox-next" aria-label="Next">›</button>
   `;
   document.body.appendChild(lb);
   const img = lb.querySelector('img');
+  const caption = lb.querySelector('.lightbox-caption');
   let items = [];
   let idx = 0;
 
-  function open(list, i){
-    items = list; idx = i;
+  function render(){
     img.src = items[idx].src;
     img.alt = items[idx].alt || '';
+    const loc = items[idx].dataset ? items[idx].dataset.location : '';
+    caption.textContent = loc || '';
+    caption.style.display = loc ? '' : 'none';
+  }
+  function open(list, i){
+    items = list; idx = i;
+    render();
     lb.classList.add('open');
   }
   function close(){ lb.classList.remove('open'); }
-  function step(d){ idx = (idx + d + items.length) % items.length; img.src = items[idx].src; img.alt = items[idx].alt || ''; }
+  function step(d){ idx = (idx + d + items.length) % items.length; render(); }
 
   galleries.forEach(g => {
     const imgs = Array.from(g.querySelectorAll('img'));

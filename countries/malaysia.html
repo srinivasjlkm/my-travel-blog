@@ -6,10 +6,11 @@
 <title>Malaysia — My Travel Diaries</title>
 <meta name="description" content="Petronas lights, jungle air, and a food scene that never lets up.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Fraunces:ital@1&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
+<div class="bg-photo-layer" id="bg-photo-layer"></div>
 
 <nav class="site-nav">
   <div class="wrap">
@@ -32,7 +33,7 @@
 
 <header class="country-hero">
   
-  <img src="https://picsum.photos/seed/my-hero/1600/1000" alt="Malaysia landscape">
+  <img id="country-hero-photo" data-country="malaysia" src="https://picsum.photos/seed/my-hero/1600/1000" alt="Malaysia landscape">
   
   <div class="country-hero-content wrap">
     <div class="eyebrow">Chapter · SOUTHEAST ASIA · Since 2022</div>
@@ -54,7 +55,7 @@
 <section class="section" id="story">
   <div class="wrap">
     <div class="section-title reveal"><span class="idx">01</span><h2>The Story</h2></div>
-    <p style="max-width:70ch;color:var(--text-ink-dim);font-size:17px;" class="reveal">KL was meant to be a two-day layover. It turned into a full week between the Batu Caves, the Cameron Highlands tea fields, and Penang's street art.</p>
+    <p style="max-width:70ch;color:var(--text-dark-dim);font-size:17px;" class="reveal">KL was meant to be a two-day layover. It turned into a full week between the Batu Caves, the Cameron Highlands tea fields, and Penang's street art.</p>
     
 
     <div class="route-strip reveal" style="margin-top:34px;">
@@ -75,77 +76,101 @@
 <section class="section" id="itinerary" style="padding-top:0;">
   <div class="wrap">
     <div class="section-title reveal"><span class="idx">02</span><h2>Where I Went</h2></div>
-    <div class="itinerary reveal">
+    <div class="timeline reveal">
       
-      <div class="stop" id="stop-1">
-        <div class="stop-head">
-          <div class="stop-left">
-            <h3>Kuala Lumpur</h3>
+      <div class="tl-stop" id="stop-1">
+        <span class="tl-dot"></span>
+        <div class="tl-head">
+          <div class="tl-head-left">
+            
+              <div class="tl-thumb-empty">Photo<br>coming</div>
+            
+            <div>
+              <h3>Kuala Lumpur</h3>
+              <div class="tl-meta">3 Days</div>
+            </div>
           </div>
-          <div style="display:flex;align-items:center;gap:18px;">
-            <span class="stop-days">3 Days</span>
-            <svg class="stop-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
-          </div>
+          <svg class="tl-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
         </div>
-        <div class="stop-panel">
-          <div class="stop-panel-inner">
+        <div class="tl-panel">
+          <div class="tl-panel-inner">
             <p>KLCC Park at golden hour, Batu Caves before the tour buses arrive, and Jalan Alor at night for the satay.</p>
             
             <div class="stop-tags">
               <span class="tag">City</span><span class="tag">Food</span><span class="tag">Landmarks</span>
             </div>
             
-            <div class="gallery place-gallery" data-folder="assets/img/malaysia/kuala-lumpur/"></div>
+            <div class="carousel-wrap">
+              <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+              <div class="gallery place-gallery" data-folder="assets/img/malaysia/kuala-lumpur/"></div>
+              <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+            </div>
 
             
           </div>
         </div>
       </div>
       
-      <div class="stop" id="stop-2">
-        <div class="stop-head">
-          <div class="stop-left">
-            <h3>Cameron Highlands</h3>
+      <div class="tl-stop" id="stop-2">
+        <span class="tl-dot"></span>
+        <div class="tl-head">
+          <div class="tl-head-left">
+            
+              <div class="tl-thumb-empty">Photo<br>coming</div>
+            
+            <div>
+              <h3>Cameron Highlands</h3>
+              <div class="tl-meta">2 Days</div>
+            </div>
           </div>
-          <div style="display:flex;align-items:center;gap:18px;">
-            <span class="stop-days">2 Days</span>
-            <svg class="stop-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
-          </div>
+          <svg class="tl-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
         </div>
-        <div class="stop-panel">
-          <div class="stop-panel-inner">
+        <div class="tl-panel">
+          <div class="tl-panel-inner">
             <p>A road trip up into tea plantations and strawberry farms — the temperature drop alone is worth it.</p>
             
             <div class="stop-tags">
               <span class="tag">Road Trip</span><span class="tag">Nature</span>
             </div>
             
-            <div class="gallery place-gallery" data-folder="assets/img/malaysia/cameron-highlands/"></div>
+            <div class="carousel-wrap">
+              <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+              <div class="gallery place-gallery" data-folder="assets/img/malaysia/cameron-highlands/"></div>
+              <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+            </div>
 
             
           </div>
         </div>
       </div>
       
-      <div class="stop" id="stop-3">
-        <div class="stop-head">
-          <div class="stop-left">
-            <h3>Penang (George Town)</h3>
+      <div class="tl-stop" id="stop-3">
+        <span class="tl-dot"></span>
+        <div class="tl-head">
+          <div class="tl-head-left">
+            
+              <div class="tl-thumb-empty">Photo<br>coming</div>
+            
+            <div>
+              <h3>Penang (George Town)</h3>
+              <div class="tl-meta">2 Days</div>
+            </div>
           </div>
-          <div style="display:flex;align-items:center;gap:18px;">
-            <span class="stop-days">2 Days</span>
-            <svg class="stop-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
-          </div>
+          <svg class="tl-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
         </div>
-        <div class="stop-panel">
-          <div class="stop-panel-inner">
+        <div class="tl-panel">
+          <div class="tl-panel-inner">
             <p>Street art alleys, colonial shophouses, and hands-down the best char kway teow of the whole trip.</p>
             
             <div class="stop-tags">
               <span class="tag">Old Town</span><span class="tag">Food</span><span class="tag">Street Art</span>
             </div>
             
-            <div class="gallery place-gallery" data-folder="assets/img/malaysia/penang-george-town/"></div>
+            <div class="carousel-wrap">
+              <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+              <div class="gallery place-gallery" data-folder="assets/img/malaysia/penang-george-town/"></div>
+              <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+            </div>
 
             
           </div>
@@ -159,8 +184,12 @@
 <section class="section" id="gallery">
   <div class="wrap">
     <div class="section-title reveal"><span class="idx">03</span><h2>Through the Lens</h2></div>
-    <div class="gallery reveal" data-country="malaysia" data-fallback-count="16">
-      <p class="gallery-loading">Loading photos…</p>
+    <div class="carousel-wrap">
+      <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+      <div class="gallery reveal" data-country="malaysia" data-fallback-count="16">
+        <p class="gallery-loading">Loading photos…</p>
+      </div>
+      <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
     </div>
     <p class="video-note" style="margin-top:18px;">This gallery pulls live from the <code>assets/img/malaysia/</code> folder in the repo — drop any photo in there and it appears here automatically, no code editing needed. Until real photos are added, placeholders fill the space.</p>
   </div>
@@ -212,7 +241,7 @@
 
 
 <section class="section" style="padding-top:0;">
-  <div class="wrap" style="display:flex;justify-content:space-between;border-top:1px solid var(--ink-line);padding-top:40px;flex-wrap:wrap;gap:20px;">
+  <div class="wrap" style="display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:40px;flex-wrap:wrap;gap:20px;">
     
     <a href="singapore.html" class="btn btn-ghost">← Singapore</a>
     

@@ -6,10 +6,11 @@
 <title>Philippines — My Travel Diaries</title>
 <meta name="description" content="Home base, and still the trip that surprises me every time.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Fraunces:ital@1&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
+<div class="bg-photo-layer" id="bg-photo-layer"></div>
 
 <nav class="site-nav">
   <div class="wrap">
@@ -54,7 +55,7 @@
 <section class="section" id="story">
   <div class="wrap">
     <div class="section-title reveal"><span class="idx">01</span><h2>The Story</h2></div>
-    <p style="max-width:70ch;color:var(--text-ink-dim);font-size:17px;" class="reveal">7,000+ islands and I've barely made a dent. These are the routes I keep coming back to — and sending friends on. Everything here is backpacker style — budget guesthouses over resorts, more time out on the water and in town than sitting in a hotel room.</p>
+    <p style="max-width:70ch;color:var(--text-dark-dim);font-size:17px;" class="reveal">7,000+ islands and I've barely made a dent. These are the routes I keep coming back to — and sending friends on. Everything here is backpacker style — budget guesthouses over resorts, more time out on the water and in town than sitting in a hotel room.</p>
     
     <p class="nav-tip reveal">🧭 To keep navigation simple, I just searched the name of each place in Google Maps and followed the route — never had real difficulties doing it this way. That said, don't expect perfect roads everywhere; some destinations have a much rougher path than others.</p>
     
@@ -98,77 +99,101 @@
 <section class="section" id="itinerary" style="padding-top:0;">
   <div class="wrap">
     <div class="section-title reveal"><span class="idx">02</span><h2>Where I Went</h2></div>
-    <div class="itinerary reveal">
+    <div class="timeline reveal">
       
-      <div class="stop" id="stop-1">
-        <div class="stop-head">
-          <div class="stop-left">
-            <h3>Manila</h3>
+      <div class="tl-stop" id="stop-1">
+        <span class="tl-dot"></span>
+        <div class="tl-head">
+          <div class="tl-head-left">
+            
+              <div class="tl-thumb-empty">Photo<br>coming</div>
+            
+            <div>
+              <h3>Manila</h3>
+              <div class="tl-meta">5 Days · Dec 2018</div>
+            </div>
           </div>
-          <div style="display:flex;align-items:center;gap:18px;">
-            <span class="stop-days">5 Days · Dec 2018</span>
-            <svg class="stop-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
-          </div>
+          <svg class="tl-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
         </div>
-        <div class="stop-panel">
-          <div class="stop-panel-inner">
+        <div class="tl-panel">
+          <div class="tl-panel-inner">
             <p>The sprawling starting point — colonial Intramuros, chaotic jeepneys, and a food scene that genuinely never sleeps.</p>
             <p class="getting-there">→ A 4-hour flight in from Malaysia to kick off the trip.</p>
             <div class="stop-tags">
               <span class="tag">City</span><span class="tag">Food</span>
             </div>
             
-            <div class="gallery place-gallery" data-folder="assets/img/philippines/manila/"></div>
+            <div class="carousel-wrap">
+              <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+              <div class="gallery place-gallery" data-folder="assets/img/philippines/manila/"></div>
+              <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+            </div>
 
             
           </div>
         </div>
       </div>
       
-      <div class="stop" id="stop-2">
-        <div class="stop-head">
-          <div class="stop-left">
-            <h3>Sagada</h3>
+      <div class="tl-stop" id="stop-2">
+        <span class="tl-dot"></span>
+        <div class="tl-head">
+          <div class="tl-head-left">
+            
+              <div class="tl-thumb-empty">Photo<br>coming</div>
+            
+            <div>
+              <h3>Sagada</h3>
+              <div class="tl-meta">3 Days · Dec 2018</div>
+            </div>
           </div>
-          <div style="display:flex;align-items:center;gap:18px;">
-            <span class="stop-days">3 Days · Dec 2018</span>
-            <svg class="stop-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
-          </div>
+          <svg class="tl-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
         </div>
-        <div class="stop-panel">
-          <div class="stop-panel-inner">
+        <div class="tl-panel">
+          <div class="tl-panel-inner">
             <p>Mountain air, hanging coffins carved into limestone cliffs, and rice terraces that appear as the morning fog lifts.</p>
             <p class="getting-there">→ About 6 hours by bus from Manila, through Baguio.</p>
             <div class="stop-tags">
               <span class="tag">Mountains</span><span class="tag">Bus Ride</span><span class="tag">Nature</span>
             </div>
             
-            <div class="gallery place-gallery" data-folder="assets/img/philippines/sagada/"></div>
+            <div class="carousel-wrap">
+              <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+              <div class="gallery place-gallery" data-folder="assets/img/philippines/sagada/"></div>
+              <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+            </div>
 
             
           </div>
         </div>
       </div>
       
-      <div class="stop" id="stop-3">
-        <div class="stop-head">
-          <div class="stop-left">
-            <h3>Palawan</h3>
+      <div class="tl-stop" id="stop-3">
+        <span class="tl-dot"></span>
+        <div class="tl-head">
+          <div class="tl-head-left">
+            
+              <div class="tl-thumb-empty">Photo<br>coming</div>
+            
+            <div>
+              <h3>Palawan</h3>
+              <div class="tl-meta">4 Days · Dec 2018</div>
+            </div>
           </div>
-          <div style="display:flex;align-items:center;gap:18px;">
-            <span class="stop-days">4 Days · Dec 2018</span>
-            <svg class="stop-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
-          </div>
+          <svg class="tl-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
         </div>
-        <div class="stop-panel">
-          <div class="stop-panel-inner">
+        <div class="tl-panel">
+          <div class="tl-panel-inner">
             <p>The Philippines' 'Last Frontier' — even the well-known corners still feel a little undiscovered.</p>
             
             <div class="stop-tags">
               <span class="tag">Islands</span>
             </div>
             
-            <div class="gallery place-gallery" data-folder="assets/img/philippines/palawan/"></div>
+            <div class="carousel-wrap">
+              <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+              <div class="gallery place-gallery" data-folder="assets/img/philippines/palawan/"></div>
+              <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+            </div>
 
             
             <div class="sub-places">
@@ -184,7 +209,11 @@
                   <span class="tag">Diving</span><span class="tag">Lagoons</span>
                 </div>
                 
-                <div class="gallery place-gallery" data-folder="assets/img/philippines/palawan/coron/"></div>
+                <div class="carousel-wrap">
+                  <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+                  <div class="gallery place-gallery" data-folder="assets/img/philippines/palawan/coron/"></div>
+                  <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+                </div>
               </div>
               
             </div>
@@ -193,25 +222,33 @@
         </div>
       </div>
       
-      <div class="stop" id="stop-4">
-        <div class="stop-head">
-          <div class="stop-left">
-            <h3>Batangas</h3>
+      <div class="tl-stop" id="stop-4">
+        <span class="tl-dot"></span>
+        <div class="tl-head">
+          <div class="tl-head-left">
+            
+              <div class="tl-thumb-empty">Photo<br>coming</div>
+            
+            <div>
+              <h3>Batangas</h3>
+              <div class="tl-meta">5 Days · 2024</div>
+            </div>
           </div>
-          <div style="display:flex;align-items:center;gap:18px;">
-            <span class="stop-days">5 Days · 2024</span>
-            <svg class="stop-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
-          </div>
+          <svg class="tl-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
         </div>
-        <div class="stop-panel">
-          <div class="stop-panel-inner">
+        <div class="tl-panel">
+          <div class="tl-panel-inner">
             <p>Two very different sides of the same province — a quiet freediving base and a long stretch of open beach, both easy trips from Manila.</p>
             
             <div class="stop-tags">
               <span class="tag">Budget</span><span class="tag">Weekend Trip</span>
             </div>
             
-            <div class="gallery place-gallery" data-folder="assets/img/philippines/batangas/"></div>
+            <div class="carousel-wrap">
+              <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+              <div class="gallery place-gallery" data-folder="assets/img/philippines/batangas/"></div>
+              <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+            </div>
 
             
             <div class="sub-places">
@@ -227,7 +264,11 @@
                   <span class="tag">Freediving</span>
                 </div>
                 
-                <div class="gallery place-gallery" data-folder="assets/img/philippines/batangas/mabini/"></div>
+                <div class="carousel-wrap">
+                  <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+                  <div class="gallery place-gallery" data-folder="assets/img/philippines/batangas/mabini/"></div>
+                  <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+                </div>
               </div>
               
               <div class="sub-place">
@@ -241,7 +282,11 @@
                   <span class="tag">Beach</span>
                 </div>
                 
-                <div class="gallery place-gallery" data-folder="assets/img/philippines/batangas/calatagan/"></div>
+                <div class="carousel-wrap">
+                  <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+                  <div class="gallery place-gallery" data-folder="assets/img/philippines/batangas/calatagan/"></div>
+                  <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+                </div>
               </div>
               
             </div>
@@ -250,25 +295,33 @@
         </div>
       </div>
       
-      <div class="stop" id="stop-5">
-        <div class="stop-head">
-          <div class="stop-left">
-            <h3>Bohol</h3>
+      <div class="tl-stop" id="stop-5">
+        <span class="tl-dot"></span>
+        <div class="tl-head">
+          <div class="tl-head-left">
+            
+              <div class="tl-thumb-empty">Photo<br>coming</div>
+            
+            <div>
+              <h3>Bohol</h3>
+              <div class="tl-meta">5 Days · 2019 & 2026</div>
+            </div>
           </div>
-          <div style="display:flex;align-items:center;gap:18px;">
-            <span class="stop-days">5 Days · 2019 & 2026</span>
-            <svg class="stop-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
-          </div>
+          <svg class="tl-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
         </div>
-        <div class="stop-panel">
-          <div class="stop-panel-inner">
+        <div class="tl-panel">
+          <div class="tl-panel-inner">
             <p>Two visits, two very different sides — resort beaches in Panglao, and the quieter blue holes of Anda.</p>
             
             <div class="stop-tags">
               <span class="tag">Island</span>
             </div>
             
-            <div class="gallery place-gallery" data-folder="assets/img/philippines/bohol/"></div>
+            <div class="carousel-wrap">
+              <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+              <div class="gallery place-gallery" data-folder="assets/img/philippines/bohol/"></div>
+              <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+            </div>
 
             
             <div class="sub-places">
@@ -284,7 +337,11 @@
                   <span class="tag">Beach</span><span class="tag">Nature</span>
                 </div>
                 
-                <div class="gallery place-gallery" data-folder="assets/img/philippines/bohol/panglao/"></div>
+                <div class="carousel-wrap">
+                  <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+                  <div class="gallery place-gallery" data-folder="assets/img/philippines/bohol/panglao/"></div>
+                  <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+                </div>
               </div>
               
               <div class="sub-place">
@@ -306,7 +363,11 @@
                   <p class="highlight-note">Thousands of grass-covered mounds that turn cocoa-brown in the dry season, seen here from the lookout point above them.</p>
                   
                 
-                <div class="gallery place-gallery" data-folder="assets/img/philippines/bohol/anda/"></div>
+                <div class="carousel-wrap">
+                  <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+                  <div class="gallery place-gallery" data-folder="assets/img/philippines/bohol/anda/"></div>
+                  <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+                </div>
               </div>
               
             </div>
@@ -315,93 +376,121 @@
         </div>
       </div>
       
-      <div class="stop" id="stop-6">
-        <div class="stop-head">
-          <div class="stop-left">
-            <h3>Bicol</h3>
+      <div class="tl-stop" id="stop-6">
+        <span class="tl-dot"></span>
+        <div class="tl-head">
+          <div class="tl-head-left">
+            
+              <div class="tl-thumb-empty">Photo<br>coming</div>
+            
+            <div>
+              <h3>Bicol</h3>
+              <div class="tl-meta">4 Days · Dec 2023</div>
+            </div>
           </div>
-          <div style="display:flex;align-items:center;gap:18px;">
-            <span class="stop-days">4 Days · Dec 2023</span>
-            <svg class="stop-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
-          </div>
+          <svg class="tl-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
         </div>
-        <div class="stop-panel">
-          <div class="stop-panel-inner">
+        <div class="tl-panel">
+          <div class="tl-panel-inner">
             <p>Mayon Volcano's near-perfect cone watches over the road the whole way, with some of the country's spiciest food waiting at the end of it.</p>
             <p class="getting-there">→ A 2-day motorbike ride from Manila, with overnight stops in Pagbilao and Naga City.</p>
             <div class="stop-tags">
               <span class="tag">Motorbike</span><span class="tag">Volcano</span><span class="tag">Food</span>
             </div>
             
-            <div class="gallery place-gallery" data-folder="assets/img/philippines/bicol/"></div>
+            <div class="carousel-wrap">
+              <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+              <div class="gallery place-gallery" data-folder="assets/img/philippines/bicol/"></div>
+              <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+            </div>
 
             
           </div>
         </div>
       </div>
       
-      <div class="stop" id="stop-7">
-        <div class="stop-head">
-          <div class="stop-left">
-            <h3>Romblon</h3>
+      <div class="tl-stop" id="stop-7">
+        <span class="tl-dot"></span>
+        <div class="tl-head">
+          <div class="tl-head-left">
+            
+              <div class="tl-thumb-empty">Photo<br>coming</div>
+            
+            <div>
+              <h3>Romblon</h3>
+              <div class="tl-meta">4 Days · 2025</div>
+            </div>
           </div>
-          <div style="display:flex;align-items:center;gap:18px;">
-            <span class="stop-days">4 Days · 2025</span>
-            <svg class="stop-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
-          </div>
+          <svg class="tl-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
         </div>
-        <div class="stop-panel">
-          <div class="stop-panel-inner">
+        <div class="tl-panel">
+          <div class="tl-panel-inner">
             <p>The 'Marble Capital of the Philippines' — quiet fishing towns, marble quarries, and coastline that barely sees a tourist.</p>
             <p class="getting-there">→ About a 6-hour ferry from Batangas.</p>
             <div class="stop-tags">
               <span class="tag">Island</span><span class="tag">Off the Beaten Path</span>
             </div>
             
-            <div class="gallery place-gallery" data-folder="assets/img/philippines/romblon/"></div>
+            <div class="carousel-wrap">
+              <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+              <div class="gallery place-gallery" data-folder="assets/img/philippines/romblon/"></div>
+              <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+            </div>
 
             
           </div>
         </div>
       </div>
       
-      <div class="stop" id="stop-8">
-        <div class="stop-head">
-          <div class="stop-left">
-            <h3>Sibuyan</h3>
+      <div class="tl-stop" id="stop-8">
+        <span class="tl-dot"></span>
+        <div class="tl-head">
+          <div class="tl-head-left">
+            
+              <div class="tl-thumb-empty">Photo<br>coming</div>
+            
+            <div>
+              <h3>Sibuyan</h3>
+              <div class="tl-meta">4 Days · 2025</div>
+            </div>
           </div>
-          <div style="display:flex;align-items:center;gap:18px;">
-            <span class="stop-days">4 Days · 2025</span>
-            <svg class="stop-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
-          </div>
+          <svg class="tl-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
         </div>
-        <div class="stop-panel">
-          <div class="stop-panel-inner">
+        <div class="tl-panel">
+          <div class="tl-panel-inner">
             <p>Known as the 'Galapagos of Asia' — dense rainforest, rivers running gin-clear, and Mt. Guiting-Guiting looming over all of it.</p>
             <p class="getting-there">→ A 4-hour ferry from Romblon.</p>
             <div class="stop-tags">
               <span class="tag">Rainforest</span><span class="tag">Ferry</span>
             </div>
             
-            <div class="gallery place-gallery" data-folder="assets/img/philippines/sibuyan/"></div>
+            <div class="carousel-wrap">
+              <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+              <div class="gallery place-gallery" data-folder="assets/img/philippines/sibuyan/"></div>
+              <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+            </div>
 
             
           </div>
         </div>
       </div>
       
-      <div class="stop" id="stop-9">
-        <div class="stop-head">
-          <div class="stop-left">
-            <h3>Siquijor</h3>
+      <div class="tl-stop" id="stop-9">
+        <span class="tl-dot"></span>
+        <div class="tl-head">
+          <div class="tl-head-left">
+            
+              <img class="tl-thumb" src="../assets/img/philippines/siquijor/DJI_20260720135217_0473_D.webp" alt="Siquijor">
+            
+            <div>
+              <h3>Siquijor</h3>
+              <div class="tl-meta">5 Days · 2026</div>
+            </div>
           </div>
-          <div style="display:flex;align-items:center;gap:18px;">
-            <span class="stop-days">5 Days · 2026</span>
-            <svg class="stop-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
-          </div>
+          <svg class="tl-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
         </div>
-        <div class="stop-panel">
-          <div class="stop-panel-inner">
+        <div class="tl-panel">
+          <div class="tl-panel-inner">
             <p>An island wrapped in old mysticism, with waterfalls the colour of glass tucked into the jungle.</p>
             <p class="getting-there">→ Flight from Manila to Dumaguete (1 hour), a quick trike to the port, then a short ferry over to the island. We rented a motorbike right at the port for all 5 days on the island — there are plenty of rental stalls there and you don't need to book ahead. I pre-booked with 'Bibings Car & Motorbike Rentals' (found them on Facebook) since I wanted a specific type of bike — their shop is right next to the port too, and they gave a good discount for renting more than 2 days.</p>
             <div class="stop-tags">
@@ -416,25 +505,33 @@
               <p class="highlight-note">A multi-level waterfall you can swim and jump between — go early, since it gets crowded with tour groups after around noon.</p>
               
             
-            <div class="gallery place-gallery" data-folder="assets/img/philippines/siquijor/"></div>
+            <div class="carousel-wrap">
+              <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+              <div class="gallery place-gallery" data-folder="assets/img/philippines/siquijor/"></div>
+              <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+            </div>
 
             
           </div>
         </div>
       </div>
       
-      <div class="stop" id="stop-10">
-        <div class="stop-head">
-          <div class="stop-left">
-            <h3>Camiguin</h3>
+      <div class="tl-stop" id="stop-10">
+        <span class="tl-dot"></span>
+        <div class="tl-head">
+          <div class="tl-head-left">
+            
+              <img class="tl-thumb" src="../assets/img/philippines/camiguin/DJI_20260729085346_0612_D.webp" alt="Camiguin">
+            
+            <div>
+              <h3>Camiguin</h3>
+              <div class="tl-meta">4 Days · 2026</div>
+            </div>
           </div>
-          <div style="display:flex;align-items:center;gap:18px;">
-            <span class="stop-days">4 Days · 2026</span>
-            <svg class="stop-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
-          </div>
+          <svg class="tl-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
         </div>
-        <div class="stop-panel">
-          <div class="stop-panel-inner">
+        <div class="tl-panel">
+          <div class="tl-panel-inner">
             <p>More volcanoes than towns, with two very different landmarks worth the trip.</p>
             <p class="getting-there">→ A 4-hour ferry from Jagna, Bohol. Getting back out: ferry to Balingoan, bus to Cagayan de Oro, overnight, then a flight home to Manila. We rented a motorbike from where we stayed, Marianita's Cottages, for all 4 days on the island.</p>
             <div class="stop-tags">
@@ -455,7 +552,11 @@
               <p class="highlight-note">A cemetery swallowed by the sea after a volcanic eruption in 1871, marked today by a large cross rising out of the water just offshore — you can swim, snorkel, or take a short boat out to it.</p>
               
             
-            <div class="gallery place-gallery" data-folder="assets/img/philippines/camiguin/"></div>
+            <div class="carousel-wrap">
+              <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+              <div class="gallery place-gallery" data-folder="assets/img/philippines/camiguin/"></div>
+              <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+            </div>
 
             
           </div>
@@ -469,8 +570,12 @@
 <section class="section" id="gallery">
   <div class="wrap">
     <div class="section-title reveal"><span class="idx">03</span><h2>Through the Lens</h2></div>
-    <div class="gallery reveal" data-country="philippines" data-fallback-count="22">
-      <p class="gallery-loading">Loading photos…</p>
+    <div class="carousel-wrap">
+      <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+      <div class="gallery reveal" data-country="philippines" data-fallback-count="22">
+        <p class="gallery-loading">Loading photos…</p>
+      </div>
+      <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
     </div>
     <p class="video-note" style="margin-top:18px;">This gallery pulls live from the <code>assets/img/philippines/</code> folder in the repo — drop any photo in there and it appears here automatically, no code editing needed. Until real photos are added, placeholders fill the space.</p>
   </div>
@@ -532,7 +637,7 @@
 
 
 <section class="section" style="padding-top:0;">
-  <div class="wrap" style="display:flex;justify-content:space-between;border-top:1px solid var(--ink-line);padding-top:40px;flex-wrap:wrap;gap:20px;">
+  <div class="wrap" style="display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:40px;flex-wrap:wrap;gap:20px;">
     
     <a href="thailand.html" class="btn btn-ghost">← Thailand</a>
     

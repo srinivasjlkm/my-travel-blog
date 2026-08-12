@@ -6,10 +6,11 @@
 <title>Singapore — My Travel Diaries</title>
 <meta name="description" content="A city that runs on order, and somehow still surprises you.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Fraunces:ital@1&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
+<div class="bg-photo-layer" id="bg-photo-layer"></div>
 
 <nav class="site-nav">
   <div class="wrap">
@@ -32,7 +33,7 @@
 
 <header class="country-hero">
   
-  <img src="https://picsum.photos/seed/sg-hero/1600/1000" alt="Singapore landscape">
+  <img id="country-hero-photo" data-country="singapore" src="https://picsum.photos/seed/sg-hero/1600/1000" alt="Singapore landscape">
   
   <div class="country-hero-content wrap">
     <div class="eyebrow">Chapter · SOUTHEAST ASIA · Since 2022</div>
@@ -54,7 +55,7 @@
 <section class="section" id="story">
   <div class="wrap">
     <div class="section-title reveal"><span class="idx">01</span><h2>The Story</h2></div>
-    <p style="max-width:70ch;color:var(--text-ink-dim);font-size:17px;" class="reveal">My first stop into Southeast Asia — and the easiest place to fall for. Hawker centres, glass towers, and rainforest, all inside one MRT ride.</p>
+    <p style="max-width:70ch;color:var(--text-dark-dim);font-size:17px;" class="reveal">My first stop into Southeast Asia — and the easiest place to fall for. Hawker centres, glass towers, and rainforest, all inside one MRT ride.</p>
     
 
     <div class="route-strip reveal" style="margin-top:34px;">
@@ -75,77 +76,101 @@
 <section class="section" id="itinerary" style="padding-top:0;">
   <div class="wrap">
     <div class="section-title reveal"><span class="idx">02</span><h2>Where I Went</h2></div>
-    <div class="itinerary reveal">
+    <div class="timeline reveal">
       
-      <div class="stop" id="stop-1">
-        <div class="stop-head">
-          <div class="stop-left">
-            <h3>Marina Bay & the Downtown Core</h3>
+      <div class="tl-stop" id="stop-1">
+        <span class="tl-dot"></span>
+        <div class="tl-head">
+          <div class="tl-head-left">
+            
+              <div class="tl-thumb-empty">Photo<br>coming</div>
+            
+            <div>
+              <h3>Marina Bay & the Downtown Core</h3>
+              <div class="tl-meta">2 Days</div>
+            </div>
           </div>
-          <div style="display:flex;align-items:center;gap:18px;">
-            <span class="stop-days">2 Days</span>
-            <svg class="stop-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
-          </div>
+          <svg class="tl-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
         </div>
-        <div class="stop-panel">
-          <div class="stop-panel-inner">
+        <div class="tl-panel">
+          <div class="tl-panel-inner">
             <p>Skyline walks, the Merlion at sunrise, and a rooftop that made me rethink what a city view could look like.</p>
             
             <div class="stop-tags">
               <span class="tag">City</span><span class="tag">Photography</span><span class="tag">Nightlife</span>
             </div>
             
-            <div class="gallery place-gallery" data-folder="assets/img/singapore/marina-bay-the-downtown-core/"></div>
+            <div class="carousel-wrap">
+              <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+              <div class="gallery place-gallery" data-folder="assets/img/singapore/marina-bay-the-downtown-core/"></div>
+              <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+            </div>
 
             
           </div>
         </div>
       </div>
       
-      <div class="stop" id="stop-2">
-        <div class="stop-head">
-          <div class="stop-left">
-            <h3>Tiong Bahru & Chinatown</h3>
+      <div class="tl-stop" id="stop-2">
+        <span class="tl-dot"></span>
+        <div class="tl-head">
+          <div class="tl-head-left">
+            
+              <div class="tl-thumb-empty">Photo<br>coming</div>
+            
+            <div>
+              <h3>Tiong Bahru & Chinatown</h3>
+              <div class="tl-meta">1 Day</div>
+            </div>
           </div>
-          <div style="display:flex;align-items:center;gap:18px;">
-            <span class="stop-days">1 Day</span>
-            <svg class="stop-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
-          </div>
+          <svg class="tl-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
         </div>
-        <div class="stop-panel">
-          <div class="stop-panel-inner">
+        <div class="tl-panel">
+          <div class="tl-panel-inner">
             <p>Old shophouses, kopi in a real coffeeshop, and the best plate of chilli crab I've had anywhere.</p>
             
             <div class="stop-tags">
               <span class="tag">Food</span><span class="tag">Old Town</span><span class="tag">Walking</span>
             </div>
             
-            <div class="gallery place-gallery" data-folder="assets/img/singapore/tiong-bahru-chinatown/"></div>
+            <div class="carousel-wrap">
+              <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+              <div class="gallery place-gallery" data-folder="assets/img/singapore/tiong-bahru-chinatown/"></div>
+              <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+            </div>
 
             
           </div>
         </div>
       </div>
       
-      <div class="stop" id="stop-3">
-        <div class="stop-head">
-          <div class="stop-left">
-            <h3>Sentosa & Southern Islands</h3>
+      <div class="tl-stop" id="stop-3">
+        <span class="tl-dot"></span>
+        <div class="tl-head">
+          <div class="tl-head-left">
+            
+              <div class="tl-thumb-empty">Photo<br>coming</div>
+            
+            <div>
+              <h3>Sentosa & Southern Islands</h3>
+              <div class="tl-meta">1 Day</div>
+            </div>
           </div>
-          <div style="display:flex;align-items:center;gap:18px;">
-            <span class="stop-days">1 Day</span>
-            <svg class="stop-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
-          </div>
+          <svg class="tl-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
         </div>
-        <div class="stop-panel">
-          <div class="stop-panel-inner">
+        <div class="tl-panel">
+          <div class="tl-panel-inner">
             <p>A short cable car ride out of the CBD chaos into beach clubs and quiet coastline.</p>
             
             <div class="stop-tags">
               <span class="tag">Beach</span><span class="tag">Day Trip</span>
             </div>
             
-            <div class="gallery place-gallery" data-folder="assets/img/singapore/sentosa-southern-islands/"></div>
+            <div class="carousel-wrap">
+              <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+              <div class="gallery place-gallery" data-folder="assets/img/singapore/sentosa-southern-islands/"></div>
+              <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
+            </div>
 
             
           </div>
@@ -159,8 +184,12 @@
 <section class="section" id="gallery">
   <div class="wrap">
     <div class="section-title reveal"><span class="idx">03</span><h2>Through the Lens</h2></div>
-    <div class="gallery reveal" data-country="singapore" data-fallback-count="15">
-      <p class="gallery-loading">Loading photos…</p>
+    <div class="carousel-wrap">
+      <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
+      <div class="gallery reveal" data-country="singapore" data-fallback-count="15">
+        <p class="gallery-loading">Loading photos…</p>
+      </div>
+      <button class="car-arrow car-next" aria-label="Scroll right" type="button">›</button>
     </div>
     <p class="video-note" style="margin-top:18px;">This gallery pulls live from the <code>assets/img/singapore/</code> folder in the repo — drop any photo in there and it appears here automatically, no code editing needed. Until real photos are added, placeholders fill the space.</p>
   </div>
@@ -222,7 +251,7 @@
 
 
 <section class="section" style="padding-top:0;">
-  <div class="wrap" style="display:flex;justify-content:space-between;border-top:1px solid var(--ink-line);padding-top:40px;flex-wrap:wrap;gap:20px;">
+  <div class="wrap" style="display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:40px;flex-wrap:wrap;gap:20px;">
     <span></span>
     
     <a href="malaysia.html" class="btn btn-primary">Malaysia →</a>
