@@ -30,6 +30,15 @@ function rawGithubUrl(path){
   return `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/${path}`;
 }
 
+/* Serves a properly *resized* version of the photo via wsrv.nl — a free public
+   image-resizing proxy. This means the browser downloads only a small,
+   web-sized WebP instead of the full original file, even if the original is
+   several MB. Massively cuts load time and scroll lag with no upload changes needed. */
+function optimizedUrl(path, width){
+  const raw = rawGithubUrl(path);
+  return `https://wsrv.nl/?url=${encodeURIComponent(raw)}&w=${width}&q=78&output=webp`;
+}
+
 /* Derives a readable location label from a photo's folder path, e.g.
    "assets/img/philippines/bohol/anda/photo.webp" -> "Bohol › Anda" */
 function locationLabelFromPath(path){
@@ -60,7 +69,8 @@ function renderImagesInto(container, paths){
     const img = document.createElement('img');
     const location = locationLabelFromPath(path);
     if(location) img.dataset.location = location;
-    img.src = rawGithubUrl(path);
+    img.dataset.fullPath = path; // keep original path handy for the lightbox's larger version
+    img.src = optimizedUrl(path, 500); // carousel/thumbnail size — real photo, tiny download
     img.alt = 'travel photo';
     img.loading = 'lazy';
     fig.appendChild(img);
@@ -101,7 +111,7 @@ async function loadCountryGallery(){
 
     const heroFallback = document.getElementById('country-hero-photo');
     if(heroFallback && matches.length){
-      heroFallback.src = rawGithubUrl(matches[Math.floor(Math.random() * matches.length)]);
+      heroFallback.src = optimizedUrl(matches[Math.floor(Math.random() * matches.length)], 1400);
     }
   }
 
@@ -129,10 +139,10 @@ function initAmbientPhotos(countrySlug, countryPaths){
   if(!path) return;
   const img = new Image();
   img.onload = () => {
-    layer.style.backgroundImage = `url(${rawGithubUrl(path)})`;
+    layer.style.backgroundImage = `url(${optimizedUrl(path, 900)})`;
     layer.classList.add('loaded');
   };
-  img.src = rawGithubUrl(path);
+  img.src = optimizedUrl(path, 900);
 }
 
 /* ---------- page background photo on non-country pages (home, about, plan, more) ----------
@@ -149,7 +159,7 @@ async function initGeneralAmbientPhotos(){
   }
   if(heroPhoto){
     const pick = allPaths[Math.floor(Math.random() * allPaths.length)];
-    if(pick) heroPhoto.src = rawGithubUrl(pick);
+    if(pick) heroPhoto.src = optimizedUrl(pick, 1400);
   }
 }
 
@@ -266,7 +276,8 @@ function initLightbox(){
   let idx = 0;
 
   function render(){
-    img.src = items[idx].src;
+    const fullPath = items[idx].dataset ? items[idx].dataset.fullPath : '';
+    img.src = fullPath ? optimizedUrl(fullPath, 1600) : items[idx].src; // bigger for the zoomed-in view, still capped
     img.alt = items[idx].alt || '';
     const loc = items[idx].dataset ? items[idx].dataset.location : '';
     caption.textContent = loc || '';
