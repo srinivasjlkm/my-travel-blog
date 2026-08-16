@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCarousels();
   loadCountryGallery();
   initGeneralAmbientPhotos();
+  initNavScrollState();
   initScrollReveal();
   initCountryNavHighlight();
 });
@@ -311,6 +312,23 @@ function initLightbox(){
 }
 
 /* ---------- scroll reveal ---------- */
+/* ---------- nav goes from transparent-over-photo to solid once scrolled past the hero ---------- */
+function initNavScrollState(){
+  const siteNav = document.querySelector('.site-nav');
+  const countryNav = document.querySelector('.country-nav');
+  if(!siteNav) return;
+  const heroEl = document.querySelector('.hero-media, .country-hero');
+  const threshold = heroEl ? heroEl.offsetHeight - 90 : 40;
+
+  function update(){
+    const scrolled = window.scrollY > threshold;
+    siteNav.classList.toggle('scrolled', scrolled);
+    if(countryNav) countryNav.classList.toggle('scrolled', scrolled);
+  }
+  update();
+  window.addEventListener('scroll', update, { passive: true });
+}
+
 function initScrollReveal(){
   const els = document.querySelectorAll('.reveal');
   if(!('IntersectionObserver' in window) || !els.length){
