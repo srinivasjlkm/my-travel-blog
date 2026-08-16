@@ -452,6 +452,56 @@
         ]
       },
       "video": false
+    },
+    {
+      "slug": "south-korea",
+      "name": "South Korea",
+      "stamp_top": "SOUTH KOREA",
+      "stamp_bottom": "EAST ASIA",
+      "tagline": "One island, one week, and somehow still not enough time.",
+      "hero_seed": "sk-hero",
+      "intro": "A week on Jeju with three friends — rented a car, split the stay between the island's north and south, and packed in more quirky attractions than I can fully list.",
+      "since": "2019",
+      "nav_tip": "If halal food matters to you, you'll find far more options closer to Jeju City than the more remote parts of the island.",
+      "places": [
+        {
+          "name": "Jeju",
+          "days": "7 Days",
+          "when": "2019",
+          "getting_there": "Flew in as a group of four (Malaysian, Filipino, and Indian passports) — Jeju was visa-free for all of us at the time. Rented a car for the week; a Malaysian driving licence was enough to drive locally, no international permit needed.",
+          "note": "Cool, rainy weather the whole trip, and somehow still one of the most scenic weeks of the entire run — waterfalls, cliffs, tea fields, freediving grandmothers, and a genuinely wild range of quirky museums packed onto one island. The standout was Udo Island — a ferry out from Seongsanpo Port, then a full day cycling the coastline, capped off with the famous peanut ice cream before the evening ferry back. We also caught local haenyeo (women freedivers) fishing just offshore, which was something else to watch in person.",
+          "tags": ["Road Trip", "Group Trip", "Nature", "Udo Island", "Freediving", "Waterfalls", "Tea Fields"],
+          "sub_places": [
+            {
+              "name": "North Jeju",
+              "days": "3 Days",
+              "getting_there": "Stayed in an Airbnb.",
+              "note": "Base for the first half of the week, including the day trip out to Udo Island.",
+              "tags": ["Airbnb"]
+            },
+            {
+              "name": "South Jeju — Seogwipo",
+              "days": "3 Days",
+              "getting_there": "Stayed at a hotel in Seogwipo.",
+              "note": "Base for the second half — right near Jeongbang Waterfall and the southern coastline.",
+              "tags": ["Hotel", "Waterfall"]
+            }
+          ]
+        }
+      ],
+      "logistics": {
+        "flights": "Direct into Jeju International Airport",
+        "stay": "Airbnb in the north, hotel in Seogwipo in the south — 3 nights each",
+        "transport": "Rented a car for the week, split between the group of four",
+        "budget": "Split four ways — car rental, Airbnb, and hotel all shared across the group",
+        "best_time": "Spring and autumn tend to be mildest — we happened to catch cooler, rainier weather on our trip",
+        "tickets": [
+          { "type": "Flight", "name": "Direct flight to Jeju", "note": "Booked as a group of four", "link": "#" },
+          { "type": "Car Rental", "name": "Self-drive, 7 days", "note": "Malaysian licence accepted, no international permit needed", "link": "#" },
+          { "type": "Ferry", "name": "Seongsanpo → Udo Island", "note": "Round trip, bicycles rentable on the island", "link": "#" }
+        ]
+      },
+      "video": false
     }
   ]
 }
