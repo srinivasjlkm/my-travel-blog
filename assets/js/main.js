@@ -345,16 +345,15 @@ function initAdaptiveHeroContrast(){
 }
 
 function initNavScrollState(){
-  const siteNav = document.querySelector('.site-nav');
+  // Only the country page's sticky sub-nav (Story/Itinerary/Gallery) needs this —
+  // the top site-nav is no longer sticky on hero pages, so it has nothing to toggle.
   const countryNav = document.querySelector('.country-nav');
-  if(!siteNav) return;
-  const heroEl = document.querySelector('.hero-media, .country-hero');
+  if(!countryNav) return;
+  const heroEl = document.querySelector('.country-hero');
   const threshold = heroEl ? heroEl.offsetHeight - 90 : 40;
 
   function update(){
-    const scrolled = window.scrollY > threshold;
-    siteNav.classList.toggle('scrolled', scrolled);
-    if(countryNav) countryNav.classList.toggle('scrolled', scrolled);
+    countryNav.classList.toggle('scrolled', window.scrollY > threshold);
   }
   update();
   window.addEventListener('scroll', update, { passive: true });

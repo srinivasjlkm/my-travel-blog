@@ -64,11 +64,13 @@ em{ font-family: inherit; font-style: normal; font-weight: 700; color: var(--pin
 .site-nav{
   --nav-fg: var(--text-dark);
   --nav-fg-dim: var(--text-dark-dim);
-  position: sticky; top:0; z-index: 50; background: transparent; transition: background .3s var(--ease);
+  position: sticky; top:0; z-index: 50; background: transparent;
 }
-body.has-hero .site-nav:not(.scrolled){ --nav-fg: var(--text-on-photo); --nav-fg-dim: var(--text-on-photo-dim); }
-body.has-hero.hero-bright .site-nav:not(.scrolled){ --nav-fg: var(--text-dark); --nav-fg-dim: var(--text-dark-dim); }
-body.has-hero .site-nav.scrolled{ background: rgba(241,246,245,0.82); backdrop-filter: blur(14px); }
+/* On pages with a hero photo, the nav sits directly over it and scrolls
+   away naturally with the page — never a background bar, ever. */
+body.has-hero .site-nav{ position: absolute; top:0; left:0; right:0; background: transparent; }
+body.has-hero .site-nav{ --nav-fg: var(--text-on-photo); --nav-fg-dim: var(--text-on-photo-dim); }
+body.has-hero.hero-bright .site-nav{ --nav-fg: var(--text-dark); --nav-fg-dim: var(--text-dark-dim); }
 .site-nav .wrap{ display:flex; align-items:center; justify-content:space-between; height: 78px; }
 .brand{ font-family: var(--font-display); font-size: 24px; letter-spacing: 0.04em; display:flex; align-items:center; gap:10px; color: var(--nav-fg); transition: color .3s; text-shadow: 0 1px 8px rgba(0,0,0,0.12); }
 .brand .brand-mark{ color: var(--pink); font-family: var(--font-body); }
