@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadCountryGallery();
   initGeneralAmbientPhotos();
   initNavScrollState();
+  initAdaptiveHeroContrast();
   initScrollReveal();
   initCountryNavHighlight();
 });
@@ -313,6 +314,36 @@ function initLightbox(){
 
 /* ---------- scroll reveal ---------- */
 /* ---------- nav goes from transparent-over-photo to solid once scrolled past the hero ---------- */
+/* ---------- adaptive text contrast: samples the actual hero photo's brightness
+   and switches nav/heading text between light and dark to match, rather than
+   forcing a fixed darkening overlay onto every photo. ---------- */
+function initAdaptiveHeroContrast(){
+  const heroImg = document.querySelector('.hero-media img, .country-hero img');
+  if(!heroImg) return;
+
+  function analyze(){
+    try{
+      const w = 32, h = 32;
+      const canvas = document.createElement('canvas');
+      canvas.width = w; canvas.height = h;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(heroImg, 0, 0, w, h);
+      const data = ctx.getImageData(0, 0, w, h).data;
+      let sum = 0;
+      for(let i = 0; i < data.length; i += 4){
+        sum += 0.299 * data[i] + 0.587 * data[i + 1] + 0.114 * data[i + 2];
+      }
+      const avgBrightness = sum / (data.length / 4); // 0 (black) – 255 (white)
+      document.body.classList.toggle('hero-bright', avgBrightness > 150);
+    } catch(err){
+      // canvas blocked (e.g. CORS) — keep the default light-on-photo styling
+    }
+  }
+
+  if(heroImg.complete && heroImg.naturalWidth) analyze();
+  heroImg.addEventListener('load', analyze); // re-fires if the src gets swapped later (e.g. real-photo fallback)
+}
+
 function initNavScrollState(){
   const siteNav = document.querySelector('.site-nav');
   const countryNav = document.querySelector('.country-nav');

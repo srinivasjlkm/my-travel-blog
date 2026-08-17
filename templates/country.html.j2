@@ -33,9 +33,9 @@
 
 <header class="country-hero">
   {% if country.hero_photo %}
-  <img src="{{ country.hero_photo }}" alt="{{ country.name }} landscape">
+  <img crossorigin="anonymous" src="{{ country.hero_photo }}" alt="{{ country.name }} landscape">
   {% else %}
-  <img id="country-hero-photo" data-country="{{ country.slug }}" src="https://picsum.photos/seed/{{ country.hero_seed }}/1600/1000" alt="{{ country.name }} landscape">
+  <img id="country-hero-photo" crossorigin="anonymous" data-country="{{ country.slug }}" src="https://picsum.photos/seed/{{ country.hero_seed }}/1600/1000" alt="{{ country.name }} landscape">
   {% endif %}
   <div class="country-hero-content wrap">
     <div class="eyebrow">Chapter · {{ country.stamp_bottom }} · Since {{ country.since }}</div>
