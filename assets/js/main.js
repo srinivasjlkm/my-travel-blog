@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initCarousels();
   loadCountryGallery();
   initGeneralAmbientPhotos();
-  initNavScrollState();
   initAdaptiveHeroContrast();
   initScrollReveal();
   initCountryNavHighlight();
@@ -342,21 +341,6 @@ function initAdaptiveHeroContrast(){
 
   if(heroImg.complete && heroImg.naturalWidth) analyze();
   heroImg.addEventListener('load', analyze); // re-fires if the src gets swapped later (e.g. real-photo fallback)
-}
-
-function initNavScrollState(){
-  // Only the country page's sticky sub-nav (Story/Itinerary/Gallery) needs this —
-  // the top site-nav is no longer sticky on hero pages, so it has nothing to toggle.
-  const countryNav = document.querySelector('.country-nav');
-  if(!countryNav) return;
-  const heroEl = document.querySelector('.country-hero');
-  const threshold = heroEl ? heroEl.offsetHeight - 90 : 40;
-
-  function update(){
-    countryNav.classList.toggle('scrolled', window.scrollY > threshold);
-  }
-  update();
-  window.addEventListener('scroll', update, { passive: true });
 }
 
 function initScrollReveal(){

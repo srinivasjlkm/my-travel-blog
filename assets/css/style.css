@@ -192,11 +192,10 @@ body.hero-bright .country-hero::after{ background: linear-gradient(180deg, rgba(
 
 .country-nav{
   --nav-fg-dim: var(--text-dark-dim);
-  display:flex; position: sticky; top:78px; background: transparent; z-index:30; overflow-x:auto; transition: background .3s var(--ease);
+  display:flex; background: transparent; overflow-x:auto;
 }
-body.has-hero .country-nav:not(.scrolled){ --nav-fg-dim: var(--text-on-photo-dim); }
-body.has-hero.hero-bright .country-nav:not(.scrolled){ --nav-fg-dim: var(--text-dark-dim); }
-.country-nav.scrolled{ background: rgba(241,246,245,0.82); backdrop-filter: blur(14px); }
+body.has-hero .country-nav{ --nav-fg-dim: var(--text-on-photo-dim); }
+body.has-hero.hero-bright .country-nav{ --nav-fg-dim: var(--text-dark-dim); }
 .country-nav a{ font-family: var(--font-body); font-size:13.5px; font-weight:600; padding: 20px 22px; color: var(--nav-fg-dim); white-space:nowrap; border-bottom:2px solid transparent; transition: color .2s, border-color .2s; text-shadow: 0 1px 8px rgba(0,0,0,0.12); }
 .country-nav a:hover, .country-nav a.active{ color: var(--pink-deep); border-color: var(--pink); }
 
