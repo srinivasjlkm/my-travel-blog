@@ -84,6 +84,21 @@
           "note": "Street art alleys, colonial shophouses, and hands-down the best char kway teow of the whole trip.",
           "tags": ["Old Town", "Food", "Street Art"],
           "gallery": 5
+        },
+        {
+          "name": "Terengganu",
+          "days": "4 Days",
+          "when": "2019",
+          "getting_there": "Road trip from Penang with a group of friends — about an 8-hour drive.",
+          "note": "Spent most of the trip based in Terengganu itself — some genuinely beautiful mosques and some of the best seafood of the whole Malaysia run. Took a day out to Redang Island, which turned out to be a highlight of the entire trip: fine white sand and an amazing scuba diving experience in clear water.",
+          "tags": ["Road Trip", "Group Trip", "Redang Island", "Scuba Diving", "Mosques", "Seafood"],
+          "highlights": [
+            {
+              "img": "../assets/img/malaysia/terengganu/20200823_190251.webp",
+              "caption": "Terengganu",
+              "note": "Mosques, coastline, and some of the best seafood of the whole trip — a great few days on either side of the day trip out to Redang."
+            }
+          ]
         }
       ],
       "logistics": {
