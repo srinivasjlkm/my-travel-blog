@@ -65,10 +65,18 @@
         },
         {
           "name": "Cameron Highlands",
-          "days": "2 Days",
-          "note": "A road trip up into tea plantations and strawberry farms — the temperature drop alone is worth it.",
-          "tags": ["Road Trip", "Nature"],
-          "gallery": 5
+          "days": "Day Trips",
+          "when": "While living in Malaysia",
+          "getting_there": "Drove up from Penang via Ipoh a few times, and also went straight by bus from Penang other times — both were a smooth, easy ride. Went back quite a few times while living in Malaysia.",
+          "note": "Once up in the highlands, the easiest way in was just walking into one of the tourism centres in town and booking a day trip from there — Boh Tea Plantation was one of the best, with sweeping views over the rows of tea. Outside of that, there are hiking trails all through town and a little further out, worth wandering without much of a plan.",
+          "tags": ["Road Trip", "Nature", "Tea Plantation", "Hiking"],
+          "highlights": [
+            {
+              "img": "../assets/img/malaysia/cameron-highlands/20191027_094312.webp",
+              "caption": "Boh Tea Plantation",
+              "note": "Endless rows of tea rolling over the hills — one of the best views from any of the day trips out of town."
+            }
+          ]
         },
         {
           "name": "Penang (George Town)",
