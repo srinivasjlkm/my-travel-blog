@@ -79,11 +79,10 @@
           ]
         },
         {
-          "name": "Penang (George Town)",
-          "days": "2 Days",
-          "note": "Street art alleys, colonial shophouses, and hands-down the best char kway teow of the whole trip.",
-          "tags": ["Old Town", "Food", "Street Art"],
-          "gallery": 5
+          "name": "Penang",
+          "days": "5 Years",
+          "note": "Considered my second home — I lived here for five years, so there's a lot of memory packed into this place. Amazing food, rich cultural heritage, and it's a genuine UNESCO World Heritage Site. Easy to get around the main island by public transport or a rented scooter. Georgetown itself is packed with street art, a chocolate museum, a cat café, and plenty more worth wandering into.",
+          "tags": ["Second Home", "UNESCO", "Street Art", "Food", "Cultural Heritage"]
         },
         {
           "name": "Terengganu",
@@ -370,11 +369,20 @@
           "gallery": 6
         },
         {
-          "name": "Ho Chi Minh City",
+          "name": "Saigon",
+          "days": "3 Days",
+          "when": "Solo trip",
+          "getting_there": "Flew in from Penang — this one was a solo trip. Traffic in the city is heavy enough that I chose not to rent and drive myself here, unlike Mui Ne.",
+          "note": "Also known as Ho Chi Minh City. Found a scooter tour company called Kiss Tours here, and they were fantastic — you just tell them your mood and what you feel like seeing or doing, and they build the route around that. Great nightlife and bar scene if that's your thing, genuinely kind and friendly people throughout, and I checked out a few museums and walked around the city on foot, which felt pretty safe the whole time.",
+          "tags": ["Solo Trip", "Nightlife", "Scooter Tours", "Museums"]
+        },
+        {
+          "name": "Mui Ne",
           "days": "2 Days",
-          "note": "War Remnants Museum, the Bến Thành night market, and rooftop pho that broke every rule I thought pho had.",
-          "tags": ["City", "History", "Food"],
-          "gallery": 5
+          "when": "Solo trip",
+          "getting_there": "Took a bus from Saigon — a proper overnight sleeper bus, which was a nice experience in itself.",
+          "note": "Rented a scooter and drove around the coastal roads here — scenic desert sand dunes on one side, clear water on the other. Did some sand dune activities and an ATV ride while I was at it. Stayed at a small backpacker place in town for the two days.",
+          "tags": ["Desert", "Scooter", "ATV", "Sand Dunes", "Sleeper Bus"]
         }
       ],
       "logistics": {
@@ -517,15 +525,16 @@
       "stamp_bottom": "SOUTHEAST ASIA",
       "tagline": "Volcanoes, dragons, and an island for every mood.",
       "hero_seed": "id-hero",
-      "intro": "A July 2018 run through Bali, Flores, and the islands in between — Labuan Bajo, Gili, Komodo, Rinca, and Pulau Padar all on the same trip.",
-      "since": "2018",
+      "intro": "Bali with a group of friends around 2017, plus Flores, Labuan Bajo, Gili, Komodo, and Rinca on a separate run — still sorting out which year covers which trip.",
+      "since": "2017",
       "places": [
         {
           "name": "Bali",
           "days": "TBD",
-          "when": "July 2018",
-          "note": "Full write-up coming soon.",
-          "tags": ["Island"]
+          "when": "2017 (approx)",
+          "getting_there": "Went with a group of friends — mostly got around in a rented van, like a mini van, which worked out cheaper split across the group for both van hire and boat trip packages.",
+          "note": "Took a boat over to Nusa Penida from Sanur Beach for a day trip — the crossing gets genuinely rough, so it's worth being mindful if you're prone to seasickness. We really wished we could've stayed longer than the one day we had there. Sanur Beach itself is beautiful for sunrise, and Tanah Lot is one of the best spots on the island for sunset. Uluwatu Temple was a highlight for a different reason — the cultural dance and storytelling performances there (kecak dance) were incredible, though it's worth keeping a close eye on your belongings, since there are a lot of monkeys around who have no problem helping themselves. With the rest of the trip on the rented van, we made it out to the Ubud rice terraces, Pantai Pandawa, and Nusa Dua Beach as well. This was back around 2017 — Bali's become a lot more crowded since, so if you're planning something similar now, better planning ahead is worth it.",
+          "tags": ["Group Trip", "Nusa Penida", "Sanur Beach", "Tanah Lot", "Uluwatu Temple", "Kecak Dance", "Ubud Rice Terraces", "Pantai Pandawa", "Nusa Dua Beach"]
         }
       ],
       "logistics": {
