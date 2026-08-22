@@ -355,34 +355,18 @@
       "since": "2023",
       "places": [
         {
-          "name": "Hanoi & Ha Long Bay",
-          "days": "3 Days",
-          "note": "Egg coffee in the Old Quarter, then an overnight boat through the limestone karsts of Ha Long Bay.",
-          "tags": ["City", "Boats", "Food"],
-          "gallery": 6
-        },
-        {
-          "name": "Hoi An & Da Nang",
-          "days": "3 Days",
-          "note": "Lantern-lit old town at night, a tailored jacket I still wear, and the Marble Mountains just outside the city.",
-          "tags": ["Old Town", "Beach"],
-          "gallery": 6
+          "name": "Hanoi",
+          "days": "TBD",
+          "note": "Full write-up coming soon.",
+          "tags": ["City"]
         },
         {
           "name": "Saigon",
-          "days": "3 Days",
+          "days": "5 Days",
           "when": "Solo trip",
-          "getting_there": "Flew in from Penang — this one was a solo trip. Traffic in the city is heavy enough that I chose not to rent and drive myself here, unlike Mui Ne.",
-          "note": "Also known as Ho Chi Minh City. Found a scooter tour company called Kiss Tours here, and they were fantastic — you just tell them your mood and what you feel like seeing or doing, and they build the route around that. Great nightlife and bar scene if that's your thing, genuinely kind and friendly people throughout, and I checked out a few museums and walked around the city on foot, which felt pretty safe the whole time.",
-          "tags": ["Solo Trip", "Nightlife", "Scooter Tours", "Museums"]
-        },
-        {
-          "name": "Mui Ne",
-          "days": "2 Days",
-          "when": "Solo trip",
-          "getting_there": "Took a bus from Saigon — a proper overnight sleeper bus, which was a nice experience in itself.",
-          "note": "Rented a scooter and drove around the coastal roads here — scenic desert sand dunes on one side, clear water on the other. Did some sand dune activities and an ATV ride while I was at it. Stayed at a small backpacker place in town for the two days.",
-          "tags": ["Desert", "Scooter", "ATV", "Sand Dunes", "Sleeper Bus"]
+          "getting_there": "Flew in from Penang — this one was a solo trip. Took a bus out to Mui Ne early on, a proper overnight sleeper bus experience, then came back to Saigon for the rest of the trip. Traffic in the city is heavy enough that I chose not to rent and drive myself here, unlike Mui Ne.",
+          "note": "Also known as Ho Chi Minh City. Out in Mui Ne, rented a scooter and drove around the coastal roads — scenic desert sand dunes on one side, clear water on the other — plus some sand dune activities and an ATV ride, staying at a small backpacker place in town for two days. Back in Saigon, found a scooter tour company called Kiss Tours, and they were fantastic — you just tell them your mood and what you feel like seeing or doing, and they build the route around that. Great nightlife and bar scene if that's your thing, genuinely kind and friendly people throughout, and I checked out a few museums and walked around the city on foot, which felt pretty safe the whole time.",
+          "tags": ["Solo Trip", "Nightlife", "Scooter Tours", "Museums", "Desert", "ATV", "Sand Dunes", "Sleeper Bus"]
         }
       ],
       "logistics": {
