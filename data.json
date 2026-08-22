@@ -509,6 +509,34 @@
         ]
       },
       "video": false
+    },
+    {
+      "slug": "indonesia",
+      "name": "Indonesia",
+      "stamp_top": "INDONESIA",
+      "stamp_bottom": "SOUTHEAST ASIA",
+      "tagline": "Volcanoes, dragons, and an island for every mood.",
+      "hero_seed": "id-hero",
+      "intro": "A July 2018 run through Bali, Flores, and the islands in between — Labuan Bajo, Gili, Komodo, Rinca, and Pulau Padar all on the same trip.",
+      "since": "2018",
+      "places": [
+        {
+          "name": "Bali",
+          "days": "TBD",
+          "when": "July 2018",
+          "note": "Full write-up coming soon.",
+          "tags": ["Island"]
+        }
+      ],
+      "logistics": {
+        "flights": "TBD",
+        "stay": "TBD",
+        "transport": "TBD",
+        "budget": "TBD",
+        "best_time": "TBD",
+        "tickets": []
+      },
+      "video": false
     }
   ]
 }
