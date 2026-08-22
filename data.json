@@ -491,25 +491,9 @@
           "name": "Jeju",
           "days": "7 Days",
           "when": "2019",
-          "getting_there": "Flew in as a group of four (Malaysian, Filipino, and Indian passports) — Jeju was visa-free for all of us at the time. Rented a car for the week; a Malaysian driving licence was enough to drive locally, no international permit needed.",
+          "getting_there": "Flew in as a group of four (Malaysian, Filipino, and Indian passports) — Jeju was visa-free for all of us at the time. Rented a car for the week; a Malaysian driving licence was enough to drive locally, no international permit needed. Split the week between an Airbnb in the north for the first half, then a hotel in Seogwipo in the south for the second half, right near Jeongbang Waterfall.",
           "note": "Cool, rainy weather the whole trip, and somehow still one of the most scenic weeks of the entire run — waterfalls, cliffs, tea fields, freediving grandmothers, and a genuinely wild range of quirky museums packed onto one island (the Museum of Sex and Health included). The standout was Udo Island — a ferry out from Seongsanpo Port, then a full day cycling the coastline, capped off with the famous peanut ice cream before the evening ferry back. Right at the same port, we also climbed Seongsan Ilchulbong to the top — the views over the crater and coastline from up there were incredible. Saeyeongyo Bridge was another good stop for the views alone. We also caught local haenyeo (women freedivers) fishing just offshore, which was something else to watch in person.",
-          "tags": ["Road Trip", "Group Trip", "Nature", "Udo Island", "Seongsan Ilchulbong", "Freediving", "Waterfalls", "Tea Fields", "Saeyeongyo Bridge", "Museum of Sex and Health"],
-          "sub_places": [
-            {
-              "name": "North Jeju",
-              "days": "3 Days",
-              "getting_there": "Stayed in an Airbnb.",
-              "note": "Base for the first half of the week, including the day trip out to Udo Island.",
-              "tags": ["Airbnb"]
-            },
-            {
-              "name": "South Jeju — Seogwipo",
-              "days": "3 Days",
-              "getting_there": "Stayed at a hotel in Seogwipo.",
-              "note": "Base for the second half — right near Jeongbang Waterfall and the southern coastline.",
-              "tags": ["Hotel", "Waterfall"]
-            }
-          ]
+          "tags": ["Road Trip", "Group Trip", "Nature", "Udo Island", "Seongsan Ilchulbong", "Freediving", "Waterfalls", "Tea Fields", "Saeyeongyo Bridge", "Museum of Sex and Health"]
         }
       ],
       "logistics": {
