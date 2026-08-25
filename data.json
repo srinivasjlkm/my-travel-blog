@@ -277,7 +277,13 @@
           "getting_there": "A 2-day motorbike ride from Manila, with overnight stops in Pagbilao and Naga City.",
           "note": "Mayon Volcano's near-perfect cone watches over the road the whole way, with some of the country's spiciest food waiting at the end of it.",
           "tags": ["Motorbike", "Volcano", "Food"],
-          "gallery": 3
+          "highlights": [
+            {
+              "img": "../assets/img/philippines/bicol/PXL_20231225_085024051.PANO.webp",
+              "caption": "Bicol",
+              "note": "Mayon Volcano's cone, watching over the road the whole way through."
+            }
+          ]
         },
         {
           "name": "Romblon",
@@ -286,7 +292,13 @@
           "getting_there": "About a 6-hour ferry from Batangas.",
           "note": "The 'Marble Capital of the Philippines' — quiet fishing towns, marble quarries, and coastline that barely sees a tourist.",
           "tags": ["Island", "Off the Beaten Path"],
-          "gallery": 3
+          "highlights": [
+            {
+              "img": "../assets/img/philippines/romblon/PXL_20250215_032557199.webp",
+              "caption": "Romblon",
+              "note": "Quiet coastline that barely sees a tourist — the Marble Capital of the Philippines."
+            }
+          ]
         },
         {
           "name": "Sibuyan",
@@ -295,7 +307,13 @@
           "getting_there": "A 4-hour ferry from Romblon.",
           "note": "Known as the 'Galapagos of Asia' — dense rainforest, rivers running gin-clear, and Mt. Guiting-Guiting looming over all of it.",
           "tags": ["Rainforest", "Ferry"],
-          "gallery": 3
+          "highlights": [
+            {
+              "img": "../assets/img/philippines/sibuyan/PXL_20250208_045819426.webp",
+              "caption": "Sibuyan",
+              "note": "The 'Galapagos of Asia' — dense rainforest and rivers running gin-clear."
+            }
+          ]
         },
         {
           "name": "Siquijor",
@@ -371,12 +389,12 @@
           "name": "Saigon",
           "days": "5 Days",
           "when": "Solo trip",
-          "getting_there": "Flew in from Penang — this one was a solo trip. Took a bus out to Mui Ne early on, a proper overnight sleeper bus experience, then came back to Saigon for the rest of the trip. Traffic in the city is heavy enough that I chose not to rent and drive myself here, unlike Mui Ne.",
+          "getting_there": "Flew in from Penang — this one was a solo trip. Entry involved a visa-on-arrival stamp, and the queue for that can get long, so it's worth being patient and prepared for a wait right at the airport. Took a bus out to Mui Ne early on, a proper overnight sleeper bus experience, then came back to Saigon for the rest of the trip. Traffic in the city is heavy enough that I chose not to rent and drive myself here, unlike Mui Ne.",
           "note": "Also known as Ho Chi Minh City. Stayed in capsule hotels here, which were pretty comfortable and affordable. Out in Mui Ne, rented a scooter and drove around the coastal roads — scenic desert sand dunes on one side, clear water on the other — plus some sand dune activities and an ATV ride, staying at a small backpacker place in town for two days. Back in Saigon, found a scooter tour company called Kiss Tours, and they were fantastic — you just tell them your mood and what you feel like seeing or doing, and they build the route around that. Great nightlife and bar scene if that's your thing, genuinely kind and friendly people throughout, and I checked out a few museums and walked around the city on foot, which felt pretty safe the whole time.",
-          "tags": ["Solo Trip", "Nightlife", "Scooter Tours", "Museums", "Desert", "ATV", "Sand Dunes", "Sleeper Bus", "Capsule Hotel"],
+          "tags": ["Solo Trip", "Nightlife", "Scooter Tours", "Museums", "Desert", "ATV", "Sand Dunes", "Sleeper Bus", "Capsule Hotel", "Visa on Arrival"],
           "highlights": [
             {
-              "img": "../assets/img/vietnam/Saigon/IMG_20170402_062650.webp",
+              "img": "../assets/img/vietnam/saigon/IMG_20170403_191324_HHT.webp",
               "caption": "Saigon",
               "note": "Ho Chi Minh City's streets, early on a solo trip that turned into scooter tours, capsule hotels, and a detour out to the Mui Ne dunes."
             }
@@ -499,7 +517,14 @@
           "when": "2019",
           "getting_there": "Flew in as a group of four (Malaysian, Filipino, and Indian passports) — Jeju was visa-free for all of us at the time. Rented a car for the week; a Malaysian driving licence was enough to drive locally, no international permit needed. Split the week between an Airbnb in the north for the first half, then a hotel in Seogwipo in the south for the second half, right near Jeongbang Waterfall.",
           "note": "Cool, rainy weather the whole trip, and somehow still one of the most scenic weeks of the entire run — waterfalls, cliffs, tea fields, freediving grandmothers, and a genuinely wild range of quirky museums packed onto one island (the Museum of Sex and Health included). The standout was Udo Island — a ferry out from Seongsanpo Port, then a full day cycling the coastline, capped off with the famous peanut ice cream before the evening ferry back. Right at the same port, we also climbed Seongsan Ilchulbong to the top — the views over the crater and coastline from up there were incredible. Saeyeongyo Bridge was another good stop for the views alone. We also caught local haenyeo (women freedivers) fishing just offshore, which was something else to watch in person.",
-          "tags": ["Road Trip", "Group Trip", "Nature", "Udo Island", "Seongsan Ilchulbong", "Freediving", "Waterfalls", "Tea Fields", "Saeyeongyo Bridge", "Museum of Sex and Health"]
+          "tags": ["Road Trip", "Group Trip", "Nature", "Udo Island", "Seongsan Ilchulbong", "Freediving", "Waterfalls", "Tea Fields", "Saeyeongyo Bridge", "Museum of Sex and Health"],
+          "highlights": [
+            {
+              "img": "../assets/img/south-korea/jeju/20190905_133823.webp",
+              "caption": "Jeju",
+              "note": "A cool, rainy week that still turned out to be one of the most scenic of the whole run."
+            }
+          ]
         }
       ],
       "logistics": {
@@ -531,8 +556,15 @@
           "days": "TBD",
           "when": "2017 (approx)",
           "getting_there": "Went with a group of friends — mostly got around in a rented van, like a mini van, which worked out cheaper split across the group for both van hire and boat trip packages.",
-          "note": "Took a boat over to Nusa Penida from Sanur Beach for a day trip — the crossing gets genuinely rough, so it's worth being mindful if you're prone to seasickness. We really wished we could've stayed longer than the one day we had there. Sanur Beach itself is beautiful for sunrise, and Tanah Lot is one of the best spots on the island for sunset. Uluwatu Temple was a highlight for a different reason — the cultural dance and storytelling performances there (kecak dance) were incredible, though it's worth keeping a close eye on your belongings, since there are a lot of monkeys around who have no problem helping themselves. With the rest of the trip on the rented van, we made it out to the Ubud rice terraces, Pantai Pandawa, and Nusa Dua Beach as well. This was back around 2017 — Bali's become a lot more crowded since, so if you're planning something similar now, better planning ahead is worth it.",
-          "tags": ["Group Trip", "Nusa Penida", "Sanur Beach", "Tanah Lot", "Uluwatu Temple", "Kecak Dance", "Ubud Rice Terraces", "Pantai Pandawa", "Nusa Dua Beach"]
+          "note": "Took a boat over to Nusa Penida from Sanur Beach for a day trip — the crossing gets genuinely rough, so it's worth being mindful if you're prone to seasickness. We really wished we could've stayed longer than the one day we had there. Sanur Beach itself is beautiful for sunrise, and Tanah Lot is one of the best spots on the island for sunset. Uluwatu Temple was a highlight for a different reason — the cultural dance and storytelling performances there (kecak dance) were incredible, though it's worth keeping a close eye on your belongings, since there are a lot of monkeys around who have no problem helping themselves. With the rest of the trip on the rented van, we made it out to the Ubud rice terraces, Pantai Pandawa, and Nusa Dua Beach as well. Also tried kopi luwak here — the famous 'poop coffee,' where civets eat the coffee cherries, digest them, and the beans are collected from their droppings to be roasted. Strange to think about, but it's a genuine local specialty. This was back around 2017 — Bali's become a lot more crowded since, so if you're planning something similar now, better planning ahead is worth it.",
+          "tags": ["Group Trip", "Nusa Penida", "Sanur Beach", "Tanah Lot", "Uluwatu Temple", "Kecak Dance", "Ubud Rice Terraces", "Pantai Pandawa", "Nusa Dua Beach", "Kopi Luwak"],
+          "highlights": [
+            {
+              "img": "../assets/img/indonesia/bali/IMG_5367.webp",
+              "caption": "Bali",
+              "note": "Sunrise over Sanur, sunset at Tanah Lot, and a lot of Bali in between."
+            }
+          ]
         }
       ],
       "logistics": {
