@@ -14,21 +14,32 @@
           "name": "Marina Bay & the Downtown Core",
           "days": "2 Days",
           "note": "Skyline walks, the Merlion at sunrise, and a rooftop that made me rethink what a city view could look like.",
-          "tags": ["City", "Photography", "Nightlife"],
+          "tags": [
+            "City",
+            "Photography",
+            "Nightlife"
+          ],
           "gallery": 6
         },
         {
           "name": "Tiong Bahru & Chinatown",
           "days": "1 Day",
           "note": "Old shophouses, kopi in a real coffeeshop, and the best plate of chilli crab I've had anywhere.",
-          "tags": ["Food", "Old Town", "Walking"],
+          "tags": [
+            "Food",
+            "Old Town",
+            "Walking"
+          ],
           "gallery": 5
         },
         {
           "name": "Sentosa & Southern Islands",
           "days": "1 Day",
           "note": "A short cable car ride out of the CBD chaos into beach clubs and quiet coastline.",
-          "tags": ["Beach", "Day Trip"],
+          "tags": [
+            "Beach",
+            "Day Trip"
+          ],
           "gallery": 4
         }
       ],
@@ -39,9 +50,24 @@
         "budget": "~$65/day (excl. flights)",
         "best_time": "Feb–Apr, before the mid-year humidity",
         "tickets": [
-          { "type": "Flight", "name": "Scoot — MNL to SIN", "note": "Booked ~6 weeks out for the best fare", "link": "#" },
-          { "type": "Stay", "name": "Bugis Capsule Hotel", "note": "Booked via Booking.com", "link": "#" },
-          { "type": "Transit", "name": "EZ-Link Card", "note": "Top up at any MRT station", "link": "#" }
+          {
+            "type": "Flight",
+            "name": "Scoot — MNL to SIN",
+            "note": "Booked ~6 weeks out for the best fare",
+            "link": "#"
+          },
+          {
+            "type": "Stay",
+            "name": "Bugis Capsule Hotel",
+            "note": "Booked via Booking.com",
+            "link": "#"
+          },
+          {
+            "type": "Transit",
+            "name": "EZ-Link Card",
+            "note": "Top up at any MRT station",
+            "link": "#"
+          }
         ]
       },
       "video": true
@@ -60,7 +86,11 @@
           "name": "Kuala Lumpur",
           "days": "3 Days",
           "note": "KLCC Park at golden hour, Batu Caves before the tour buses arrive, and Jalan Alor at night for the satay.",
-          "tags": ["City", "Food", "Landmarks"],
+          "tags": [
+            "City",
+            "Food",
+            "Landmarks"
+          ],
           "gallery": 6
         },
         {
@@ -69,7 +99,12 @@
           "when": "While living in Malaysia",
           "getting_there": "Drove up from Penang via Ipoh a few times, and also went straight by bus from Penang other times — both were a smooth, easy ride. Went back quite a few times while living in Malaysia.",
           "note": "Once up in the highlands, the easiest way in was just walking into one of the tourism centres in town and booking a day trip from there — Boh Tea Plantation was one of the best, with sweeping views over the rows of tea. Outside of that, there are hiking trails all through town and a little further out, worth wandering without much of a plan.",
-          "tags": ["Road Trip", "Nature", "Tea Plantation", "Hiking"],
+          "tags": [
+            "Road Trip",
+            "Nature",
+            "Tea Plantation",
+            "Hiking"
+          ],
           "highlights": [
             {
               "img": "../assets/img/malaysia/cameron-highlands/20191027_094312.webp",
@@ -82,7 +117,13 @@
           "name": "Penang",
           "days": "5 Years",
           "note": "Considered my second home — I lived here for five years, so there's a lot of memory packed into this place. Amazing food, rich cultural heritage, and it's a genuine UNESCO World Heritage Site. Easy to get around the main island by public transport or a rented scooter. Georgetown itself is packed with street art, a chocolate museum, a cat café, and plenty more worth wandering into.",
-          "tags": ["Second Home", "UNESCO", "Street Art", "Food", "Cultural Heritage"],
+          "tags": [
+            "Second Home",
+            "UNESCO",
+            "Street Art",
+            "Food",
+            "Cultural Heritage"
+          ],
           "highlights": [
             {
               "img": "../assets/img/malaysia/penang/DSC_0622.webp",
@@ -97,7 +138,14 @@
           "when": "2019",
           "getting_there": "Road trip from Penang with a group of friends — about an 8-hour drive.",
           "note": "Spent most of the trip based in Terengganu itself — some genuinely beautiful mosques and some of the best seafood of the whole Malaysia run. Took a day out to Redang Island, which turned out to be a highlight of the entire trip: fine white sand and an amazing scuba diving experience in clear water.",
-          "tags": ["Road Trip", "Group Trip", "Redang Island", "Scuba Diving", "Mosques", "Seafood"],
+          "tags": [
+            "Road Trip",
+            "Group Trip",
+            "Redang Island",
+            "Scuba Diving",
+            "Mosques",
+            "Seafood"
+          ],
           "highlights": [
             {
               "img": "../assets/img/malaysia/terengganu/20200823_190251.webp",
@@ -114,9 +162,24 @@
         "budget": "~$45/day (excl. flights)",
         "best_time": "Year-round, avoid Nov–Dec monsoon on the east coast",
         "tickets": [
-          { "type": "Flight", "name": "AirAsia — SIN to KUL", "note": "Book the early morning flight, cheaper + less turbulence", "link": "#" },
-          { "type": "Car Rental", "name": "Perodua Axia, self-drive", "note": "Picked up at KL Sentral, dropped in Ipoh", "link": "#" },
-          { "type": "Stay", "name": "Cameron Highlands homestay", "note": "Found via Agoda, mountain view room", "link": "#" }
+          {
+            "type": "Flight",
+            "name": "AirAsia — SIN to KUL",
+            "note": "Book the early morning flight, cheaper + less turbulence",
+            "link": "#"
+          },
+          {
+            "type": "Car Rental",
+            "name": "Perodua Axia, self-drive",
+            "note": "Picked up at KL Sentral, dropped in Ipoh",
+            "link": "#"
+          },
+          {
+            "type": "Stay",
+            "name": "Cameron Highlands homestay",
+            "note": "Found via Agoda, mountain view room",
+            "link": "#"
+          }
         ]
       },
       "video": false
@@ -135,21 +198,33 @@
           "name": "Bangkok",
           "days": "4 Days",
           "note": "Wat Arun across the river at sunset, Chatuchak on a Saturday, and a rooftop bar that made the humidity worth it.",
-          "tags": ["City", "Temples", "Nightlife"],
+          "tags": [
+            "City",
+            "Temples",
+            "Nightlife"
+          ],
           "gallery": 7
         },
         {
           "name": "Chiang Mai & Pai",
           "days": "5 Days",
           "note": "Rented a scooter and did the Pai loop over two days — waterfalls, canyon views, and the best banana pancakes on the route.",
-          "tags": ["Road Trip", "Nature", "Scooter"],
+          "tags": [
+            "Road Trip",
+            "Nature",
+            "Scooter"
+          ],
           "gallery": 6
         },
         {
           "name": "Koh Lipe & Koh Phi Phi",
           "days": "4 Days",
           "note": "Island hopping by longtail boat, snorkeling off Maya Bay before the crowds arrived at 8am.",
-          "tags": ["Beach", "Islands", "Boats"],
+          "tags": [
+            "Beach",
+            "Islands",
+            "Boats"
+          ],
           "gallery": 6
         }
       ],
@@ -160,9 +235,24 @@
         "budget": "~$38/day (excl. flights)",
         "best_time": "Nov–Feb, dry season across the whole country",
         "tickets": [
-          { "type": "Flight", "name": "Thai Lion Air — BKK to Krabi", "note": "Booked last-minute, still under $40", "link": "#" },
-          { "type": "Scooter", "name": "Honda Click 125i", "note": "Rented in Pai, 300 THB/day incl. helmet", "link": "#" },
-          { "type": "Ferry", "name": "Krabi → Koh Lipe speedboat", "note": "2.5h, book the morning departure", "link": "#" }
+          {
+            "type": "Flight",
+            "name": "Thai Lion Air — BKK to Krabi",
+            "note": "Booked last-minute, still under $40",
+            "link": "#"
+          },
+          {
+            "type": "Scooter",
+            "name": "Honda Click 125i",
+            "note": "Rented in Pai, 300 THB/day incl. helmet",
+            "link": "#"
+          },
+          {
+            "type": "Ferry",
+            "name": "Krabi → Koh Lipe speedboat",
+            "note": "2.5h, book the morning departure",
+            "link": "#"
+          }
         ]
       },
       "video": true
@@ -185,8 +275,12 @@
           "when": "Dec 2018",
           "getting_there": "A 4-hour flight in from Malaysia to kick off the trip.",
           "note": "The sprawling starting point — colonial Intramuros, chaotic jeepneys, and a food scene that genuinely never sleeps.",
-          "tags": ["City", "Food"],
-          "gallery": 3
+          "tags": [
+            "City",
+            "Food"
+          ],
+          "gallery": 3,
+          "video_url": "https://www.youtube.com/watch?v=vskIRsoPhvw"
         },
         {
           "name": "Sagada",
@@ -194,7 +288,11 @@
           "when": "Dec 2018",
           "getting_there": "About 6 hours by bus from Manila, through Baguio.",
           "note": "Mountain air, hanging coffins carved into limestone cliffs, and rice terraces that appear as the morning fog lifts.",
-          "tags": ["Mountains", "Bus Ride", "Nature"],
+          "tags": [
+            "Mountains",
+            "Bus Ride",
+            "Nature"
+          ],
           "gallery": 3
         },
         {
@@ -202,14 +300,20 @@
           "days": "4 Days",
           "when": "Dec 2018",
           "note": "The Philippines' 'Last Frontier' — even the well-known corners still feel a little undiscovered.",
-          "tags": ["Islands"],
+          "tags": [
+            "Islands"
+          ],
           "sub_places": [
             {
               "name": "Coron",
               "days": "4 Days",
               "getting_there": "A straightforward 2-hour flight from Manila.",
               "note": "Impossibly clear lagoons ringed by limestone karsts, with WWII shipwrecks resting in turquoise water just offshore.",
-              "tags": ["Diving", "Lagoons"]
+              "tags": [
+                "Diving",
+                "Lagoons"
+              ],
+              "video_url": "https://www.youtube.com/watch?v=El-DtTATD9Y"
             }
           ],
           "gallery": 4
@@ -219,21 +323,28 @@
           "days": "5 Days",
           "when": "2024",
           "note": "Two very different sides of the same province — a quiet freediving base and a long stretch of open beach, both easy trips from Manila.",
-          "tags": ["Budget", "Weekend Trip"],
+          "tags": [
+            "Budget",
+            "Weekend Trip"
+          ],
           "sub_places": [
             {
               "name": "Mabini",
               "days": "2 Days",
               "getting_there": "A 2-hour drive from Tagaytay.",
               "note": "A quiet freediving base on the Verde Island Passage — one of the most biodiverse stretches of water on the planet.",
-              "tags": ["Freediving"]
+              "tags": [
+                "Freediving"
+              ]
             },
             {
               "name": "Calatagan",
               "days": "3 Days",
               "getting_there": "Details coming soon.",
               "note": "Long stretches of pale sand and calm water — a low-key coastal escape without the crowds.",
-              "tags": ["Beach"]
+              "tags": [
+                "Beach"
+              ]
             }
           ],
           "gallery": 3
@@ -243,15 +354,24 @@
           "days": "5 Days",
           "when": "2019 & 2026",
           "note": "Two visits, two very different sides — resort beaches in Panglao, and the quieter blue holes of Anda.",
-          "tags": ["Island"],
+          "tags": [
+            "Island"
+          ],
           "sub_places": [
             {
               "name": "Panglao",
               "days": "4 Days",
               "when": "Summer 2019",
-              "getting_there": "About a 1-hour flight from Manila to Tagbilaran.",
-              "note": "White sand beaches by day, and the otherworldly Chocolate Hills rolling across the interior.",
-              "tags": ["Beach", "Nature"]
+              "getting_there": "Flew from Manila into Bohol airport, then took a trike to Panglao Grande Resort. Rented a scooter right from the resort for the whole stay.",
+              "note": "A really special trip — went with my partner and had an amazing time. The food was incredible everywhere in Bohol, not just at the resort. Explored the local beaches around Panglao, then drove up to Chocolate Hills through the man-made forest road — calm seas and amazing sealife along the way. Also visited the Tarsier Conservation Area, a nice chance to see the exotic little animals in their actual habitat, and swam at Hinagdanan Cave (a bit crowded, but still worth it). Panglao's sunsets are beautiful, and the people were some of the friendliest we met.",
+              "tags": [
+                "Beach",
+                "Nature",
+                "Chocolate Hills",
+                "Tarsier Sanctuary",
+                "Hinagdanan Cave",
+                "Scooter"
+              ]
             },
             {
               "name": "Anda",
@@ -259,7 +379,10 @@
               "when": "2026",
               "getting_there": "A 2-hour ferry from Siquijor into Tagbilaran, then a trike and bus out to Anda — mostly used as a stop on the way to Camiguin this time. We also rented a motorbike and drove up to Chocolate Hills — about a 2-hour ride from Jagna Port.",
               "note": "Bohol's quieter side — untouched beaches and blue holes, without Panglao's resort crowds.",
-              "tags": ["Beach", "Transit Stop"],
+              "tags": [
+                "Beach",
+                "Transit Stop"
+              ],
               "highlights": [
                 {
                   "img": "../assets/img/philippines/bohol/anda/DJI_20260725115212_0532_D.webp",
@@ -276,7 +399,11 @@
           "when": "Dec 2023",
           "getting_there": "A 2-day motorbike ride from Manila, with overnight stops in Pagbilao and Naga City.",
           "note": "Mayon Volcano's near-perfect cone watches over the road the whole way, with some of the country's spiciest food waiting at the end of it.",
-          "tags": ["Motorbike", "Volcano", "Food"],
+          "tags": [
+            "Motorbike",
+            "Volcano",
+            "Food"
+          ],
           "highlights": [
             {
               "img": "../assets/img/philippines/bicol/PXL_20231225_085024051.PANO.webp",
@@ -291,14 +418,18 @@
           "when": "2025",
           "getting_there": "About a 6-hour ferry from Batangas.",
           "note": "The 'Marble Capital of the Philippines' — quiet fishing towns, marble quarries, and coastline that barely sees a tourist.",
-          "tags": ["Island", "Off the Beaten Path"],
+          "tags": [
+            "Island",
+            "Off the Beaten Path"
+          ],
           "highlights": [
             {
               "img": "../assets/img/philippines/romblon/PXL_20250215_032557199.webp",
               "caption": "Romblon",
               "note": "Quiet coastline that barely sees a tourist — the Marble Capital of the Philippines."
             }
-          ]
+          ],
+          "video_url": "https://www.youtube.com/watch?v=1ETufy4QEjM"
         },
         {
           "name": "Sibuyan",
@@ -306,14 +437,18 @@
           "when": "2025",
           "getting_there": "A 4-hour ferry from Romblon.",
           "note": "Known as the 'Galapagos of Asia' — dense rainforest, rivers running gin-clear, and Mt. Guiting-Guiting looming over all of it.",
-          "tags": ["Rainforest", "Ferry"],
+          "tags": [
+            "Rainforest",
+            "Ferry"
+          ],
           "highlights": [
             {
               "img": "../assets/img/philippines/sibuyan/PXL_20250208_045819426.webp",
               "caption": "Sibuyan",
               "note": "The 'Galapagos of Asia' — dense rainforest and rivers running gin-clear."
             }
-          ]
+          ],
+          "video_url": "https://www.youtube.com/watch?v=ynJ8qxnq91Y"
         },
         {
           "name": "Siquijor",
@@ -321,7 +456,10 @@
           "when": "2026",
           "getting_there": "Flight from Manila to Dumaguete (1 hour), a quick trike to the port, then a short ferry over to the island. We rented a motorbike right at the port for all 5 days on the island — there are plenty of rental stalls there and you don't need to book ahead. I pre-booked with 'Bibings Car & Motorbike Rentals' (found them on Facebook) since I wanted a specific type of bike — their shop is right next to the port too, and they gave a good discount for renting more than 2 days.",
           "note": "An island wrapped in old mysticism, with waterfalls the colour of glass tucked into the jungle.",
-          "tags": ["Waterfalls", "Island"],
+          "tags": [
+            "Waterfalls",
+            "Island"
+          ],
           "highlights": [
             {
               "img": "../assets/img/philippines/siquijor/DJI_20260720135217_0473_D.webp",
@@ -332,7 +470,8 @@
           "images": [
             "../assets/img/philippines/siquijor/DJI_20260720180842_0489_D.webp",
             "../assets/img/philippines/siquijor/DJI_20260720181004_0491_D.webp"
-          ]
+          ],
+          "video_url": "https://www.youtube.com/watch?v=sxqa2YLeeNc"
         },
         {
           "name": "Camiguin",
@@ -340,7 +479,10 @@
           "when": "2026",
           "getting_there": "A 4-hour ferry from Jagna, Bohol. Getting back out: ferry to Balingoan, bus to Cagayan de Oro, overnight, then a flight home to Manila. We rented a motorbike from where we stayed, Marianita's Cottages, for all 4 days on the island.",
           "note": "More volcanoes than towns, with two very different landmarks worth the trip.",
-          "tags": ["Beach", "Island"],
+          "tags": [
+            "Beach",
+            "Island"
+          ],
           "highlights": [
             {
               "img": "../assets/img/philippines/camiguin/DJI_20260729085346_0612_D.webp",
@@ -362,9 +504,24 @@
         "budget": "~₱2,000/day (~$36, excl. flights) — budget backpacking style",
         "best_time": "Dec–May, before typhoon season",
         "tickets": [
-          { "type": "Flight", "name": "Cebu Pacific — MNL to Tagbilaran", "note": "Book a few weeks ahead for the better fares", "link": "#" },
-          { "type": "Ferry", "name": "Batangas → Romblon", "note": "~6 hours, several daily departures", "link": "#" },
-          { "type": "Ferry", "name": "Jagna, Bohol → Camiguin", "note": "~4 hours, check schedules ahead — not daily", "link": "#" }
+          {
+            "type": "Flight",
+            "name": "Cebu Pacific — MNL to Tagbilaran",
+            "note": "Book a few weeks ahead for the better fares",
+            "link": "#"
+          },
+          {
+            "type": "Ferry",
+            "name": "Batangas → Romblon",
+            "note": "~6 hours, several daily departures",
+            "link": "#"
+          },
+          {
+            "type": "Ferry",
+            "name": "Jagna, Bohol → Camiguin",
+            "note": "~4 hours, check schedules ahead — not daily",
+            "link": "#"
+          }
         ]
       },
       "video": true
@@ -383,7 +540,9 @@
           "name": "Hanoi",
           "days": "TBD",
           "note": "Full write-up coming soon.",
-          "tags": ["City"]
+          "tags": [
+            "City"
+          ]
         },
         {
           "name": "Saigon",
@@ -391,14 +550,26 @@
           "when": "Solo trip",
           "getting_there": "Flew in from Penang — this one was a solo trip. Entry involved a visa-on-arrival stamp, and the queue for that can get long, so it's worth being patient and prepared for a wait right at the airport. Took a bus out to Mui Ne early on, a proper overnight sleeper bus experience, then came back to Saigon for the rest of the trip. Traffic in the city is heavy enough that I chose not to rent and drive myself here, unlike Mui Ne.",
           "note": "Also known as Ho Chi Minh City. Stayed in capsule hotels here, which were pretty comfortable and affordable. Out in Mui Ne, rented a scooter and drove around the coastal roads — scenic desert sand dunes on one side, clear water on the other — plus some sand dune activities and an ATV ride, staying at a small backpacker place in town for two days. Back in Saigon, found a scooter tour company called Kiss Tours, and they were fantastic — you just tell them your mood and what you feel like seeing or doing, and they build the route around that. Great nightlife and bar scene if that's your thing, genuinely kind and friendly people throughout, and I checked out a few museums and walked around the city on foot, which felt pretty safe the whole time.",
-          "tags": ["Solo Trip", "Nightlife", "Scooter Tours", "Museums", "Desert", "ATV", "Sand Dunes", "Sleeper Bus", "Capsule Hotel", "Visa on Arrival"],
+          "tags": [
+            "Solo Trip",
+            "Nightlife",
+            "Scooter Tours",
+            "Museums",
+            "Desert",
+            "ATV",
+            "Sand Dunes",
+            "Sleeper Bus",
+            "Capsule Hotel",
+            "Visa on Arrival"
+          ],
           "highlights": [
             {
               "img": "../assets/img/vietnam/saigon/IMG_20170403_191324_HHT.webp",
               "caption": "Saigon",
               "note": "Ho Chi Minh City's streets, early on a solo trip that turned into scooter tours, capsule hotels, and a detour out to the Mui Ne dunes."
             }
-          ]
+          ],
+          "video_url": "https://www.youtube.com/watch?v=cB2AtKK4uts&t=27s"
         }
       ],
       "logistics": {
@@ -408,9 +579,24 @@
         "budget": "~$32/day (excl. flights)",
         "best_time": "Feb–Apr for the whole north-to-south route",
         "tickets": [
-          { "type": "Flight", "name": "Vietjet — HAN to DAD", "note": "Domestic leg, booked a week ahead", "link": "#" },
-          { "type": "Boat", "name": "Ha Long Bay overnight cruise", "note": "Mid-range operator, booked via hostel desk", "link": "#" },
-          { "type": "Motorbike", "name": "Honda Wave, Hoi An to Hue", "note": "One-way rental, drop-off included", "link": "#" }
+          {
+            "type": "Flight",
+            "name": "Vietjet — HAN to DAD",
+            "note": "Domestic leg, booked a week ahead",
+            "link": "#"
+          },
+          {
+            "type": "Boat",
+            "name": "Ha Long Bay overnight cruise",
+            "note": "Mid-range operator, booked via hostel desk",
+            "link": "#"
+          },
+          {
+            "type": "Motorbike",
+            "name": "Honda Wave, Hoi An to Hue",
+            "note": "One-way rental, drop-off included",
+            "link": "#"
+          }
         ]
       },
       "video": false
@@ -429,15 +615,23 @@
           "name": "Malé",
           "days": "1 Day",
           "note": "A short stopover to reset before the speedboat out — local market, fish harbour, and a rooftop coffee.",
-          "tags": ["City", "Transit"],
+          "tags": [
+            "City",
+            "Transit"
+          ],
           "gallery": 3
         },
         {
           "name": "Maafushi (Local Island)",
           "days": "5 Days",
           "note": "Bikini beach by day, night snorkeling with reef sharks, and a sandbank picnic that needed zero filter.",
-          "tags": ["Beach", "Snorkeling", "Budget"],
-          "gallery": 7
+          "tags": [
+            "Beach",
+            "Snorkeling",
+            "Budget"
+          ],
+          "gallery": 7,
+          "video_url": "https://www.youtube.com/watch?v=jK-ZTDfVvII"
         }
       ],
       "logistics": {
@@ -447,9 +641,24 @@
         "budget": "~$70/day (excl. flights) — the budget way to do the Maldives",
         "best_time": "Dec–Apr, dry season",
         "tickets": [
-          { "type": "Flight", "name": "Singapore Airlines — SIN to MLE", "note": "Booked as a stopover add-on", "link": "#" },
-          { "type": "Ferry", "name": "Malé → Maafushi speedboat", "note": "30 mins, book a day ahead at the jetty", "link": "#" },
-          { "type": "Stay", "name": "Maafushi guesthouse", "note": "Half the price of a resort, same water", "link": "#" }
+          {
+            "type": "Flight",
+            "name": "Singapore Airlines — SIN to MLE",
+            "note": "Booked as a stopover add-on",
+            "link": "#"
+          },
+          {
+            "type": "Ferry",
+            "name": "Malé → Maafushi speedboat",
+            "note": "30 mins, book a day ahead at the jetty",
+            "link": "#"
+          },
+          {
+            "type": "Stay",
+            "name": "Maafushi guesthouse",
+            "note": "Half the price of a resort, same water",
+            "link": "#"
+          }
         ]
       },
       "video": true
@@ -468,22 +677,79 @@
           "name": "Delhi",
           "days": "3 Days",
           "note": "Old Delhi by cycle rickshaw, Humayun's Tomb at sunrise, and a street food crawl through Chandni Chowk.",
-          "tags": ["City", "History", "Food"],
+          "tags": [
+            "City",
+            "History",
+            "Food"
+          ],
           "gallery": 6
         },
         {
           "name": "Jaipur & Jodhpur",
           "days": "4 Days",
           "note": "The Pink City's forts, the Blue City's rooftop views, and an overnight train between the two.",
-          "tags": ["Road Trip", "Forts", "Trains"],
+          "tags": [
+            "Road Trip",
+            "Forts",
+            "Trains"
+          ],
           "gallery": 6
         },
         {
           "name": "Udaipur",
           "days": "2 Days",
           "note": "Lake Pichola at golden hour and a rooftop dinner looking straight at the City Palace.",
-          "tags": ["Lakes", "Palaces"],
+          "tags": [
+            "Lakes",
+            "Palaces"
+          ],
           "gallery": 5
+        },
+        {
+          "name": "Ladakh",
+          "days": "3 Weeks",
+          "when": "May 2022",
+          "getting_there": "Flew from Delhi to Leh on GoAir — at the time, there weren't many airlines flying this route. This is already a high-altitude place, and altitude sickness is a real risk — give your body at least 2 days to adjust before doing much. I learned this the hard way: I nearly fainted on day two, walking to the market thinking I'd already adjusted. There have been fatalities reported from altitude sickness here, so don't take it lightly.",
+          "note": "This trip was a healing journey, taken about a year after I lost both my parents to COVID. It helped me work through a severe depression — to see light in immense darkness, and hope after living through so much loss. I met some extraordinary people along the way, and the whole experience gave me a real sense of perspective on life that carried me through a genuinely dark time.",
+          "tags": [
+            "Solo Trip",
+            "Motorbike",
+            "High Altitude",
+            "Healing Journey"
+          ],
+          "sub_places": [
+            {
+              "name": "Leh Town",
+              "days": "2 Weeks",
+              "getting_there": "Stayed at a backpacker hostel for the two weeks in town.",
+              "note": "Spent most of my time exploring on foot and by local transport around town.",
+              "bullet_list": [
+                "Shanti Stupa",
+                "Phyang Monastery",
+                "Spituk Monastery",
+                "Leh Main Market",
+                "Leh Palace",
+                "Thiksey Monastery"
+              ],
+              "tags": [
+                "Monasteries",
+                "Backpacker Hostel"
+              ]
+            },
+            {
+              "name": "Nubra Valley & Pangong Tso",
+              "days": "1 Week",
+              "getting_there": "Rented a Royal Enfield Himalayan 400cc and rode across Nubra Valley, Pangong Tso Lake, Shyok, and Durbuk.",
+              "note": "Drove through Khardung La Pass at around 18,000 feet — the wind chill and lack of oxygen at that altitude meant focusing on nothing but the moment just to get through it safely. Watch out for glacier or ice roads out here too — they're sometimes nearly invisible to the naked eye but genuinely dangerous and slippery; I almost got frostbite on my feet from being underprepared for how extreme the cold got. Stayed in tents booked through Booking.com along the way through the valley.",
+              "tags": [
+                "Royal Enfield",
+                "Khardung La Pass",
+                "Pangong Tso",
+                "Nubra Valley",
+                "Camping"
+              ]
+            }
+          ]
         }
       ],
       "logistics": {
@@ -493,9 +759,24 @@
         "budget": "~$40/day (excl. flights)",
         "best_time": "Oct–Mar, before the heat sets in",
         "tickets": [
-          { "type": "Train", "name": "Jaipur → Jodhpur overnight sleeper", "note": "Booked via IRCTC, AC 3-tier", "link": "#" },
-          { "type": "Car + Driver", "name": "Rajasthan circuit, 6 days", "note": "Arranged through the Jaipur guesthouse", "link": "#" },
-          { "type": "Stay", "name": "Udaipur heritage haveli", "note": "Lake-facing room, booked direct", "link": "#" }
+          {
+            "type": "Train",
+            "name": "Jaipur → Jodhpur overnight sleeper",
+            "note": "Booked via IRCTC, AC 3-tier",
+            "link": "#"
+          },
+          {
+            "type": "Car + Driver",
+            "name": "Rajasthan circuit, 6 days",
+            "note": "Arranged through the Jaipur guesthouse",
+            "link": "#"
+          },
+          {
+            "type": "Stay",
+            "name": "Udaipur heritage haveli",
+            "note": "Lake-facing room, booked direct",
+            "link": "#"
+          }
         ]
       },
       "video": false
@@ -517,7 +798,18 @@
           "when": "2019",
           "getting_there": "Flew in as a group of four (Malaysian, Filipino, and Indian passports) — Jeju was visa-free for all of us at the time. Rented a car for the week; a Malaysian driving licence was enough to drive locally, no international permit needed. Split the week between an Airbnb in the north for the first half, then a hotel in Seogwipo in the south for the second half, right near Jeongbang Waterfall.",
           "note": "Cool, rainy weather the whole trip, and somehow still one of the most scenic weeks of the entire run — waterfalls, cliffs, tea fields, freediving grandmothers, and a genuinely wild range of quirky museums packed onto one island (the Museum of Sex and Health included). The standout was Udo Island — a ferry out from Seongsanpo Port, then a full day cycling the coastline, capped off with the famous peanut ice cream before the evening ferry back. Right at the same port, we also climbed Seongsan Ilchulbong to the top — the views over the crater and coastline from up there were incredible. Saeyeongyo Bridge was another good stop for the views alone. We also caught local haenyeo (women freedivers) fishing just offshore, which was something else to watch in person.",
-          "tags": ["Road Trip", "Group Trip", "Nature", "Udo Island", "Seongsan Ilchulbong", "Freediving", "Waterfalls", "Tea Fields", "Saeyeongyo Bridge", "Museum of Sex and Health"],
+          "tags": [
+            "Road Trip",
+            "Group Trip",
+            "Nature",
+            "Udo Island",
+            "Seongsan Ilchulbong",
+            "Freediving",
+            "Waterfalls",
+            "Tea Fields",
+            "Saeyeongyo Bridge",
+            "Museum of Sex and Health"
+          ],
           "highlights": [
             {
               "img": "../assets/img/south-korea/jeju/20190905_133823.webp",
@@ -534,9 +826,24 @@
         "budget": "Split four ways — car rental, Airbnb, and hotel all shared across the group",
         "best_time": "Spring and autumn tend to be mildest — we happened to catch cooler, rainier weather on our trip",
         "tickets": [
-          { "type": "Flight", "name": "Direct flight to Jeju", "note": "Booked as a group of four", "link": "#" },
-          { "type": "Car Rental", "name": "Self-drive, 7 days", "note": "Malaysian licence accepted, no international permit needed", "link": "#" },
-          { "type": "Ferry", "name": "Seongsanpo → Udo Island", "note": "Round trip, bicycles rentable on the island", "link": "#" }
+          {
+            "type": "Flight",
+            "name": "Direct flight to Jeju",
+            "note": "Booked as a group of four",
+            "link": "#"
+          },
+          {
+            "type": "Car Rental",
+            "name": "Self-drive, 7 days",
+            "note": "Malaysian licence accepted, no international permit needed",
+            "link": "#"
+          },
+          {
+            "type": "Ferry",
+            "name": "Seongsanpo → Udo Island",
+            "note": "Round trip, bicycles rentable on the island",
+            "link": "#"
+          }
         ]
       },
       "video": false
@@ -557,7 +864,18 @@
           "when": "2017 (approx)",
           "getting_there": "Went with a group of friends — mostly got around in a rented van, like a mini van, which worked out cheaper split across the group for both van hire and boat trip packages.",
           "note": "Took a boat over to Nusa Penida from Sanur Beach for a day trip — the crossing gets genuinely rough, so it's worth being mindful if you're prone to seasickness. We really wished we could've stayed longer than the one day we had there. Sanur Beach itself is beautiful for sunrise, and Tanah Lot is one of the best spots on the island for sunset. Uluwatu Temple was a highlight for a different reason — the cultural dance and storytelling performances there (kecak dance) were incredible, though it's worth keeping a close eye on your belongings, since there are a lot of monkeys around who have no problem helping themselves. With the rest of the trip on the rented van, we made it out to the Ubud rice terraces, Pantai Pandawa, and Nusa Dua Beach as well. Also tried kopi luwak here — the famous 'poop coffee,' where civets eat the coffee cherries, digest them, and the beans are collected from their droppings to be roasted. Strange to think about, but it's a genuine local specialty. This was back around 2017 — Bali's become a lot more crowded since, so if you're planning something similar now, better planning ahead is worth it.",
-          "tags": ["Group Trip", "Nusa Penida", "Sanur Beach", "Tanah Lot", "Uluwatu Temple", "Kecak Dance", "Ubud Rice Terraces", "Pantai Pandawa", "Nusa Dua Beach", "Kopi Luwak"],
+          "tags": [
+            "Group Trip",
+            "Nusa Penida",
+            "Sanur Beach",
+            "Tanah Lot",
+            "Uluwatu Temple",
+            "Kecak Dance",
+            "Ubud Rice Terraces",
+            "Pantai Pandawa",
+            "Nusa Dua Beach",
+            "Kopi Luwak"
+          ],
           "highlights": [
             {
               "img": "../assets/img/indonesia/bali/IMG_5367.webp",
@@ -565,6 +883,19 @@
               "note": "Sunrise over Sanur, sunset at Tanah Lot, and a lot of Bali in between."
             }
           ]
+        },
+        {
+          "name": "Flores & Komodo Islands",
+          "days": "TBD",
+          "when": "2018 (approx)",
+          "note": "Full write-up coming soon.",
+          "tags": [
+            "Komodo Islands",
+            "Flores",
+            "Labuan Bajo",
+            "Rinca"
+          ],
+          "video_url": "https://www.youtube.com/watch?v=-P5xiXjAy7U"
         }
       ],
       "logistics": {

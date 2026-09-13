@@ -78,6 +78,26 @@ body.has-hero.hero-bright .site-nav{ --nav-fg: var(--text-dark); --nav-fg-dim: v
 .nav-links a{ font-family: var(--font-body); font-size: 13.5px; font-weight: 600; letter-spacing: 0.03em; color: var(--nav-fg-dim); padding: 6px 0; border-bottom: 1px solid transparent; transition: color .25s var(--ease), border-color .25s var(--ease); text-shadow: 0 1px 8px rgba(0,0,0,0.12); }
 .nav-links a:hover, .nav-links a.active{ color: var(--pink-deep); border-color: var(--pink); }
 .nav-insta{ display:flex; align-items:center; gap:8px; background: rgba(232,87,124,0.12); color: var(--pink-deep); padding: 9px 18px; border-radius: 999px; font-family: var(--font-body); font-size: 13px; font-weight: 600; transition: background .25s var(--ease), color .25s var(--ease); }
+
+.nav-countries{ position: relative; }
+.nav-countries-panel{
+  position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+  margin-top: 14px;
+  background: rgba(241,246,245,0.97); backdrop-filter: blur(14px);
+  border-radius: 14px; box-shadow: 0 20px 40px -14px rgba(22,53,49,0.3);
+  padding: 10px; min-width: 210px; max-height: 340px; overflow-y: auto;
+  display: none; flex-direction: column; gap: 2px; z-index: 60;
+}
+.nav-countries:hover .nav-countries-panel{ display: flex; }
+.nav-countries-panel a{
+  padding: 9px 14px; border-radius: 8px; font-size: 13.5px; font-weight: 600;
+  color: var(--text-dark-dim); white-space: nowrap; text-shadow: none;
+  border-bottom: none;
+}
+.nav-countries-panel a:hover{ background: rgba(232,87,124,0.1); color: var(--pink-deep); }
+@media (max-width: 860px){
+  .nav-countries-panel{ position: static; display: flex; max-height: none; overflow: visible; background: transparent; box-shadow: none; backdrop-filter: none; padding: 4px 0 0 14px; margin-top: 6px; transform: none; }
+}
 .nav-insta:hover{ background: var(--pink); color: #fff; }
 .nav-toggle{ display:none; background:none; border:none; color:var(--nav-fg); cursor:pointer; padding:8px; transition: color .3s; }
 .nav-toggle svg{ width:24px; height:24px; }
@@ -226,6 +246,10 @@ body.has-hero.hero-bright .country-nav{ --nav-fg-dim: var(--text-dark-dim); }
 .tl-panel-inner p{ color: var(--text-dark-dim); font-size:15px; }
 .tl-panel-inner .getting-there{ color: var(--turquoise-deep); font-weight:600; font-size:14.5px; margin-bottom:8px; }
 @media (max-width:640px){ .tl-panel-inner{ padding-left:0; } .tl-thumb, .tl-thumb-empty{ width:64px; height:64px; } }
+
+.place-list{ margin: 14px 0 0; padding-left: 22px; color: var(--text-dark-dim); font-size: 15px; }
+.place-list li{ margin-bottom: 7px; }
+.place-list li::marker{ color: var(--pink); }
 
 .stop-tags{ display:flex; gap:14px; flex-wrap:wrap; margin-top:16px; align-items:center; }
 .tag{ font-family: var(--font-body); font-size:12.5px; font-weight:600; letter-spacing:0.02em; color: var(--turquoise-deep); }

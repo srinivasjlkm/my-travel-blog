@@ -17,7 +17,21 @@
     <a href="../index.html" class="brand"><span class="brand-mark">✦</span> My Travel Diaries</a>
     <div class="nav-links">
       <a href="../index.html">Home</a>
+      <div class="nav-countries">
       <a href="../index.html#stamps">Countries</a>
+      <div class="nav-countries-panel">
+    <a href="../countries/singapore.html">Singapore</a>
+    <a href="../countries/malaysia.html">Malaysia</a>
+    <a href="../countries/thailand.html">Thailand</a>
+    <a href="../countries/philippines.html">Philippines</a>
+    <a href="../countries/vietnam.html">Vietnam</a>
+    <a href="../countries/maldives.html">Maldives</a>
+    <a href="../countries/india.html">India</a>
+    <a href="../countries/south-korea.html">South Korea</a>
+    <a href="../countries/indonesia.html">Indonesia</a>
+    <a href="../countries/more.html">More Countries →</a>
+      </div>
+    </div>
       <a href="../about.html">About</a>
       <a href="../plan.html">Plan a Trip</a>
       <a href="https://www.instagram.com/srinivasjlkm" target="_blank" rel="noopener" class="nav-insta">
@@ -96,6 +110,11 @@
           <div class="tl-panel-inner">
             <p>{{ place.note }}</p>
             {% if place.getting_there %}<p class="getting-there">→ {{ place.getting_there }}</p>{% endif %}
+            {% if place.bullet_list %}
+            <ul class="place-list">
+              {% for item in place.bullet_list %}<li>{{ item }}</li>{% endfor %}
+            </ul>
+            {% endif %}
             <div class="stop-tags">
               {% for tag in place.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
             </div>
@@ -107,6 +126,11 @@
               </figure>
               {% if h.note %}<p class="highlight-note">{{ h.note }}</p>{% endif %}
               {% endfor %}
+            {% endif %}
+            {% if place.video_id %}
+            <div class="video-frame">
+              <iframe src="https://www.youtube.com/embed/{{ place.video_id }}" title="{{ place.name }} video" allowfullscreen loading="lazy"></iframe>
+            </div>
             {% endif %}
             <div class="carousel-wrap">
               <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>
@@ -124,6 +148,11 @@
                 </div>
                 <p>{{ sub.note }}</p>
                 {% if sub.getting_there %}<p class="getting-there">→ {{ sub.getting_there }}</p>{% endif %}
+                {% if sub.bullet_list %}
+                <ul class="place-list">
+                  {% for item in sub.bullet_list %}<li>{{ item }}</li>{% endfor %}
+                </ul>
+                {% endif %}
                 <div class="stop-tags">
                   {% for tag in sub.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
                 </div>
@@ -135,6 +164,11 @@
                   </figure>
                   {% if h.note %}<p class="highlight-note">{{ h.note }}</p>{% endif %}
                   {% endfor %}
+                {% endif %}
+                {% if sub.video_id %}
+                <div class="video-frame">
+                  <iframe src="https://www.youtube.com/embed/{{ sub.video_id }}" title="{{ sub.name }} video" allowfullscreen loading="lazy"></iframe>
+                </div>
                 {% endif %}
                 <div class="carousel-wrap">
                   <button class="car-arrow car-prev" aria-label="Scroll left" type="button">‹</button>

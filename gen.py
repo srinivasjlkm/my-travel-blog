@@ -10,14 +10,22 @@ def slugify(text):
     text = re.sub(r"[^a-z0-9]+", "-", text)
     return text.strip("-")
 
+def youtube_id(url):
+    if not url:
+        return None
+    m = re.search(r"(?:v=|youtu\.be/|embed/)([A-Za-z0-9_-]{11})", url)
+    return m.group(1) if m else None
+
 # compute a short label for the route strip + slugs for photo-folder paths
 for c in data:
     for p in c["places"]:
         short = re.split(r"[(&]", p["name"])[0].strip()
         p["short"] = short
         p["slug"] = slugify(p["name"])
+        p["video_id"] = youtube_id(p.get("video_url"))
         for sub in p.get("sub_places", []):
             sub["slug"] = slugify(sub["name"])
+            sub["video_id"] = youtube_id(sub.get("video_url"))
 
 env = Environment(loader=FileSystemLoader(str(root / "templates")))
 tmpl = env.get_template("country.html.j2")
