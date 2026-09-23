@@ -11,64 +11,23 @@
       "since": "2022",
       "places": [
         {
-          "name": "Marina Bay & the Downtown Core",
-          "days": "2 Days",
-          "note": "Skyline walks, the Merlion at sunrise, and a rooftop that made me rethink what a city view could look like.",
+          "name": "Singapore",
+          "days": "TBD",
+          "when": "Solo trip (multiple visits)",
+          "note": "Been here quite a few times over the years, always solo. Full write-up coming soon.",
           "tags": [
-            "City",
-            "Photography",
-            "Nightlife"
-          ],
-          "gallery": 6
-        },
-        {
-          "name": "Tiong Bahru & Chinatown",
-          "days": "1 Day",
-          "note": "Old shophouses, kopi in a real coffeeshop, and the best plate of chilli crab I've had anywhere.",
-          "tags": [
-            "Food",
-            "Old Town",
-            "Walking"
-          ],
-          "gallery": 5
-        },
-        {
-          "name": "Sentosa & Southern Islands",
-          "days": "1 Day",
-          "note": "A short cable car ride out of the CBD chaos into beach clubs and quiet coastline.",
-          "tags": [
-            "Beach",
-            "Day Trip"
-          ],
-          "gallery": 4
+            "Solo Trip",
+            "City"
+          ]
         }
       ],
       "logistics": {
-        "flights": "Manila → Singapore (Scoot), ~4h direct",
-        "stay": "Capsule hotel, Bugis — clean, central, budget-friendly",
-        "transport": "EZ-Link card on the MRT the entire trip — no car needed",
-        "budget": "~$65/day (excl. flights)",
-        "best_time": "Feb–Apr, before the mid-year humidity",
-        "tickets": [
-          {
-            "type": "Flight",
-            "name": "Scoot — MNL to SIN",
-            "note": "Booked ~6 weeks out for the best fare",
-            "link": "#"
-          },
-          {
-            "type": "Stay",
-            "name": "Bugis Capsule Hotel",
-            "note": "Booked via Booking.com",
-            "link": "#"
-          },
-          {
-            "type": "Transit",
-            "name": "EZ-Link Card",
-            "note": "Top up at any MRT station",
-            "link": "#"
-          }
-        ]
+        "flights": "TBD",
+        "stay": "TBD",
+        "transport": "TBD",
+        "budget": "TBD",
+        "best_time": "TBD",
+        "tickets": []
       },
       "video": true
     },
@@ -153,6 +112,30 @@
               "note": "Mosques, coastline, and some of the best seafood of the whole trip — a great few days on either side of the day trip out to Redang."
             }
           ]
+        },
+        {
+          "name": "Langkawi",
+          "days": "TBD",
+          "note": "Full write-up coming soon.",
+          "tags": [
+            "Island"
+          ]
+        },
+        {
+          "name": "Malacca",
+          "days": "TBD",
+          "note": "Full write-up coming soon.",
+          "tags": [
+            "City"
+          ]
+        },
+        {
+          "name": "Perhentian Islands",
+          "days": "TBD",
+          "note": "Full write-up coming soon.",
+          "tags": [
+            "Island"
+          ]
         }
       ],
       "logistics": {
@@ -195,65 +178,33 @@
       "since": "2023",
       "places": [
         {
-          "name": "Bangkok",
-          "days": "4 Days",
-          "note": "Wat Arun across the river at sunset, Chatuchak on a Saturday, and a rooftop bar that made the humidity worth it.",
-          "tags": [
-            "City",
-            "Temples",
-            "Nightlife"
-          ],
-          "gallery": 7
-        },
-        {
-          "name": "Chiang Mai & Pai",
-          "days": "5 Days",
-          "note": "Rented a scooter and did the Pai loop over two days — waterfalls, canyon views, and the best banana pancakes on the route.",
+          "name": "Krabi",
+          "days": "TBD",
+          "getting_there": "Road trip with friends.",
+          "note": "Full write-up coming soon.",
           "tags": [
             "Road Trip",
-            "Nature",
-            "Scooter"
-          ],
-          "gallery": 6
+            "Group Trip"
+          ]
         },
         {
-          "name": "Koh Lipe & Koh Phi Phi",
-          "days": "4 Days",
-          "note": "Island hopping by longtail boat, snorkeling off Maya Bay before the crowds arrived at 8am.",
+          "name": "Phuket",
+          "days": "TBD",
+          "getting_there": "Road trip with friends.",
+          "note": "Full write-up coming soon.",
           "tags": [
-            "Beach",
-            "Islands",
-            "Boats"
-          ],
-          "gallery": 6
+            "Road Trip",
+            "Group Trip"
+          ]
         }
       ],
       "logistics": {
-        "flights": "Bangkok internal legs via Thai Lion Air + a ferry from Krabi to the islands",
-        "stay": "Hostels in BKK & Chiang Mai, beach bungalow on Koh Lipe",
-        "transport": "Scooter rental in the north, longtail boats in the south",
-        "budget": "~$38/day (excl. flights)",
-        "best_time": "Nov–Feb, dry season across the whole country",
-        "tickets": [
-          {
-            "type": "Flight",
-            "name": "Thai Lion Air — BKK to Krabi",
-            "note": "Booked last-minute, still under $40",
-            "link": "#"
-          },
-          {
-            "type": "Scooter",
-            "name": "Honda Click 125i",
-            "note": "Rented in Pai, 300 THB/day incl. helmet",
-            "link": "#"
-          },
-          {
-            "type": "Ferry",
-            "name": "Krabi → Koh Lipe speedboat",
-            "note": "2.5h, book the morning departure",
-            "link": "#"
-          }
-        ]
+        "flights": "TBD",
+        "stay": "TBD",
+        "transport": "TBD",
+        "budget": "TBD",
+        "best_time": "TBD",
+        "tickets": []
       },
       "video": true
     },
@@ -541,8 +492,10 @@
           "days": "TBD",
           "note": "Full write-up coming soon.",
           "tags": [
-            "City"
-          ]
+            "City",
+            "Group Trip"
+          ],
+          "getting_there": "A direct flight from Penang — went with a group of friends for this one."
         },
         {
           "name": "Saigon",
@@ -683,27 +636,6 @@
             "Food"
           ],
           "gallery": 6
-        },
-        {
-          "name": "Jaipur & Jodhpur",
-          "days": "4 Days",
-          "note": "The Pink City's forts, the Blue City's rooftop views, and an overnight train between the two.",
-          "tags": [
-            "Road Trip",
-            "Forts",
-            "Trains"
-          ],
-          "gallery": 6
-        },
-        {
-          "name": "Udaipur",
-          "days": "2 Days",
-          "note": "Lake Pichola at golden hour and a rooftop dinner looking straight at the City Palace.",
-          "tags": [
-            "Lakes",
-            "Palaces"
-          ],
-          "gallery": 5
         },
         {
           "name": "Ladakh",
@@ -885,7 +817,7 @@
           ]
         },
         {
-          "name": "Flores & Komodo Islands",
+          "name": "Flores",
           "days": "TBD",
           "when": "2018 (approx)",
           "note": "Full write-up coming soon.",
@@ -896,6 +828,15 @@
             "Rinca"
           ],
           "video_url": "https://www.youtube.com/watch?v=-P5xiXjAy7U"
+        },
+        {
+          "name": "Medan",
+          "days": "TBD",
+          "when": "June 2017 (approx)",
+          "note": "Full write-up coming soon.",
+          "tags": [
+            "City"
+          ]
         }
       ],
       "logistics": {
